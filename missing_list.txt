@@ -1,0 +1,187 @@
+============================================================
+ 📊 AUDIT RESULTS (MISSING POSTS)
+============================================================
+
+🚨 FOUND 60 MISSING POSTS!
+
+1. عنوان (Title): +
+   لینک (Link): https://web.archive.org/web/20120721104458/http://delsharm.blogfa.com/post-2.aspx
+--------------------------------------------------
+2. عنوان (Title): هميشه حسين...
+   لینک (Link): https://web.archive.org/web/20120721110258/http://delsharm.blogfa.com/post-10.aspx
+--------------------------------------------------
+3. عنوان (Title): خاطرات یک دیوانه
+   لینک (Link): https://web.archive.org/web/20120721110258/http://delsharm.blogfa.com/post-9.aspx
+--------------------------------------------------
+4. عنوان (Title): نذيرشنبه و صدا و سيماي شرمنده
+   لینک (Link): https://web.archive.org/web/20120721110316/http://www.persianblog.ir/post-16.aspx
+--------------------------------------------------
+5. عنوان (Title): عذرخواهی دیرهنگام یک ایرانی از ملت بافرهنگ افغانستان
+   لینک (Link): https://web.archive.org/web/20120721110316/http://www.bahr.blogfa.com/post-46.aspx
+--------------------------------------------------
+6. عنوان (Title): سياه‌مشق 1
+   لینک (Link): https://web.archive.org/web/20130917082204/http://www.delsharm.blogfa.com/post-40.aspx
+--------------------------------------------------
+7. عنوان (Title): سیاه‌مشق 3
+   لینک (Link): https://web.archive.org/web/20130917091245/http://www.delsharm.blogfa.com/post-42.aspx
+--------------------------------------------------
+8. عنوان (Title): سیاه‌مشق 2
+   لینک (Link): https://web.archive.org/web/20130917091245/http://www.delsharm.blogfa.com/post-41.aspx
+--------------------------------------------------
+9. عنوان (Title): خاطرات یک دیوانه -3-
+   لینک (Link): https://web.archive.org/web/20130917070750/http://www.delsharm.blogfa.com/post-44.aspx
+--------------------------------------------------
+10. عنوان (Title): آه
+   لینک (Link): https://web.archive.org/web/20130917070750/http://www.delsharm.blogfa.com/post-43.aspx
+--------------------------------------------------
+11. عنوان (Title): آی دریا!
+   لینک (Link): https://web.archive.org/web/20140803131356/http://delsharm.blogfa.com/post-46.aspx
+--------------------------------------------------
+12. عنوان (Title): سیاه‌مشق 4
+   لینک (Link): https://web.archive.org/web/20140803131627/http://delsharm.blogfa.com/post-47.aspx
+--------------------------------------------------
+13. عنوان (Title): سیاه‌مشق 9
+   لینک (Link): https://web.archive.org/web/20140803142630/http://delsharm.blogfa.com/post-54.aspx
+--------------------------------------------------
+14. عنوان (Title): سیاه‌مشق 8
+   لینک (Link): https://web.archive.org/web/20140803142630/http://delsharm.blogfa.com/post-53.aspx
+--------------------------------------------------
+15. عنوان (Title): خاطرات یک دیوانه 4
+   لینک (Link): https://web.archive.org/web/20140803142630/http://delsharm.blogfa.com/post-52.aspx
+--------------------------------------------------
+16. عنوان (Title): سیاه‌مشق 7
+   لینک (Link): https://web.archive.org/web/20140803142630/http://delsharm.blogfa.com/post-51.aspx
+--------------------------------------------------
+17. عنوان (Title): حرف دوم!
+   لینک (Link): https://web.archive.org/web/20140803142630/http://delsharm.blogfa.com/post-50.aspx
+--------------------------------------------------
+18. عنوان (Title): مریم آوازخوان
+   لینک (Link): https://web.archive.org/web/20140803133215/http://delsharm.blogfa.com/post-60.aspx
+--------------------------------------------------
+19. عنوان (Title): ادامه مطلب
+   لینک (Link): https://web.archive.org/web/20140803133215/http://delsharm.blogfa.com/post-60.aspx
+--------------------------------------------------
+20. عنوان (Title): سیاه‌مشق 13
+   لینک (Link): https://web.archive.org/web/20140803133215/http://delsharm.blogfa.com/post-59.aspx
+--------------------------------------------------
+21. عنوان (Title): سیاه‌مشق 12
+   لینک (Link): https://web.archive.org/web/20140803133215/http://delsharm.blogfa.com/post-58.aspx
+--------------------------------------------------
+22. عنوان (Title): سیاه‌مشق 11
+   لینک (Link): https://web.archive.org/web/20140803133215/http://delsharm.blogfa.com/post-57.aspx
+--------------------------------------------------
+23. عنوان (Title): سیاه‌مشق 10
+   لینک (Link): https://web.archive.org/web/20140803133215/http://delsharm.blogfa.com/post-56.aspx
+--------------------------------------------------
+24. عنوان (Title): خاطرات یک دیوانه 5
+   لینک (Link): https://web.archive.org/web/20140803133215/http://delsharm.blogfa.com/post-55.aspx
+--------------------------------------------------
+25. عنوان (Title): واگویه‌های یک دیوانه 1
+   لینک (Link): https://web.archive.org/web/20140803150347/http://delsharm.blogfa.com/post-66.aspx
+--------------------------------------------------
+26. عنوان (Title): سیاه‌مشق 17
+   لینک (Link): https://web.archive.org/web/20140803150347/http://delsharm.blogfa.com/post-65.aspx
+--------------------------------------------------
+27. عنوان (Title): سیاه‌مشق 16
+   لینک (Link): https://web.archive.org/web/20140803150347/http://delsharm.blogfa.com/post-64.aspx
+--------------------------------------------------
+28. عنوان (Title): ....
+   لینک (Link): https://web.archive.org/web/20140803150347/http://delsharm.blogfa.com/post-64.aspx
+--------------------------------------------------
+29. عنوان (Title): سیاه‌مشق 15
+   لینک (Link): https://web.archive.org/web/20140803150347/http://delsharm.blogfa.com/post-63.aspx
+--------------------------------------------------
+30. عنوان (Title): سیاه‌مشق 14
+   لینک (Link): https://web.archive.org/web/20140803150347/http://delsharm.blogfa.com/post-62.aspx
+--------------------------------------------------
+31. عنوان (Title): خاطرات یک دیوانه 6
+   لینک (Link): https://web.archive.org/web/20140803150347/http://delsharm.blogfa.com/post-61.aspx
+--------------------------------------------------
+32. عنوان (Title): تا آمدم که با تو خداحافظی کنم...
+   لینک (Link): https://web.archive.org/web/20130917065054/http://www.delsharm.blogfa.com/post-72.aspx
+--------------------------------------------------
+33. عنوان (Title): سیاه‌مشق 22
+   لینک (Link): https://web.archive.org/web/20130917065054/http://www.delsharm.blogfa.com/post-71.aspx
+--------------------------------------------------
+34. عنوان (Title): سیاه‌مشق 21
+   لینک (Link): https://web.archive.org/web/20130917065054/http://www.delsharm.blogfa.com/post-70.aspx
+--------------------------------------------------
+35. عنوان (Title): سیاه‌مشق 20
+   لینک (Link): https://web.archive.org/web/20130917065054/http://www.delsharm.blogfa.com/post-69.aspx
+--------------------------------------------------
+36. عنوان (Title): سیاه‌مشق 19
+   لینک (Link): https://web.archive.org/web/20130917065054/http://www.delsharm.blogfa.com/post-68.aspx
+--------------------------------------------------
+37. عنوان (Title): سیاه‌مشق 18
+   لینک (Link): https://web.archive.org/web/20130917065054/http://www.delsharm.blogfa.com/post-67.aspx
+--------------------------------------------------
+38. عنوان (Title): هنوز منتظرم... شاید نگاهی...
+   لینک (Link): https://web.archive.org/web/20150511055338/http://www.delsharm.blogfa.com/post-73.aspx
+--------------------------------------------------
+39. عنوان (Title): سیاه‌مشق 23
+   لینک (Link): https://web.archive.org/web/20150511060208/http://www.delsharm.blogfa.com/post-77.aspx
+--------------------------------------------------
+40. عنوان (Title): یونس
+   لینک (Link): https://web.archive.org/web/20150511060208/http://www.delsharm.blogfa.com/post-76.aspx
+--------------------------------------------------
+41. عنوان (Title): مثل لحظۀ تولدت
+   لینک (Link): https://web.archive.org/web/20150511060208/http://www.delsharm.blogfa.com/post-75.aspx
+--------------------------------------------------
+42. عنوان (Title): من زنده‌ام هنوز و غزل فکر می‌کنم
+   لینک (Link): https://web.archive.org/web/20150511060208/http://www.delsharm.blogfa.com/post-74.aspx
+--------------------------------------------------
+43. عنوان (Title): من عاشق تواَم به غزل احتیاج نیست
+   لینک (Link): https://web.archive.org/web/20150511054947/http://www.delsharm.blogfa.com/post-88.aspx
+--------------------------------------------------
+44. عنوان (Title): شاه‌بیت غزل زندگی‌ام
+   لینک (Link): https://web.archive.org/web/20150511054947/http://www.delsharm.blogfa.com/post-87.aspx
+--------------------------------------------------
+45. عنوان (Title): نام تو
+   لینک (Link): https://web.archive.org/web/20150511054947/http://www.delsharm.blogfa.com/post-86.aspx
+--------------------------------------------------
+46. عنوان (Title): آی عاشقان، سلام
+   لینک (Link): https://web.archive.org/web/20150511054947/http://www.delsharm.blogfa.com/post-85.aspx
+--------------------------------------------------
+47. عنوان (Title): یاددا‌‌‌شت‌های درد جاودانگی
+   لینک (Link): https://web.archive.org/web/20150511054947/http://www.delsharm.blogfa.com/post-84.aspx
+--------------------------------------------------
+48. عنوان (Title): نفرین به عشق
+   لینک (Link): https://web.archive.org/web/20150511054947/http://www.delsharm.blogfa.com/post-83.aspx
+--------------------------------------------------
+49. عنوان (Title): دلم گرفته از این روزها، دلم تنگ است
+   لینک (Link): https://web.archive.org/web/20150511054947/http://www.delsharm.blogfa.com/post-82.aspx
+--------------------------------------------------
+50. عنوان (Title): سیاه‌مشق 26
+   لینک (Link): https://web.archive.org/web/20150511054947/http://www.delsharm.blogfa.com/post-81.aspx
+--------------------------------------------------
+51. عنوان (Title): سیاه‌مشق 25
+   لینک (Link): https://web.archive.org/web/20150511054947/http://www.delsharm.blogfa.com/post-80.aspx
+--------------------------------------------------
+52. عنوان (Title): نام اعظم
+   لینک (Link): https://web.archive.org/web/20150511054947/http://www.delsharm.blogfa.com/post-79.aspx
+--------------------------------------------------
+53. عنوان (Title): سیاه‌مشق 24
+   لینک (Link): https://web.archive.org/web/20150511054947/http://www.delsharm.blogfa.com/post-78.aspx
+--------------------------------------------------
+54. عنوان (Title): گویاترین وحی خداوند
+   لینک (Link): https://web.archive.org/web/20150705203339/http://delsharm.blogfa.com/post-91.aspx
+--------------------------------------------------
+55. عنوان (Title): من سال‌های سال مُردم
+   لینک (Link): https://web.archive.org/web/20150705203339/http://delsharm.blogfa.com/post-90.aspx
+--------------------------------------------------
+56. عنوان (Title): پارک شهر
+   لینک (Link): https://web.archive.org/web/20150705203339/http://delsharm.blogfa.com/post-89.aspx
+--------------------------------------------------
+57. عنوان (Title): مدیون تواَم
+   لینک (Link): https://web.archive.org/web/20151215225510/http://delsharm.blogfa.com/post-102.aspx
+--------------------------------------------------
+58. عنوان (Title): سال قبل معرفی کتاب‌های ادبی به مناسبت
+نمایشگاه کتاب گذاشته بودم، خواستید نگاهی بیندازید
+   لینک (Link): https://web.archive.org/web/20151215225510/http://www.rasadesobh.blogfa.com/post-45.aspx
+--------------------------------------------------
+59. عنوان (Title): مثل موسیقی ترِ باران
+   لینک (Link): https://web.archive.org/web/20151215225510/http://delsharm.blogfa.com/post-101.aspx
+--------------------------------------------------
+60. عنوان (Title): این وبلاگ به نشانی جدید منتقل شد
+   لینک (Link): https://web.archive.org/web/20151215225607/http://delsharm.blogfa.com/post-155.aspx
+--------------------------------------------------
