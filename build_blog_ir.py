@@ -430,7 +430,7 @@ def create_local_blog(xml_file, output_dir):
         <head>
             <meta charset="UTF-8">
             <title>{title} | {blog_title}</title>
-            <link rel="stylesheet" href="../style.css">
+            <link rel="stylesheet" href="../style.css?v=2">
             {theme_head_script}
         </head>
         <body>
@@ -473,7 +473,7 @@ def create_local_blog(xml_file, output_dir):
         <head>
             <meta charset="UTF-8">
             <title>برچسب: {tag} | {blog_title}</title>
-            <link rel="stylesheet" href="../style.css">
+            <link rel="stylesheet" href="../style.css?v=2">
             {theme_head_script}
         </head>
         <body>
@@ -519,7 +519,7 @@ def create_local_blog(xml_file, output_dir):
         <head>
             <meta charset="UTF-8">
             <title>بایگانی: {baygani_data['label']} | {blog_title}</title>
-            <link rel="stylesheet" href="../style.css">
+            <link rel="stylesheet" href="../style.css?v=2">
             {theme_head_script}
         </head>
         <body>
