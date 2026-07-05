@@ -248,7 +248,6 @@ def create_local_blog(xml_file, output_dir):
         color: var(--text-main); 
         font-size: 0.95em; 
         line-height: 1.8;
-        /* Increased max-height to accommodate longer text when no image is present */
         max-height: 200px; 
         overflow: hidden; 
     }
@@ -266,7 +265,6 @@ def create_local_blog(xml_file, output_dir):
         pointer-events: none; 
     }
     
-    /* ADDED margin-top: auto; to push the button to the absolute bottom of the card */
     .read-more { margin-top: auto; align-self: flex-start; font-weight: bold; font-size: 0.9em; padding: 8px 16px; background: var(--btn-bg); border-radius: 6px; color: #2980b9; transition: background 0.2s; }
     .read-more:hover { background: var(--btn-hover); text-decoration: none;}
     
@@ -403,17 +401,24 @@ def create_local_blog(xml_file, output_dir):
             'img_url': img_url, 'excerpt': excerpt
         }
 
+        # Handle existing tags
+        unique_post_tags = set()
         if tags_elem is not None:
             unique_post_tags = set(t.text.strip() for t in tags_elem.findall('.//NAME') if t.text and t.text.strip())
             
-            for clean_tag in unique_post_tags:
-                safe_tag_filename = sanitize_filename(clean_tag)
-                post_tags.append(clean_tag)
-                tag_links_html.append(f'<a href="../tags/{safe_tag_filename}.html">{clean_tag}</a>')
-                
-                if clean_tag not in tags_dict:
-                    tags_dict[clean_tag] = []
-                tags_dict[clean_tag].append(post_metadata)
+        # ADDED LOGIC: Auto-tag missing titles with "سیاه‌مشق"
+        if title == "—":
+            unique_post_tags.add("سیاه‌مشق")
+            
+        # Process all collected tags
+        for clean_tag in unique_post_tags:
+            safe_tag_filename = sanitize_filename(clean_tag)
+            post_tags.append(clean_tag)
+            tag_links_html.append(f'<a href="../tags/{safe_tag_filename}.html">{clean_tag}</a>')
+            
+            if clean_tag not in tags_dict:
+                tags_dict[clean_tag] = []
+            tags_dict[clean_tag].append(post_metadata)
 
         if baygani_key not in baygani_dict:
             baygani_dict[baygani_key] = {'label': baygani_label, 'posts': []}
@@ -579,7 +584,7 @@ def create_local_blog(xml_file, output_dir):
     <head>
         <meta charset="UTF-8">
         <title>{blog_title}</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css?v=2">
         {theme_head_script}
     </head>
     <body>
@@ -714,7 +719,7 @@ def create_local_blog(xml_file, output_dir):
     with open(os.path.join(output_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
 
-    print(f"\n✅ Visual alignment fixed.")
+    print(f"\n✅ Auto-tagging for missing titles implemented.")
     print(f"📂 Output saved to: {os.path.abspath(output_dir)}")
     print(f"🌐 Open '{os.path.join(output_dir, 'index.html')}' in your browser to view.")
 
