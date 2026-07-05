@@ -59,6 +59,9 @@ def extract_preview(html_content):
     no_img_html = re.sub(r'<img[^>]+>', '', html_content, flags=re.IGNORECASE)
     p_blocks = re.findall(r'<p[^>]*>.*?</p>', no_img_html, flags=re.IGNORECASE | re.DOTALL)
     
+    # Dynamic excerpt length based on image presence
+    target_length = 350 if img_url else 600
+    
     excerpt_html = ""
     
     # Attempt 1: Extract from <p> blocks
@@ -72,7 +75,7 @@ def extract_preview(html_content):
                 
             selected_blocks.append(p)
             current_length += len(clean_text)
-            if current_length >= 350: 
+            if current_length >= target_length: 
                 break
         excerpt_html = "".join(selected_blocks)
         
@@ -90,7 +93,7 @@ def extract_preview(html_content):
                 
             excerpt_lines.append(line)
             current_length += len(line)
-            if current_length >= 350:
+            if current_length >= target_length:
                 break
                 
         excerpt_html = "<p>" + "<br>".join(excerpt_lines) + "</p>"
@@ -165,9 +168,7 @@ def create_local_blog(xml_file, output_dir):
         --fade-end: rgba(255,255,255,1);
         --btn-bg: #f4f6f7;
         --btn-hover: #e2e8f0;
-        
-        /* High contrast toggle button variables */
-        --toggle-bg: #2c3e50; /* Dark background in light mode */
+        --toggle-bg: #2c3e50;
         --toggle-color: #ffffff;
     }
 
@@ -184,9 +185,7 @@ def create_local_blog(xml_file, output_dir):
         --fade-end: rgba(30,30,30,1);
         --btn-bg: #333333;
         --btn-hover: #444444;
-        
-        /* High contrast toggle button variables */
-        --toggle-bg: #e0e0e0; /* Light background in dark mode */
+        --toggle-bg: #e0e0e0; 
         --toggle-color: #121212;
     }
 
@@ -249,7 +248,8 @@ def create_local_blog(xml_file, output_dir):
         color: var(--text-main); 
         font-size: 0.95em; 
         line-height: 1.8;
-        max-height: 140px; 
+        /* Increased max-height to accommodate longer text when no image is present */
+        max-height: 200px; 
         overflow: hidden; 
     }
     .card-content .excerpt-container p {
@@ -266,7 +266,8 @@ def create_local_blog(xml_file, output_dir):
         pointer-events: none; 
     }
     
-    .read-more { align-self: flex-start; font-weight: bold; font-size: 0.9em; padding: 8px 16px; background: var(--btn-bg); border-radius: 6px; color: #2980b9; transition: background 0.2s; }
+    /* ADDED margin-top: auto; to push the button to the absolute bottom of the card */
+    .read-more { margin-top: auto; align-self: flex-start; font-weight: bold; font-size: 0.9em; padding: 8px 16px; background: var(--btn-bg); border-radius: 6px; color: #2980b9; transition: background 0.2s; }
     .read-more:hover { background: var(--btn-hover); text-decoration: none;}
     
     .single-post-container { max-width: 800px; margin: auto; background: var(--bg-container); padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
@@ -297,7 +298,7 @@ def create_local_blog(xml_file, output_dir):
     .comment-item .date { font-size: 0.85em; color: var(--text-muted); margin-right: 10px; }
     .comment-item p { margin: 10px 0 0 0; }
 
-    /* Updated Theme Toggle Button for High Contrast */
+    /* Theme Toggle Button */
     .theme-toggle-btn {
         position: absolute;
         top: 25px;
@@ -713,7 +714,7 @@ def create_local_blog(xml_file, output_dir):
     with open(os.path.join(output_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
 
-    print(f"\n✅ High contrast dark mode toggle button integrated.")
+    print(f"\n✅ Visual alignment fixed.")
     print(f"📂 Output saved to: {os.path.abspath(output_dir)}")
     print(f"🌐 Open '{os.path.join(output_dir, 'index.html')}' in your browser to view.")
 
