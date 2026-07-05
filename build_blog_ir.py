@@ -44,6 +44,14 @@ def get_baygani_info(gregorian_date_str):
 def sanitize_filename(name):
     return re.sub(r'[\\/*?:"<>|]', "", name).strip()
 
+def strip_hardcoded_colors(html_content):
+    if not html_content:
+        return ""
+    cleaned = re.sub(r'\b(?:color|bgcolor)\s*=\s*["\'][^"\']*["\']', '', html_content, flags=re.IGNORECASE)
+    cleaned = re.sub(r'(?<!-)\bcolor\s*:\s*[^;"\']+[;]?', '', cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r'\bbackground-color\s*:\s*[^;"\']+[;]?', '', cleaned, flags=re.IGNORECASE)
+    return cleaned
+
 def extract_preview(html_content):
     img_match = re.search(r'<img[^>]+src=["\'](.*?)["\']', html_content, re.IGNORECASE)
     img_url = img_match.group(1) if img_match else None
@@ -52,6 +60,8 @@ def extract_preview(html_content):
     p_blocks = re.findall(r'<p[^>]*>.*?</p>', no_img_html, flags=re.IGNORECASE | re.DOTALL)
     
     excerpt_html = ""
+    
+    # Attempt 1: Extract from <p> blocks
     if p_blocks:
         current_length = 0
         selected_blocks = []
@@ -65,8 +75,10 @@ def extract_preview(html_content):
             if current_length >= 350: 
                 break
         excerpt_html = "".join(selected_blocks)
-    else:
-        text_with_markers = re.sub(r'<br\s*/?>|</div>', '\n', no_img_html, flags=re.IGNORECASE)
+        
+    # Attempt 2: If <p> blocks were empty, fall back to div/br parsing
+    if not excerpt_html.strip():
+        text_with_markers = re.sub(r'<br\s*/?>|</div>|</p>', '\n', no_img_html, flags=re.IGNORECASE)
         clean_text = re.sub(r'<[^>]+>', ' ', text_with_markers)
         lines = [line.strip() for line in clean_text.split('\n')]
         
@@ -140,29 +152,71 @@ def create_local_blog(xml_file, output_dir):
     css_content = """
     @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap');
 
+    :root {
+        --bg-body: #f0f2f5;
+        --bg-container: #ffffff;
+        --text-main: #333333;
+        --text-heading: #2c3e50;
+        --text-muted: #7f8c8d;
+        --border-color: #e0e6ed;
+        --border-light: #eaeaea;
+        --accent-bg: #f9f9f9;
+        --fade-start: rgba(255,255,255,0);
+        --fade-end: rgba(255,255,255,1);
+        --btn-bg: #f4f6f7;
+        --btn-hover: #e2e8f0;
+        
+        /* High contrast toggle button variables */
+        --toggle-bg: #2c3e50; /* Dark background in light mode */
+        --toggle-color: #ffffff;
+    }
+
+    html.dark-mode {
+        --bg-body: #121212;
+        --bg-container: #1e1e1e;
+        --text-main: #ffffff; 
+        --text-heading: #ffffff;
+        --text-muted: #aaaaaa;
+        --border-color: #333333;
+        --border-light: #333333;
+        --accent-bg: #2a2a2a;
+        --fade-start: rgba(30,30,30,0);
+        --fade-end: rgba(30,30,30,1);
+        --btn-bg: #333333;
+        --btn-hover: #444444;
+        
+        /* High contrast toggle button variables */
+        --toggle-bg: #e0e0e0; /* Light background in dark mode */
+        --toggle-color: #121212;
+    }
+
     body {
         font-family: 'Vazirmatn', sans-serif;
         direction: rtl;
         text-align: justify;
-        background-color: #f0f2f5;
-        color: #333;
+        background-color: var(--bg-body);
+        color: var(--text-main);
         line-height: 1.8;
         margin: 0;
         padding: 40px 20px;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
+    
     .container { max-width: 1200px; margin: auto; }
-    .page-header { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 40px; text-align: center; }
-    h1, h2 { color: #2c3e50; }
+    
+    .page-header { position: relative; background: var(--bg-container); padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 40px; text-align: center; }
+    
+    h1, h2 { color: var(--text-heading); }
     h1 { margin: 0; font-size: 2.2em; }
     a { color: #2980b9; text-decoration: none; transition: color 0.2s; }
     a:hover { color: #1abc9c; }
     
-    .section-title { font-size: 1.4em; color: #34495e; border-bottom: 2px solid #e0e6ed; padding-bottom: 10px; margin-bottom: 25px; margin-top: 40px; font-weight: bold;}
+    .section-title { font-size: 1.4em; color: var(--text-heading); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 25px; margin-top: 40px; font-weight: bold;}
     .section-title:first-child { margin-top: 0; }
     
     .main-layout { display: flex; flex-direction: row; gap: 40px; align-items: flex-start; }
     .content-area { flex: 3; min-width: 0; }
-    .sidebar-area { flex: 1; min-width: 300px; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); position: sticky; top: 20px; }
+    .sidebar-area { flex: 1; min-width: 300px; background: var(--bg-container); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); position: sticky; top: 20px; }
     
     @media (max-width: 850px) {
         .main-layout { flex-direction: column; }
@@ -179,20 +233,20 @@ def create_local_blog(xml_file, output_dir):
     .tag-count { background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 15px; font-size: 0.8em; font-weight: bold;}
     
     .posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; }
-    .post-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.04); transition: transform 0.2s, box-shadow 0.2s; border: 1px solid #eaeaea; display: flex; flex-direction: column; }
+    .post-card { background: var(--bg-container); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.04); transition: transform 0.2s, box-shadow 0.2s; border: 1px solid var(--border-light); display: flex; flex-direction: column; }
     .post-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
-    .card-img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee; }
+    .card-img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color); }
     
     .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
     .card-content h2 { margin-top: 0; font-size: 1.3em; margin-bottom: 8px; text-align: right; }
-    .card-content h2 a { color: #2c3e50; }
-    .card-content .date { font-size: 0.85em; color: #95a5a6; margin-bottom: 15px; }
+    .card-content h2 a { color: var(--text-heading); }
+    .card-content .date { font-size: 0.85em; color: var(--text-muted); margin-bottom: 15px; }
     
     .card-content .excerpt-container { 
         position: relative;
         flex-grow: 1; 
         margin-bottom: 20px; 
-        color: #555; 
+        color: var(--text-main); 
         font-size: 0.95em; 
         line-height: 1.8;
         max-height: 140px; 
@@ -208,39 +262,65 @@ def create_local_blog(xml_file, output_dir):
         left: 0;
         right: 0;
         height: 60px;
-        background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1) 90%);
+        background: linear-gradient(to bottom, var(--fade-start), var(--fade-end) 90%);
         pointer-events: none; 
     }
     
-    .read-more { align-self: flex-start; font-weight: bold; font-size: 0.9em; padding: 8px 16px; background: #f4f6f7; border-radius: 6px; color: #2980b9; transition: background 0.2s; }
-    .read-more:hover { background: #e2e8f0; text-decoration: none;}
+    .read-more { align-self: flex-start; font-weight: bold; font-size: 0.9em; padding: 8px 16px; background: var(--btn-bg); border-radius: 6px; color: #2980b9; transition: background 0.2s; }
+    .read-more:hover { background: var(--btn-hover); text-decoration: none;}
     
-    .single-post-container { max-width: 800px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+    .single-post-container { max-width: 800px; margin: auto; background: var(--bg-container); padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
     .single-post-container div img { display: block; margin: 20px auto; max-width: 100%; height: auto; border-radius: 8px;}
     .single-post-container p { margin-bottom: 10px; }
-    .post-tags { font-size: 0.85em; color: #7f8c8d; margin-top: 40px; padding-top: 15px; border-top: 1px dashed #ccc; }
+    .post-tags { font-size: 0.85em; color: var(--text-muted); margin-top: 40px; padding-top: 15px; border-top: 1px dashed var(--border-color); }
     .post-tags a { color: #2980b9; font-weight: bold; }
     
-    .pagination { display: flex; justify-content: space-between; align-items: center; margin-top: 40px; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
+    .pagination { display: flex; justify-content: space-between; align-items: center; margin-top: 40px; padding: 20px; background: var(--bg-container); border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
     .pagination a { padding: 10px 20px; background: #2c3e50; color: white; border-radius: 8px; font-size: 0.9em; cursor: pointer; transition: background 0.2s;}
     .pagination a:hover { background: #1a252f; text-decoration: none; }
     .page-numbers { display: flex; gap: 5px; direction: rtl; align-items: center; } 
-    .page-numbers a, .page-numbers span { padding: 8px 14px; background: #f0f2f5; color: #333; border-radius: 6px; font-size: 0.9em; cursor: pointer; transition: background 0.2s;}
-    .page-numbers a:hover { background: #e2e8f0; }
+    .page-numbers a, .page-numbers span { padding: 8px 14px; background: var(--btn-bg); color: var(--text-main); border-radius: 6px; font-size: 0.9em; cursor: pointer; transition: background 0.2s;}
+    .page-numbers a:hover { background: var(--btn-hover); }
     .page-numbers .current-page { background: #2980b9; color: white; font-weight: bold; cursor: default; }
 
     /* Force clean styles on ALL elements in the post content */
     .single-post-container, .single-post-container * {
-        color: #333 !important;
+        color: var(--text-main) !important;
         font-family: 'Vazirmatn', sans-serif !important;
+        background-color: transparent !important;
     }
 
     /* Comments Section Styling */
-    .comments-section { margin-top: 50px; padding-top: 20px; border-top: 2px solid #eee; }
-    .comment-item { background: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 15px; border-right: 4px solid #3498db; }
-    .comment-item strong { color: #2c3e50; font-size: 1.1em; }
-    .comment-item .date { font-size: 0.85em; color: #95a5a6; margin-right: 10px; }
+    .comments-section { margin-top: 50px; padding-top: 20px; border-top: 2px solid var(--border-color); }
+    .comment-item { background: var(--accent-bg); padding: 20px; border-radius: 8px; margin-bottom: 15px; border-right: 4px solid #3498db; }
+    .comment-item strong { color: var(--text-heading); font-size: 1.1em; }
+    .comment-item .date { font-size: 0.85em; color: var(--text-muted); margin-right: 10px; }
     .comment-item p { margin: 10px 0 0 0; }
+
+    /* Updated Theme Toggle Button for High Contrast */
+    .theme-toggle-btn {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        background: var(--toggle-bg);
+        color: var(--toggle-color);
+        border: none;
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s ease, background 0.3s ease, opacity 0.2s ease;
+        z-index: 10;
+    }
+    .theme-toggle-btn:hover {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
     """
     
     with open(os.path.join(output_dir, "style.css"), "w", encoding="utf-8") as f:
@@ -255,6 +335,39 @@ def create_local_blog(xml_file, output_dir):
     tags_dict = {}
     baygani_dict = {} 
     
+    theme_head_script = """
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+    """
+    
+    theme_btn_html = '<button id="theme-toggle" class="theme-toggle-btn" aria-label="تغییر تم">🌙</button>'
+
+    theme_script = """
+    <script>
+        const themeBtn = document.getElementById('theme-toggle');
+        
+        function updateIcon() {
+            if (document.documentElement.classList.contains('dark-mode')) {
+                themeBtn.innerHTML = '☀️';
+            } else {
+                themeBtn.innerHTML = '🌙';
+            }
+        }
+        
+        updateIcon();
+        
+        themeBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark-mode');
+            const isDark = document.documentElement.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateIcon();
+        });
+    </script>
+    """
+
     print("Parsing posts and building metadata...")
 
     for i, post in enumerate(posts):
@@ -263,12 +376,14 @@ def create_local_blog(xml_file, output_dir):
         title = "—" if not title_raw or title_raw.lower() == "unknown" else title_raw
         
         content_elem = post.find('CONTENT')
-        content = content_elem.text if (content_elem is not None and content_elem.text) else "<p>بدون محتوا</p>"
+        raw_content = content_elem.text if (content_elem is not None and content_elem.text) else "<p>بدون محتوا</p>"
+        content = strip_hardcoded_colors(raw_content)
 
-        # Parse and render comments
         comments_html = render_comments(post)
 
-        img_url, excerpt = extract_preview(content)
+        img_url, raw_excerpt = extract_preview(content)
+        excerpt = strip_hardcoded_colors(raw_excerpt)
+        
         date_elem = post.find('CREATED_DATE')
         raw_date = date_elem.text.strip() if (date_elem is not None and date_elem.text) else "1970-01-01"
         date_text = convert_to_jalali(raw_date)
@@ -304,7 +419,7 @@ def create_local_blog(xml_file, output_dir):
         baygani_dict[baygani_key]['posts'].append(post_metadata)
 
         tags_html = f'<div class="post-tags"><strong>برچسب‌ها:</strong> {"، ".join(tag_links_html)}</div>' if tag_links_html else ""
-        date_html = f'<div class="date" style="color: #95a5a6; font-size: 0.9em; margin-bottom: 20px;">{date_text}</div>' if date_text else ""
+        date_html = f'<div class="date" style="color: var(--text-muted); font-size: 0.9em; margin-bottom: 20px;">{date_text}</div>' if date_text else ""
         
         all_posts_info.append(post_metadata)
         
@@ -315,20 +430,23 @@ def create_local_blog(xml_file, output_dir):
             <meta charset="UTF-8">
             <title>{title} | {blog_title}</title>
             <link rel="stylesheet" href="../style.css">
+            {theme_head_script}
         </head>
         <body>
             <div class="single-post-container">
                 <div class="page-header" style="margin-bottom: 30px;">
+                    {theme_btn_html}
                     <h1><a href="../index.html" style="color: inherit; text-decoration: none;">{blog_title}</a></h1>
-                    <p style="color: #7f8c8d; margin-top: 10px; font-size: 1.1em;">محمدصادق رسولی</p>
+                    <p style="color: var(--text-muted); margin-top: 10px; font-size: 1.1em;">محمدصادق رسولی</p>
                 </div>
                 <a href="../index.html" style="display: inline-block; margin-bottom: 20px; font-weight: bold;">← بازگشت به صفحه اصلی</a>
-                <h2 style="border-bottom: 2px solid #eee; padding-bottom: 15px; margin-top: 10px;">{title}</h2>
+                <h2 style="border-bottom: 2px solid var(--border-color); padding-bottom: 15px; margin-top: 10px;">{title}</h2>
                 {date_html}
                 <div>{content}</div>
                 {tags_html}
                 {comments_html}
             </div>
+            {theme_script}
         </body>
         </html>
         """
@@ -355,16 +473,18 @@ def create_local_blog(xml_file, output_dir):
             <meta charset="UTF-8">
             <title>برچسب: {tag} | {blog_title}</title>
             <link rel="stylesheet" href="../style.css">
+            {theme_head_script}
         </head>
         <body>
             <div class="container">
                 <div class="page-header">
+                    {theme_btn_html}
                     <a href="../index.html" style="float: right; font-weight: bold;">← بازگشت</a>
                     <h1><a href="../index.html" style="color: inherit; text-decoration: none;">{blog_title}</a></h1>
-                    <p style="color: #7f8c8d; margin-top: 10px; font-size: 1.1em;">محمدصادق رسولی</p>
-                    <hr style="border: 0; border-top: 1px solid #e0e6ed; margin: 20px 0;">
+                    <p style="color: var(--text-muted); margin-top: 10px; font-size: 1.1em;">محمدصادق رسولی</p>
+                    <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 20px 0;">
                     <h2 style="margin: 0; font-size: 1.5em; text-align: center;">نوشته‌های دارای برچسب: {tag}</h2>
-                    <p style="color: #7f8c8d; margin-top: 5px; font-size: 0.9em; text-align: center;">{to_persian_num(len(posts_list))} نوشته یافت شد</p>
+                    <p style="color: var(--text-muted); margin-top: 5px; font-size: 0.9em; text-align: center;">{to_persian_num(len(posts_list))} نوشته یافت شد</p>
                 </div>
                 <div class="posts-grid">
         """
@@ -380,9 +500,10 @@ def create_local_blog(xml_file, output_dir):
             tag_page_html += f'<a href="../posts/{p["filename"]}" class="read-more">ادامه مطلب ←</a>'
             tag_page_html += f'</div></div>'
             
-        tag_page_html += """
+        tag_page_html += f"""
                 </div>
             </div>
+            {theme_script}
         </body>
         </html>
         """
@@ -398,16 +519,18 @@ def create_local_blog(xml_file, output_dir):
             <meta charset="UTF-8">
             <title>بایگانی: {baygani_data['label']} | {blog_title}</title>
             <link rel="stylesheet" href="../style.css">
+            {theme_head_script}
         </head>
         <body>
             <div class="container">
                 <div class="page-header">
+                    {theme_btn_html}
                     <a href="../index.html" style="float: right; font-weight: bold;">← بازگشت</a>
                     <h1><a href="../index.html" style="color: inherit; text-decoration: none;">{blog_title}</a></h1>
-                    <p style="color: #7f8c8d; margin-top: 10px; font-size: 1.1em;">محمدصادق رسولی</p>
-                    <hr style="border: 0; border-top: 1px solid #e0e6ed; margin: 20px 0;">
+                    <p style="color: var(--text-muted); margin-top: 10px; font-size: 1.1em;">محمدصادق رسولی</p>
+                    <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 20px 0;">
                     <h2 style="margin: 0; font-size: 1.5em; text-align: center;">بایگانی نوشته‌ها: {baygani_data['label']}</h2>
-                    <p style="color: #7f8c8d; margin-top: 5px; font-size: 0.9em; text-align: center;">{to_persian_num(len(baygani_data['posts']))} نوشته یافت شد</p>
+                    <p style="color: var(--text-muted); margin-top: 5px; font-size: 0.9em; text-align: center;">{to_persian_num(len(baygani_data['posts']))} نوشته یافت شد</p>
                 </div>
                 <div class="posts-grid">
         """
@@ -423,9 +546,10 @@ def create_local_blog(xml_file, output_dir):
             baygani_page_html += f'<a href="../posts/{p["filename"]}" class="read-more">ادامه مطلب ←</a>'
             baygani_page_html += f'</div></div>'
             
-        baygani_page_html += """
+        baygani_page_html += f"""
                 </div>
             </div>
+            {theme_script}
         </body>
         </html>
         """
@@ -455,12 +579,14 @@ def create_local_blog(xml_file, output_dir):
         <meta charset="UTF-8">
         <title>{blog_title}</title>
         <link rel="stylesheet" href="style.css">
+        {theme_head_script}
     </head>
     <body>
         <div class="container">
             <div class="page-header">
+                {theme_btn_html}
                 <h1><a href="index.html" style="color: inherit; text-decoration: none;">{blog_title}</a></h1>
-                <p style="color: #7f8c8d; margin-top: 10px; font-size: 1.1em;">محمدصادق رسولی</p>
+                <p style="color: var(--text-muted); margin-top: 10px; font-size: 1.1em;">محمدصادق رسولی</p>
             </div>
             
             <div class="main-layout">
@@ -486,6 +612,8 @@ def create_local_blog(xml_file, output_dir):
             </div>
             
         </div>
+        
+        {theme_script}
 
         <script>
             function toFa(num) {{
@@ -524,7 +652,6 @@ def create_local_blog(xml_file, output_dir):
                 renderPagination();
             }}
 
-            // SMART PAGINATION LOGIC UPDATED
             function renderPagination() {{
                 const container = document.getElementById('pagination-container');
                 container.innerHTML = '';
@@ -547,7 +674,6 @@ def create_local_blog(xml_file, output_dir):
                 let lastAdded = 0;
                 
                 for(let i=1; i<=totalPages; i++) {{
-                    // Condition: Show first 5, last 3, and immediately adjacent pages
                     if (i <= 5 || i > totalPages - 3 || Math.abs(i - currentPage) <= 1) {{
                         if (lastAdded > 0 && i - lastAdded > 1) {{
                             pageNumbers += '<span>...</span>';
@@ -587,7 +713,7 @@ def create_local_blog(xml_file, output_dir):
     with open(os.path.join(output_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
 
-    print(f"\n✅ Smart pagination implemented! You will now see pages 1-5, the last 3, and the active page.")
+    print(f"\n✅ High contrast dark mode toggle button integrated.")
     print(f"📂 Output saved to: {os.path.abspath(output_dir)}")
     print(f"🌐 Open '{os.path.join(output_dir, 'index.html')}' in your browser to view.")
 
