@@ -222,10 +222,7 @@ def create_local_blog(xml_file, output_dir):
     .section-title { font-size: 1.4em; color: var(--text-heading); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 25px; margin-top: 40px; font-weight: bold;}
     .section-title:first-child { margin-top: 0; }
     
-    /* --------------------------------------------------------
-       STRICT CSS GRID LAYOUT: Eliminates all overlapping!
-       Right side (Posts) gets 3 parts, Left side (Sidebar) gets 1 part.
-       -------------------------------------------------------- */
+    /* Desktop Layout */
     .main-layout { 
         display: grid;
         grid-template-columns: 3fr 1fr; 
@@ -234,21 +231,18 @@ def create_local_blog(xml_file, output_dir):
         width: 100%;
     }
     
-    .content-area { 
-        min-width: 0; 
-    }
+    .content-area { min-width: 0; }
     
     .sidebar-area { 
         min-width: 0; 
         background: var(--bg-container); 
         padding: 25px; 
         border-radius: 12px; 
-        box-shadow: 0 6px 20px rgba(0,0,0,0.08); /* Beautiful elevated shadow */
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08);
         position: sticky; 
         top: 20px; 
     }
     
-    /* Desktop Tile View */
     .posts-grid { 
         display: grid; 
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
@@ -256,68 +250,85 @@ def create_local_blog(xml_file, output_dir):
     }
 
     /* --------------------------------------------------------
-       MOBILE ADJUSTMENTS: Keep side-by-side but shift proportions 
+       MOBILE LAYOUT: Full width posts, horizontal scrollable navs
        -------------------------------------------------------- */
     @media (max-width: 850px) {
         .main-layout { 
-            display: grid; 
-            /* RTL makes the first value (2.5fr) stick to the Right, and 1fr stick to the Left */
-            grid-template-columns: 2.5fr 1fr; 
-            gap: 15px; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 20px; 
         }
         
+        /* Turn the sidebar into a top navigation container */
         .sidebar-area { 
+            order: -1; /* Forces it to the top */
             width: 100%; 
             position: static; 
-            padding: 15px 10px; /* Reduce padding to save space */
+            padding: 10px 0; /* Remove side padding to let scroll bleed to edges */
+            background: transparent; 
+            box-shadow: none;
         }
         
         .content-area { 
             width: 100%; 
-            min-width: 0;
         }
         
-        /* Strict single-column for the post tiles */
         .posts-grid { 
             grid-template-columns: 1fr; 
-            gap: 15px;
         } 
+        
+        /* Force horizontal scrolling */
+        .tags-grid {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            gap: 10px;
+        }
+        
+        /* Hide scrollbars for a clean, native app feel */
+        .tags-grid::-webkit-scrollbar {
+            display: none;
+        }
+        .tags-grid {
+            -ms-overflow-style: none; 
+            scrollbar-width: none; 
+        }
 
-        /* Tighten up internal card and tag spacing to fit the mobile columns */
-        .card-content { 
-            padding: 15px; 
+        /* Keep tiles original size but don't let them shrink */
+        .tag-tile, .baygani-tile {
+            flex: 0 0 auto;
         }
-        
-        .tag-tile, .baygani-tile { 
-            padding: 3px 6px; /* Reduces the physical size of the button */
-            font-size: 8px;   /* Shrinks the text size */
-            gap: 4px;         /* Reduces space between the text and the number */
-        }
-        
+
         .section-title {
             font-size: 1.1em;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+            padding: 0 10px; /* Keep title aligned if container padding is 0 */
+            border-bottom: none;
+            margin-top: 15px;
         }
     }
     /* -------------------------------------------------------- */
     
-    /* Use a tight gap and align items to the right */
     .tags-grid { 
         display: flex; 
         flex-wrap: wrap; 
-        gap: 8px; /* Reduced from 12px for tighter spacing */
-        justify-content: flex-start; /* Keeps items packed to the right */
+        gap: 8px; 
+        justify-content: flex-start; 
         align-items: flex-start;
     }
     
-    /* Beautiful elegant shadows for Tags */
     .tag-tile { 
-    background: linear-gradient(135deg, #3498db, #2980b9); 
+        background: linear-gradient(135deg, #3498db, #2980b9); 
         color: white;
-        padding: 6px 12px; /* Smaller padding */
+        padding: 6px 12px; 
         border-radius: 18px; 
-        font-size: 11px; /* Smaller font to fit more items */
-        display: inline-flex; /* Changed from flex to inline-flex to hug the content */
+        font-size: 11px; 
+        display: inline-flex; 
         align-items: center; 
         gap: 6px; 
         transition: transform 0.2s, box-shadow 0.2s; 
@@ -333,10 +344,10 @@ def create_local_blog(xml_file, output_dir):
     .baygani-tile { 
         background: linear-gradient(135deg, #3498db, #2980b9); 
         color: white;
-       padding: 6px 12px; /* Smaller padding */
+        padding: 6px 12px; 
         border-radius: 18px; 
-        font-size: 11px; /* Smaller font to fit more items */
-        display: inline-flex; /* Changed from flex to inline-flex to hug the content */
+        font-size: 11px; 
+        display: inline-flex; 
         align-items: center; 
         gap: 6px; 
         transition: transform 0.2s, box-shadow 0.2s; 
@@ -349,21 +360,19 @@ def create_local_blog(xml_file, output_dir):
         color: white;
     }
     
-    /* Slightly adjust the number bubble */
     .tag-count { 
         background: rgba(255,255,255,0.25); 
+        padding: 1px 5px; 
         border-radius: 10px; 
-        font-size: 8px;   /* Makes the number smaller */
-        padding: 1px 4px; /* Tighter box around the number */
+        font-size: 10px; 
         font-weight: bold;
     }
     
-    /* Beautiful elegant shadows for Post Cards */
     .post-card { 
         background: var(--bg-container); 
         border-radius: 15px; 
         overflow: hidden; 
-        box-shadow: 0 6px 20px rgba(0,0,0,0.08); /* Rich beauty shadow */
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08); 
         transition: transform 0.2s, box-shadow 0.2s; 
         border: 1px solid var(--border-light); 
         display: flex; 
@@ -371,7 +380,7 @@ def create_local_blog(xml_file, output_dir):
     }
     .post-card:hover { 
         transform: translateY(-5px); 
-        box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* Elevates on hover */
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
     .card-img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color); }
     
