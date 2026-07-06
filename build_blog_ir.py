@@ -212,7 +212,7 @@ def create_local_blog(xml_file, output_dir):
     
     .container { max-width: 1200px; margin: auto; width: 100%; }
     
-    .page-header { position: relative; background: var(--bg-container); padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 40px; text-align: center; width: 100%; }
+    .page-header { position: relative; background: var(--bg-container); padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); margin-bottom: 40px; text-align: center; width: 100%; }
     
     h1, h2 { color: var(--text-heading); }
     h1 { margin: 0; font-size: 2.2em; }
@@ -222,63 +222,116 @@ def create_local_blog(xml_file, output_dir):
     .section-title { font-size: 1.4em; color: var(--text-heading); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 25px; margin-top: 40px; font-weight: bold;}
     .section-title:first-child { margin-top: 0; }
     
-    .main-layout { display: flex; flex-direction: row; gap: 40px; align-items: flex-start; }
-    .content-area { flex: 3; min-width: 0; }
-    .sidebar-area { flex: 1; min-width: 300px; background: var(--bg-container); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); position: sticky; top: 20px; }
-    
-    @media (max-width: 850px) {
-        /* Restored mobile stacking to prevent tiles from overflowing and mixing into the sidebar */
-        .main-layout { flex-direction: column; }
-        .sidebar-area { width: 100%; position: static; box-sizing: border-box; margin-top: 20px;}
+    /* --------------------------------------------------------
+       STRICT CSS GRID LAYOUT: Eliminates all overlapping!
+       Right side (Posts) gets 3 parts, Left side (Sidebar) gets 1 part.
+       -------------------------------------------------------- */
+    .main-layout { 
+        display: grid;
+        grid-template-columns: 3fr 1fr; 
+        gap: 40px;
+        align-items: start;
+        width: 100%;
     }
+    
+    .content-area { 
+        min-width: 0; 
+    }
+    
+    .sidebar-area { 
+        min-width: 0; 
+        background: var(--bg-container); 
+        padding: 25px; 
+        border-radius: 12px; 
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08); /* Beautiful elevated shadow */
+        position: sticky; 
+        top: 20px; 
+    }
+    
+    /* Desktop Tile View */
+    .posts-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+        gap: 25px; 
+    }
+
+    /* Mobile: Stack sidebar below, strictly one tile wide */
+    @media (max-width: 850px) {
+        .main-layout { 
+            grid-template-columns: 1fr; /* Stacks completely */
+            gap: 30px; 
+        }
+        .sidebar-area { 
+            position: static; 
+        }
+        .posts-grid { 
+            grid-template-columns: 1fr; /* Strict 1-tile mobile view */
+        }
+    }
+    /* -------------------------------------------------------- */
     
     .tags-grid { display: flex; flex-wrap: wrap; gap: 12px; }
     
-    /* ADDED: Beautiful soft shadow and border radius for Tag Tiles */
+    /* Beautiful elegant shadows for Tags */
     .tag-tile { 
         background: linear-gradient(135deg, #3498db, #2980b9); 
         color: white; 
         padding: 8px 16px; 
         border-radius: 20px; 
-        font-size: 0.9em; 
+        font-size: 12px; /* Smaller explicit size */
         display: flex; 
         align-items: center; 
         gap: 8px; 
         transition: transform 0.2s, box-shadow 0.2s; 
-        box-shadow: 0 4px 8px rgba(41, 128, 185, 0.3);
+        box-shadow: 0 4px 10px rgba(41, 128, 185, 0.35); /* Beauty shadow */
         border: 1px solid rgba(255, 255, 255, 0.1);
+        word-break: break-word;
+        white-space: normal;
     }
     .tag-tile:hover { 
         transform: translateY(-3px); 
-        box-shadow: 0 6px 15px rgba(41, 128, 185, 0.5); 
+        box-shadow: 0 6px 18px rgba(41, 128, 185, 0.6); 
         color: white;
     }
     
-    /* ADDED: Beautiful soft shadow and border radius for Baygani Tiles */
     .baygani-tile { 
         background: linear-gradient(135deg, #34495e, #2c3e50); 
         color: white; 
         padding: 8px 16px; 
         border-radius: 20px; 
-        font-size: 0.9em; 
+        font-size: 12px; /* Smaller explicit size */
         display: flex; 
         align-items: center; 
         gap: 8px; 
         transition: transform 0.2s, box-shadow 0.2s; 
-        box-shadow: 0 4px 8px rgba(44, 62, 80, 0.3);
+        box-shadow: 0 4px 10px rgba(44, 62, 80, 0.35); /* Beauty shadow */
         border: 1px solid rgba(255, 255, 255, 0.1);
+        word-break: break-word;
+        white-space: normal;
     }
     .baygani-tile:hover { 
         transform: translateY(-3px); 
-        box-shadow: 0 6px 15px rgba(44, 62, 80, 0.5); 
+        box-shadow: 0 6px 18px rgba(44, 62, 80, 0.6); 
         color: white;
     }
     
-    .tag-count { background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 15px; font-size: 0.8em; font-weight: bold;}
+    .tag-count { background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 15px; font-size: 11px; font-weight: bold;}
     
-    .posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; }
-    .post-card { background: var(--bg-container); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.06); transition: transform 0.2s, box-shadow 0.2s; border: 1px solid var(--border-light); display: flex; flex-direction: column; }
-    .post-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+    /* Beautiful elegant shadows for Post Cards */
+    .post-card { 
+        background: var(--bg-container); 
+        border-radius: 15px; 
+        overflow: hidden; 
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08); /* Rich beauty shadow */
+        transition: transform 0.2s, box-shadow 0.2s; 
+        border: 1px solid var(--border-light); 
+        display: flex; 
+        flex-direction: column; 
+    }
+    .post-card:hover { 
+        transform: translateY(-5px); 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* Elevates on hover */
+    }
     .card-img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color); }
     
     .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
@@ -296,9 +349,7 @@ def create_local_blog(xml_file, output_dir):
         max-height: 200px; 
         overflow: hidden; 
     }
-    .card-content .excerpt-container p {
-        margin: 0 0 4px 0; 
-    }
+    .card-content .excerpt-container p { margin: 0 0 4px 0; }
     .card-content .excerpt-container::after {
         content: "";
         position: absolute;
@@ -313,13 +364,13 @@ def create_local_blog(xml_file, output_dir):
     .read-more { margin-top: auto; align-self: flex-start; font-weight: bold; font-size: 0.9em; padding: 8px 16px; background: var(--btn-bg); border-radius: 6px; color: #2980b9; transition: background 0.2s; }
     .read-more:hover { background: var(--btn-hover); text-decoration: none;}
     
-    .single-post-container { max-width: 800px; margin: auto; background: var(--bg-container); padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); width: 100%; }
+    .single-post-container { max-width: 800px; margin: auto; background: var(--bg-container); padding: 40px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); width: 100%; }
     .single-post-container div img { display: block; margin: 20px auto; max-width: 100%; height: auto; border-radius: 8px;}
     .single-post-container p { margin-bottom: 10px; }
     .post-tags { font-size: 0.85em; color: var(--text-muted); margin-top: 40px; padding-top: 15px; border-top: 1px dashed var(--border-color); }
     .post-tags a { color: #2980b9; font-weight: bold; }
     
-    .pagination { display: flex; justify-content: space-between; align-items: center; margin-top: 40px; padding: 20px; background: var(--bg-container); border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
+    .pagination { display: flex; justify-content: space-between; align-items: center; margin-top: 40px; padding: 20px; background: var(--bg-container); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
     .pagination a { padding: 10px 20px; background: #2c3e50; color: white; border-radius: 8px; font-size: 0.9em; cursor: pointer; transition: background 0.2s;}
     .pagination a:hover { background: #1a252f; text-decoration: none; }
     .page-numbers { display: flex; gap: 5px; direction: rtl; align-items: center; } 
@@ -327,70 +378,30 @@ def create_local_blog(xml_file, output_dir):
     .page-numbers a:hover { background: var(--btn-hover); }
     .page-numbers .current-page { background: #2980b9; color: white; font-weight: bold; cursor: default; }
 
-    /* Force clean styles on single post content */
+    /* Clean styles overrides */
     .post-content-body { font-size: 16px !important; }
-    .post-content-body font,
-    .post-content-body span,
-    .post-content-body p,
-    .post-content-body div,
-    .post-content-body * {
-        color: var(--text-main) !important;
-        font-family: 'Vazirmatn', sans-serif !important;
-        font-size: 16px !important;
-        line-height: 1.8 !important;
-        background-color: transparent !important;
+    .post-content-body font, .post-content-body span, .post-content-body p, .post-content-body div, .post-content-body * {
+        color: var(--text-main) !important; font-family: 'Vazirmatn', sans-serif !important; font-size: 16px !important; line-height: 1.8 !important; background-color: transparent !important;
     }
     .post-content-body h1, .post-content-body h2, .post-content-body h3 {
-        color: var(--text-heading) !important;
-        font-family: 'Vazirmatn', sans-serif !important;
-        background-color: transparent !important;
+        color: var(--text-heading) !important; font-family: 'Vazirmatn', sans-serif !important; background-color: transparent !important;
     }
     
-    /* Force clean styles on previews in the tiles */
     .excerpt-container { font-size: 15px !important; }
-    .excerpt-container font,
-    .excerpt-container span,
-    .excerpt-container p,
-    .excerpt-container div,
-    .excerpt-container * {
-        color: var(--text-main) !important;
-        font-family: 'Vazirmatn', sans-serif !important;
-        font-size: 15px !important;
-        line-height: 1.8 !important;
-        background-color: transparent !important;
+    .excerpt-container font, .excerpt-container span, .excerpt-container p, .excerpt-container div, .excerpt-container * {
+        color: var(--text-main) !important; font-family: 'Vazirmatn', sans-serif !important; font-size: 15px !important; line-height: 1.8 !important; background-color: transparent !important;
     }
 
-    /* Comments Section Styling */
     .comments-section { margin-top: 50px; padding-top: 20px; border-top: 2px solid var(--border-color); }
     .comment-item { background: var(--accent-bg); padding: 20px; border-radius: 8px; margin-bottom: 15px; border-right: 4px solid #3498db; }
     .comment-item strong { color: var(--text-heading); font-size: 1.1em; }
     .comment-item .date { font-size: 0.85em; color: var(--text-muted); margin-right: 10px; }
     .comment-item p { margin: 10px 0 0 0; }
 
-    /* Theme Toggle Button */
     .theme-toggle-btn {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        background: var(--toggle-bg);
-        color: var(--toggle-color);
-        border: none;
-        font-size: 20px;
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        cursor: pointer;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.2s ease, background 0.3s ease, opacity 0.2s ease;
-        z-index: 10;
+        position: absolute; top: 25px; left: 25px; background: var(--toggle-bg); color: var(--toggle-color); border: none; font-size: 20px; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease, background 0.3s ease, opacity 0.2s ease; z-index: 10;
     }
-    .theme-toggle-btn:hover {
-        transform: scale(1.1);
-        opacity: 0.9;
-    }
+    .theme-toggle-btn:hover { transform: scale(1.1); opacity: 0.9; }
     """
     
     with open(os.path.join(output_dir, "style.css"), "w", encoding="utf-8") as f:
@@ -508,8 +519,9 @@ def create_local_blog(xml_file, output_dir):
     sorted_tags = sorted(tags_dict.items(), key=lambda item: len(item[1]), reverse=True)
     sorted_baygani_keys = sorted(baygani_dict.keys(), reverse=True)
 
-    print("Phase 2: Generating Footer Navigation & Subpages...")
+    print("Phase 2: Generating Universal Sidebars & Subpages...")
 
+    # Sidebar links for subpages (with ../)
     tag_tiles_html_subpage = ""
     tag_tiles_html_index = ""
     for tag, posts_list in sorted_tags:
@@ -526,7 +538,26 @@ def create_local_blog(xml_file, output_dir):
         baygani_tiles_html_subpage += f'<a href="../baygani/{key}.html" class="baygani-tile"><span class="tag-name">{baygani_data["label"]}</span><span class="tag-count">{count}</span></a>\n'
         baygani_tiles_html_index += f'<a href="baygani/{key}.html" class="baygani-tile"><span class="tag-name">{baygani_data["label"]}</span><span class="tag-count">{count}</span></a>\n'
 
-    footer_nav_html = f"""
+    sidebar_html_index = f"""
+    <div class="sidebar-area">
+        <div class="section-title">موضوعات پرطرفدار</div>
+        <div class="tags-grid">{tag_tiles_html_index}</div>
+        <div class="section-title">بایگانی ماهانه</div>
+        <div class="tags-grid">{baygani_tiles_html_index}</div>
+    </div>
+    """
+
+    sidebar_html_subpage = f"""
+    <div class="sidebar-area">
+        <div class="section-title">موضوعات پرطرفدار</div>
+        <div class="tags-grid">{tag_tiles_html_subpage}</div>
+        <div class="section-title">بایگانی ماهانه</div>
+        <div class="tags-grid">{baygani_tiles_html_subpage}</div>
+    </div>
+    """
+
+    # This footer is NOW ONLY for the actual single posts! Not the tag pages.
+    footer_nav_html_single_post = f"""
     <div class="subpage-footer" style="margin-top: 80px; padding-top: 40px; border-top: 2px solid var(--border-color);">
         <h3 style="color: var(--text-heading); margin-bottom: 20px; font-size: 1.3em;">موضوعات پرطرفدار</h3>
         <div class="tags-grid">{tag_tiles_html_subpage}</div>
@@ -535,6 +566,7 @@ def create_local_blog(xml_file, output_dir):
     </div>
     """
 
+    # Generate Individual Posts
     for p in all_posts_info:
         post_html = f"""
         <!DOCTYPE html>
@@ -561,7 +593,7 @@ def create_local_blog(xml_file, output_dir):
                 {p['tags_html']}
                 {p['comments_html']}
                 
-                {footer_nav_html}
+                {footer_nav_html_single_post}
             </div>
             {theme_script}
         </body>
@@ -570,6 +602,7 @@ def create_local_blog(xml_file, output_dir):
         with open(os.path.join(posts_dir, p['filename']), "w", encoding="utf-8") as f:
             f.write(post_html)
 
+    # Generate Tag Pages (Strict Grid layout, no bottom footer)
     for tag, posts_list in tags_dict.items():
         safe_tag_filename = f"{sanitize_filename(tag)}.html"
         tag_page_html = f"""
@@ -593,7 +626,10 @@ def create_local_blog(xml_file, output_dir):
                     <h2 style="margin: 0; font-size: 1.5em; text-align: center;">نوشته‌های دارای برچسب: {tag}</h2>
                     <p style="color: var(--text-muted); margin-top: 5px; font-size: 0.9em; text-align: center;">{to_persian_num(len(posts_list))} نوشته یافت شد</p>
                 </div>
-                <div class="posts-grid">
+                
+                <div class="main-layout">
+                    <div class="content-area">
+                        <div class="posts-grid">
         """
         for p in posts_list:
             tag_page_html += f'<div class="post-card">'
@@ -608,8 +644,10 @@ def create_local_blog(xml_file, output_dir):
             tag_page_html += f'</div></div>'
             
         tag_page_html += f"""
+                        </div>
+                    </div>
+                    {sidebar_html_subpage}
                 </div>
-                {footer_nav_html}
             </div>
             {theme_script}
         </body>
@@ -618,6 +656,7 @@ def create_local_blog(xml_file, output_dir):
         with open(os.path.join(tags_dir, safe_tag_filename), "w", encoding="utf-8") as f:
             f.write(tag_page_html)
 
+    # Generate Baygani Pages (Strict Grid layout, no bottom footer)
     for key in sorted_baygani_keys:
         baygani_data = baygani_dict[key]
         baygani_page_html = f"""
@@ -641,7 +680,10 @@ def create_local_blog(xml_file, output_dir):
                     <h2 style="margin: 0; font-size: 1.5em; text-align: center;">بایگانی نوشته‌ها: {baygani_data['label']}</h2>
                     <p style="color: var(--text-muted); margin-top: 5px; font-size: 0.9em; text-align: center;">{to_persian_num(len(baygani_data['posts']))} نوشته یافت شد</p>
                 </div>
-                <div class="posts-grid">
+                
+                <div class="main-layout">
+                    <div class="content-area">
+                        <div class="posts-grid">
         """
         for p in baygani_data['posts']:
             baygani_page_html += f'<div class="post-card">'
@@ -656,8 +698,10 @@ def create_local_blog(xml_file, output_dir):
             baygani_page_html += f'</div></div>'
             
         baygani_page_html += f"""
+                        </div>
+                    </div>
+                    {sidebar_html_subpage}
                 </div>
-                {footer_nav_html}
             </div>
             {theme_script}
         </body>
@@ -694,24 +738,14 @@ def create_local_blog(xml_file, output_dir):
             
             <div class="main-layout">
                 <div class="content-area">
-                    <div class="section-title">آخرین نوشته‌ها</div>
+                    <div class="section-title" style="margin-top: 0;">آخرین نوشته‌ها</div>
                     <div id="posts-container" class="posts-grid">
                         </div>
                     <div class="pagination" id="pagination-container">
                     </div>
                 </div>
 
-                <div class="sidebar-area">
-                    <div class="section-title">موضوعات پرطرفدار</div>
-                    <div class="tags-grid">
-                        {tag_tiles_html_index}
-                    </div>
-                    
-                    <div class="section-title">بایگانی ماهانه</div>
-                    <div class="tags-grid">
-                        {baygani_tiles_html_index}
-                    </div>
-                </div>
+                {sidebar_html_index}
             </div>
             
         </div>
