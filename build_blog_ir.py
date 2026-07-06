@@ -55,9 +55,7 @@ def sanitize_filename(name):
 def strip_hardcoded_styles(html_content):
     if not html_content:
         return ""
-    # Strip old HTML attributes (color, bgcolor, face, size)
     cleaned = re.sub(r'\b(?:color|bgcolor|face|size)\s*=\s*["\'][^"\']*["\']', '', html_content, flags=re.IGNORECASE)
-    # Strip specific inline CSS properties
     cleaned = re.sub(r'(?<!-)\bcolor\s*:\s*[^;"\']+[;]?', '', cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r'\bbackground-color\s*:\s*[^;"\']+[;]?', '', cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r'\bfont-family\s*:\s*[^;"\']+[;]?', '', cleaned, flags=re.IGNORECASE)
@@ -162,6 +160,11 @@ def create_local_blog(xml_file, output_dir):
     css_content = """
     @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap');
 
+    /* This fixes the title bar overflowing and half-aligning on mobile */
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
     :root {
         --bg-body: #f0f2f5;
         --bg-container: #ffffff;
@@ -208,9 +211,9 @@ def create_local_blog(xml_file, output_dir):
         transition: background-color 0.3s ease, color 0.3s ease;
     }
     
-    .container { max-width: 1200px; margin: auto; }
+    .container { max-width: 1200px; margin: auto; width: 100%; }
     
-    .page-header { position: relative; background: var(--bg-container); padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 40px; text-align: center; }
+    .page-header { position: relative; background: var(--bg-container); padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 40px; text-align: center; width: 100%; }
     
     h1, h2 { color: var(--text-heading); }
     h1 { margin: 0; font-size: 2.2em; }
@@ -225,8 +228,8 @@ def create_local_blog(xml_file, output_dir):
     .sidebar-area { flex: 1; min-width: 300px; background: var(--bg-container); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); position: sticky; top: 20px; }
     
     @media (max-width: 850px) {
-        .main-layout { flex-direction: column; }
-        .sidebar-area { width: 100%; position: static; box-sizing: border-box; margin-top: 20px;}
+        /* I removed flex-direction: column so the tags stay on the left on the first page */
+        .sidebar-area { position: static; min-width: 150px; }
     }
     
     .tags-grid { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -275,7 +278,7 @@ def create_local_blog(xml_file, output_dir):
     .read-more { margin-top: auto; align-self: flex-start; font-weight: bold; font-size: 0.9em; padding: 8px 16px; background: var(--btn-bg); border-radius: 6px; color: #2980b9; transition: background 0.2s; }
     .read-more:hover { background: var(--btn-hover); text-decoration: none;}
     
-    .single-post-container { max-width: 800px; margin: auto; background: var(--bg-container); padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+    .single-post-container { max-width: 800px; margin: auto; background: var(--bg-container); padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); width: 100%; }
     .single-post-container div img { display: block; margin: 20px auto; max-width: 100%; height: auto; border-radius: 8px;}
     .single-post-container p { margin-bottom: 10px; }
     .post-tags { font-size: 0.85em; color: var(--text-muted); margin-top: 40px; padding-top: 15px; border-top: 1px dashed var(--border-color); }
@@ -289,7 +292,6 @@ def create_local_blog(xml_file, output_dir):
     .page-numbers a:hover { background: var(--btn-hover); }
     .page-numbers .current-page { background: #2980b9; color: white; font-weight: bold; cursor: default; }
 
-    /* --- FONT OVERRIDE FIXES --- */
     /* Force clean styles on single post content */
     .post-content-body { font-size: 16px !important; }
     .post-content-body font,
@@ -309,7 +311,7 @@ def create_local_blog(xml_file, output_dir):
         background-color: transparent !important;
     }
     
-    /* Force clean styles on previews in the tiles (Index, Tags, Baygani) */
+    /* Force clean styles on previews in the tiles */
     .excerpt-container { font-size: 15px !important; }
     .excerpt-container font,
     .excerpt-container span,
@@ -401,7 +403,7 @@ def create_local_blog(xml_file, output_dir):
     </script>
     """
 
-    print("Parsing posts and building metadata...")
+    print("Phase 1: Parsing posts and extracting metadata...")
 
     for i, post in enumerate(posts):
         title_elem = post.find('TITLE')
@@ -413,15 +415,12 @@ def create_local_blog(xml_file, output_dir):
         content = strip_hardcoded_styles(raw_content)
 
         comments_html = render_comments(post)
-
         img_url, raw_excerpt = extract_preview(content)
         excerpt = strip_hardcoded_styles(raw_excerpt)
         
         date_elem = post.find('CREATED_DATE')
         raw_date = date_elem.text.strip() if (date_elem is not None and date_elem.text) else "1970-01-01"
-        
         date_text, time_text = convert_to_jalali(raw_date)
-
         baygani_key, baygani_label = get_baygani_info(raw_date)
         url_elem = post.find('URL')
         url_slug = url_elem.text.strip() if (url_elem is not None and url_elem.text) else f"post_{i+1}"
@@ -431,11 +430,6 @@ def create_local_blog(xml_file, output_dir):
         post_tags = []
         tag_links_html = []
         
-        post_metadata = {
-            'title': title, 'filename': filename, 'date': date_text, 'raw_date': raw_date,
-            'img_url': img_url, 'excerpt': excerpt
-        }
-
         unique_post_tags = set()
         if tags_elem is not None:
             unique_post_tags = set(t.text.strip() for t in tags_elem.findall('.//NAME') if t.text and t.text.strip())
@@ -448,6 +442,20 @@ def create_local_blog(xml_file, output_dir):
             post_tags.append(clean_tag)
             tag_links_html.append(f'<a href="../tags/{safe_tag_filename}.html">{clean_tag}</a>')
             
+        tags_html = f'<div class="post-tags"><strong>برچسب‌ها:</strong> {"، ".join(tag_links_html)}</div>' if tag_links_html else ""
+        date_html = f'<div class="date" style="color: var(--text-muted); font-size: 0.9em; margin-bottom: 20px;">{date_text}</div>' if date_text else ""
+        time_footer_html = f'<div style="color: var(--text-muted); font-size: 0.85em; margin-top: 40px; padding-top: 15px; border-top: 1px dashed var(--border-color);">تاریخ و زمان انتشار: {date_text} ساعت {time_text}</div>' if time_text else ""
+        
+        post_metadata = {
+            'title': title, 'filename': filename, 'date': date_text, 'raw_date': raw_date,
+            'img_url': img_url, 'excerpt': excerpt,
+            'content': content, 'comments_html': comments_html, 'tags_html': tags_html,
+            'date_html': date_html, 'time_footer_html': time_footer_html
+        }
+
+        all_posts_info.append(post_metadata)
+        
+        for clean_tag in unique_post_tags:
             if clean_tag not in tags_dict:
                 tags_dict[clean_tag] = []
             tags_dict[clean_tag].append(post_metadata)
@@ -456,20 +464,54 @@ def create_local_blog(xml_file, output_dir):
             baygani_dict[baygani_key] = {'label': baygani_label, 'posts': []}
         baygani_dict[baygani_key]['posts'].append(post_metadata)
 
-        tags_html = f'<div class="post-tags"><strong>برچسب‌ها:</strong> {"، ".join(tag_links_html)}</div>' if tag_links_html else ""
-        date_html = f'<div class="date" style="color: var(--text-muted); font-size: 0.9em; margin-bottom: 20px;">{date_text}</div>' if date_text else ""
-        
-        time_footer_html = f'<div style="color: var(--text-muted); font-size: 0.85em; margin-top: 40px; padding-top: 15px; border-top: 1px dashed var(--border-color);">تاریخ و زمان انتشار: {date_text} ساعت {time_text}</div>' if time_text else ""
-        
-        all_posts_info.append(post_metadata)
+    # Sort everything before generating layouts
+    all_posts_info.sort(key=lambda x: x['raw_date'], reverse=True)
+    for tag in tags_dict:
+        tags_dict[tag].sort(key=lambda x: x['raw_date'], reverse=True)
+    for key in baygani_dict:
+        baygani_dict[key]['posts'].sort(key=lambda x: x['raw_date'], reverse=True)
 
+    sorted_tags = sorted(tags_dict.items(), key=lambda item: len(item[1]), reverse=True)
+    sorted_baygani_keys = sorted(baygani_dict.keys(), reverse=True)
+
+    print("Phase 2: Generating Footer Navigation & Subpages...")
+
+    # Generate two sets of tile links (one for subpages with ../ and one for index)
+    tag_tiles_html_subpage = ""
+    tag_tiles_html_index = ""
+    for tag, posts_list in sorted_tags:
+        count = to_persian_num(len(posts_list))
+        safe_tag_filename = sanitize_filename(tag)
+        tag_tiles_html_subpage += f'<a href="../tags/{safe_tag_filename}.html" class="tag-tile"><span class="tag-name">{tag}</span><span class="tag-count">{count}</span></a>\n'
+        tag_tiles_html_index += f'<a href="tags/{safe_tag_filename}.html" class="tag-tile"><span class="tag-name">{tag}</span><span class="tag-count">{count}</span></a>\n'
+
+    baygani_tiles_html_subpage = ""
+    baygani_tiles_html_index = ""
+    for key in sorted_baygani_keys:
+        baygani_data = baygani_dict[key]
+        count = to_persian_num(len(baygani_data['posts']))
+        baygani_tiles_html_subpage += f'<a href="../baygani/{key}.html" class="baygani-tile"><span class="tag-name">{baygani_data["label"]}</span><span class="tag-count">{count}</span></a>\n'
+        baygani_tiles_html_index += f'<a href="baygani/{key}.html" class="baygani-tile"><span class="tag-name">{baygani_data["label"]}</span><span class="tag-count">{count}</span></a>\n'
+
+    # The universal footer injected at the end of all subpages!
+    footer_nav_html = f"""
+    <div class="subpage-footer" style="margin-top: 80px; padding-top: 40px; border-top: 2px solid var(--border-color);">
+        <h3 style="color: var(--text-heading); margin-bottom: 20px; font-size: 1.3em;">موضوعات پرطرفدار</h3>
+        <div class="tags-grid">{tag_tiles_html_subpage}</div>
+        <h3 style="color: var(--text-heading); margin-top: 40px; margin-bottom: 20px; font-size: 1.3em;">بایگانی ماهانه</h3>
+        <div class="tags-grid">{baygani_tiles_html_subpage}</div>
+    </div>
+    """
+
+    # Generate Individual Posts
+    for p in all_posts_info:
         post_html = f"""
         <!DOCTYPE html>
         <html lang="fa" dir="rtl">
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>{title} | {blog_title}</title>
+            <title>{p['title']} | {blog_title}</title>
             <link rel="stylesheet" href="../style.css?v=2">
             {theme_head_script}
         </head>
@@ -481,31 +523,23 @@ def create_local_blog(xml_file, output_dir):
                     <p style="color: var(--text-muted); margin-top: 10px; font-size: 1.1em;">محمدصادق رسولی</p>
                 </div>
                 <a href="../index.html" style="display: inline-block; margin-bottom: 20px; font-weight: bold;">← بازگشت به صفحه اصلی</a>
-                <h2 style="border-bottom: 2px solid var(--border-color); padding-bottom: 15px; margin-top: 10px;">{title}</h2>
-                {date_html}
-                <div class="post-content-body">{content}</div>
-                {time_footer_html}
-                {tags_html}
-                {comments_html}
+                <h2 style="border-bottom: 2px solid var(--border-color); padding-bottom: 15px; margin-top: 10px;">{p['title']}</h2>
+                {p['date_html']}
+                <div class="post-content-body">{p['content']}</div>
+                {p['time_footer_html']}
+                {p['tags_html']}
+                {p['comments_html']}
+                
+                {footer_nav_html}
             </div>
             {theme_script}
         </body>
         </html>
         """
-        with open(os.path.join(posts_dir, filename), "w", encoding="utf-8") as f:
+        with open(os.path.join(posts_dir, p['filename']), "w", encoding="utf-8") as f:
             f.write(post_html)
 
-    all_posts_info.sort(key=lambda x: x['raw_date'], reverse=True)
-    for tag in tags_dict:
-        tags_dict[tag].sort(key=lambda x: x['raw_date'], reverse=True)
-    for key in baygani_dict:
-        baygani_dict[key]['posts'].sort(key=lambda x: x['raw_date'], reverse=True)
-
-    sorted_tags = sorted(tags_dict.items(), key=lambda item: len(item[1]), reverse=True)
-    sorted_baygani_keys = sorted(baygani_dict.keys(), reverse=True)
-
-    print("Generating Grouped Pages (Tags & Baygani)...")
-    
+    # Generate Tag Pages
     for tag, posts_list in tags_dict.items():
         safe_tag_filename = f"{sanitize_filename(tag)}.html"
         tag_page_html = f"""
@@ -545,6 +579,7 @@ def create_local_blog(xml_file, output_dir):
             
         tag_page_html += f"""
                 </div>
+                {footer_nav_html}
             </div>
             {theme_script}
         </body>
@@ -553,6 +588,7 @@ def create_local_blog(xml_file, output_dir):
         with open(os.path.join(tags_dir, safe_tag_filename), "w", encoding="utf-8") as f:
             f.write(tag_page_html)
 
+    # Generate Baygani Pages
     for key in sorted_baygani_keys:
         baygani_data = baygani_dict[key]
         baygani_page_html = f"""
@@ -592,6 +628,7 @@ def create_local_blog(xml_file, output_dir):
             
         baygani_page_html += f"""
                 </div>
+                {footer_nav_html}
             </div>
             {theme_script}
         </body>
@@ -600,21 +637,14 @@ def create_local_blog(xml_file, output_dir):
         with open(os.path.join(baygani_dir, f"{key}.html"), "w", encoding="utf-8") as f:
             f.write(baygani_page_html)
 
-    tag_tiles_html = ""
-    for tag, posts_list in sorted_tags:
-        count = to_persian_num(len(posts_list))
-        safe_tag_filename = sanitize_filename(tag)
-        tag_tiles_html += f'<a href="tags/{safe_tag_filename}.html" class="tag-tile"><span class="tag-name">{tag}</span><span class="tag-count">{count}</span></a>\n'
+    print("Phase 3: Generating Master Index...")
 
-    baygani_tiles_html = ""
-    for key in sorted_baygani_keys:
-        baygani_data = baygani_dict[key]
-        count = to_persian_num(len(baygani_data['posts']))
-        baygani_tiles_html += f'<a href="baygani/{key}.html" class="baygani-tile"><span class="tag-name">{baygani_data["label"]}</span><span class="tag-count">{count}</span></a>\n'
-
-    posts_json = json.dumps(all_posts_info, ensure_ascii=False).replace("</", "<\\/")
-    
-    print("Generating Master Index...")
+    # Fast JSON build for index.html (stripped of heavy HTML strings)
+    index_json_data = [{
+        'title': p['title'], 'filename': p['filename'], 'date': p['date'],
+        'img_url': p['img_url'], 'excerpt': p['excerpt']
+    } for p in all_posts_info]
+    posts_json = json.dumps(index_json_data, ensure_ascii=False).replace("</", "<\\/")
 
     index_html = f"""
     <!DOCTYPE html>
@@ -646,12 +676,12 @@ def create_local_blog(xml_file, output_dir):
                 <div class="sidebar-area">
                     <div class="section-title">موضوعات پرطرفدار</div>
                     <div class="tags-grid">
-                        {tag_tiles_html}
+                        {tag_tiles_html_index}
                     </div>
                     
                     <div class="section-title">بایگانی ماهانه</div>
                     <div class="tags-grid">
-                        {baygani_tiles_html}
+                        {baygani_tiles_html_index}
                     </div>
                 </div>
             </div>
@@ -762,7 +792,7 @@ def create_local_blog(xml_file, output_dir):
     with open(os.path.join(output_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
 
-    print(f"\n✅ Auto-tagging for missing titles implemented.")
+    print(f"\n✅ Build Complete.")
     print(f"📂 Output saved to: {os.path.abspath(output_dir)}")
     print(f"🌐 Open '{os.path.join(output_dir, 'index.html')}' in your browser to view.")
 
