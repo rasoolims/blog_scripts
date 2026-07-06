@@ -256,18 +256,30 @@ def create_local_blog(xml_file, output_dir):
     }
 
     /* Mobile: Stack sidebar below, strictly one tile wide */
-    @media (max-width: 850px) {
-        .main-layout { 
-            grid-template-columns: 1fr; /* Stacks completely */
-            gap: 30px; 
+    /* MOBILE ADJUSTMENTS: Stack elements, but keep Sidebar at the top (Start) */
+        @media (max-width: 850px) {
+            .main-layout { 
+                display: flex; 
+                flex-direction: column; /* Stacks everything vertically */
+                gap: 30px; 
+            }
+            
+            /* Order: Force sidebar to appear above the posts */
+            .sidebar-area { 
+                order: -1; 
+                width: 100%; 
+                position: static; 
+            }
+            
+            .content-area { 
+                width: 100%; 
+            }
+            
+            /* Strict single-column for the tiles */
+            .posts-grid { 
+                grid-template-columns: 1fr; 
+            } 
         }
-        .sidebar-area { 
-            position: static; 
-        }
-        .posts-grid { 
-            grid-template-columns: 1fr; /* Strict 1-tile mobile view */
-        }
-    }
     /* -------------------------------------------------------- */
     
     /* Use a tight gap and align items to the right */
