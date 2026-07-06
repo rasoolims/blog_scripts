@@ -249,71 +249,6 @@ def create_local_blog(xml_file, output_dir):
         gap: 25px; 
     }
 
-    /* --------------------------------------------------------
-       MOBILE LAYOUT: Full width posts, horizontal scrollable navs
-       -------------------------------------------------------- */
-    @media (max-width: 850px) {
-        .main-layout { 
-            display: flex; 
-            flex-direction: column; 
-            gap: 20px; 
-        }
-        
-        /* Turn the sidebar into a top navigation container */
-        .sidebar-area { 
-            order: -1; /* Forces it to the top */
-            width: 100%; 
-            position: static; 
-            padding: 10px 0; /* Remove side padding to let scroll bleed to edges */
-            background: transparent; 
-            box-shadow: none;
-        }
-        
-        .content-area { 
-            width: 100%; 
-        }
-        
-        .posts-grid { 
-            grid-template-columns: 1fr; 
-        } 
-        
-        /* Force horizontal scrolling */
-        .tags-grid {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            overflow-y: hidden;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
-            gap: 10px;
-        }
-        
-        /* Hide scrollbars for a clean, native app feel */
-        .tags-grid::-webkit-scrollbar {
-            display: none;
-        }
-        .tags-grid {
-            -ms-overflow-style: none; 
-            scrollbar-width: none; 
-        }
-
-        /* Keep tiles original size but don't let them shrink */
-        .tag-tile, .baygani-tile {
-            flex: 0 0 auto;
-        }
-
-        .section-title {
-            font-size: 1.1em;
-            margin-bottom: 10px;
-            padding: 0 10px; /* Keep title aligned if container padding is 0 */
-            border-bottom: none;
-            margin-top: 15px;
-        }
-    }
-    /* -------------------------------------------------------- */
-    
     .tags-grid { 
         display: flex; 
         flex-wrap: wrap; 
@@ -452,6 +387,66 @@ def create_local_blog(xml_file, output_dir):
         position: absolute; top: 25px; left: 25px; background: var(--toggle-bg); color: var(--toggle-color); border: none; font-size: 20px; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease, background 0.3s ease, opacity 0.2s ease; z-index: 10;
     }
     .theme-toggle-btn:hover { transform: scale(1.1); opacity: 0.9; }
+
+    /* --------------------------------------------------------
+       MOBILE LAYOUT (Placed correctly at the bottom to override)
+       -------------------------------------------------------- */
+    @media (max-width: 850px) {
+        .main-layout { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 20px; 
+        }
+        
+        .sidebar-area { 
+            order: -1; 
+            width: 100%; 
+            position: static; 
+            padding: 10px 0; 
+            background: transparent; 
+            box-shadow: none;
+        }
+        
+        .content-area { 
+            width: 100%; 
+        }
+        
+        .posts-grid { 
+            grid-template-columns: 1fr; 
+        } 
+        
+        /* Force single line scrolling */
+        .tags-grid {
+            flex-wrap: nowrap !important; /* Forces it into a single line */
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+        
+        /* Hide scrollbars for Chrome/Safari */
+        .tags-grid::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Prevent the tiles from squishing together */
+        .tag-tile, .baygani-tile {
+            flex: 0 0 auto !important; 
+            white-space: nowrap !important; /* Stops text from breaking to two lines */
+        }
+
+        .section-title {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            padding: 0 10px; 
+            border-bottom: none;
+            margin-top: 15px;
+        }
+    }
     """
     
     with open(os.path.join(output_dir, "style.css"), "w", encoding="utf-8") as f:
@@ -571,7 +566,6 @@ def create_local_blog(xml_file, output_dir):
 
     print("Phase 2: Generating Universal Sidebars & Subpages...")
 
-    # Sidebar links for subpages (with ../)
     tag_tiles_html_subpage = ""
     tag_tiles_html_index = ""
     for tag, posts_list in sorted_tags:
@@ -606,7 +600,6 @@ def create_local_blog(xml_file, output_dir):
     </div>
     """
 
-    # This footer is NOW ONLY for the actual single posts! Not the tag pages.
     footer_nav_html_single_post = f"""
     <div class="subpage-footer" style="margin-top: 80px; padding-top: 40px; border-top: 2px solid var(--border-color);">
         <h3 style="color: var(--text-heading); margin-bottom: 20px; font-size: 1.3em;">موضوعات پرطرفدار</h3>
@@ -616,7 +609,6 @@ def create_local_blog(xml_file, output_dir):
     </div>
     """
 
-    # Generate Individual Posts
     for p in all_posts_info:
         post_html = f"""
         <!DOCTYPE html>
@@ -652,7 +644,6 @@ def create_local_blog(xml_file, output_dir):
         with open(os.path.join(posts_dir, p['filename']), "w", encoding="utf-8") as f:
             f.write(post_html)
 
-    # Generate Tag Pages (Strict Grid layout, no bottom footer)
     for tag, posts_list in tags_dict.items():
         safe_tag_filename = f"{sanitize_filename(tag)}.html"
         tag_page_html = f"""
@@ -706,7 +697,6 @@ def create_local_blog(xml_file, output_dir):
         with open(os.path.join(tags_dir, safe_tag_filename), "w", encoding="utf-8") as f:
             f.write(tag_page_html)
 
-    # Generate Baygani Pages (Strict Grid layout, no bottom footer)
     for key in sorted_baygani_keys:
         baygani_data = baygani_dict[key]
         baygani_page_html = f"""
