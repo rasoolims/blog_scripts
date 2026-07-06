@@ -255,31 +255,49 @@ def create_local_blog(xml_file, output_dir):
         gap: 25px; 
     }
 
-    /* Mobile: Stack sidebar below, strictly one tile wide */
-    /* MOBILE ADJUSTMENTS: Stack elements, but keep Sidebar at the top (Start) */
-        @media (max-width: 850px) {
-            .main-layout { 
-                display: flex; 
-                flex-direction: column; /* Stacks everything vertically */
-                gap: 30px; 
-            }
-            
-            /* Order: Force sidebar to appear above the posts */
-            .sidebar-area { 
-                order: -1; 
-                width: 100%; 
-                position: static; 
-            }
-            
-            .content-area { 
-                width: 100%; 
-            }
-            
-            /* Strict single-column for the tiles */
-            .posts-grid { 
-                grid-template-columns: 1fr; 
-            } 
+    /* --------------------------------------------------------
+       MOBILE ADJUSTMENTS: Keep side-by-side but shift proportions 
+       -------------------------------------------------------- */
+    @media (max-width: 850px) {
+        .main-layout { 
+            display: grid; 
+            /* RTL makes the first value (2.5fr) stick to the Right, and 1fr stick to the Left */
+            grid-template-columns: 2.5fr 1fr; 
+            gap: 15px; 
         }
+        
+        .sidebar-area { 
+            width: 100%; 
+            position: static; 
+            padding: 15px 10px; /* Reduce padding to save space */
+        }
+        
+        .content-area { 
+            width: 100%; 
+            min-width: 0;
+        }
+        
+        /* Strict single-column for the post tiles */
+        .posts-grid { 
+            grid-template-columns: 1fr; 
+            gap: 15px;
+        } 
+
+        /* Tighten up internal card and tag spacing to fit the mobile columns */
+        .card-content { 
+            padding: 15px; 
+        }
+        
+        .tag-tile, .baygani-tile { 
+            padding: 4px 8px; 
+            font-size: 10px; 
+        }
+        
+        .section-title {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+    }
     /* -------------------------------------------------------- */
     
     /* Use a tight gap and align items to the right */
