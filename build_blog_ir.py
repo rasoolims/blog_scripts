@@ -289,8 +289,9 @@ def create_local_blog(xml_file, output_dir):
         }
         
         .tag-tile, .baygani-tile { 
-            padding: 4px 8px; 
-            font-size: 10px; 
+            padding: 3px 6px; /* Reduces the physical size of the button */
+            font-size: 8px;   /* Shrinks the text size */
+            gap: 4px;         /* Reduces space between the text and the number */
         }
         
         .section-title {
@@ -351,9 +352,9 @@ def create_local_blog(xml_file, output_dir):
     /* Slightly adjust the number bubble */
     .tag-count { 
         background: rgba(255,255,255,0.25); 
-        padding: 1px 5px; 
         border-radius: 10px; 
-        font-size: 10px; /* Smallest text for the count */
+        font-size: 8px;   /* Makes the number smaller */
+        padding: 1px 4px; /* Tighter box around the number */
         font-weight: bold;
     }
     
