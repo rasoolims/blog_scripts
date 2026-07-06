@@ -160,7 +160,6 @@ def create_local_blog(xml_file, output_dir):
     css_content = """
     @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap');
 
-    /* This fixes the title bar overflowing and half-aligning on mobile */
     *, *::before, *::after {
         box-sizing: border-box;
     }
@@ -228,22 +227,58 @@ def create_local_blog(xml_file, output_dir):
     .sidebar-area { flex: 1; min-width: 300px; background: var(--bg-container); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); position: sticky; top: 20px; }
     
     @media (max-width: 850px) {
-        /* I removed flex-direction: column so the tags stay on the left on the first page */
-        .sidebar-area { position: static; min-width: 150px; }
+        /* Restored mobile stacking to prevent tiles from overflowing and mixing into the sidebar */
+        .main-layout { flex-direction: column; }
+        .sidebar-area { width: 100%; position: static; box-sizing: border-box; margin-top: 20px;}
     }
     
-    .tags-grid { display: flex; flex-wrap: wrap; gap: 10px; }
-    .tag-tile { background: linear-gradient(135deg, #3498db, #2980b9); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.9em; display: flex; align-items: center; gap: 8px; transition: transform 0.2s, box-shadow 0.2s; }
-    .tag-tile:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(50, 150, 219, 0.3); color: white;}
+    .tags-grid { display: flex; flex-wrap: wrap; gap: 12px; }
     
-    .baygani-tile { background: linear-gradient(135deg, #34495e, #2c3e50); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.9em; display: flex; align-items: center; gap: 8px; transition: transform 0.2s, box-shadow 0.2s; }
-    .baygani-tile:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(44, 62, 80, 0.3); color: white;}
+    /* ADDED: Beautiful soft shadow and border radius for Tag Tiles */
+    .tag-tile { 
+        background: linear-gradient(135deg, #3498db, #2980b9); 
+        color: white; 
+        padding: 8px 16px; 
+        border-radius: 20px; 
+        font-size: 0.9em; 
+        display: flex; 
+        align-items: center; 
+        gap: 8px; 
+        transition: transform 0.2s, box-shadow 0.2s; 
+        box-shadow: 0 4px 8px rgba(41, 128, 185, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .tag-tile:hover { 
+        transform: translateY(-3px); 
+        box-shadow: 0 6px 15px rgba(41, 128, 185, 0.5); 
+        color: white;
+    }
+    
+    /* ADDED: Beautiful soft shadow and border radius for Baygani Tiles */
+    .baygani-tile { 
+        background: linear-gradient(135deg, #34495e, #2c3e50); 
+        color: white; 
+        padding: 8px 16px; 
+        border-radius: 20px; 
+        font-size: 0.9em; 
+        display: flex; 
+        align-items: center; 
+        gap: 8px; 
+        transition: transform 0.2s, box-shadow 0.2s; 
+        box-shadow: 0 4px 8px rgba(44, 62, 80, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .baygani-tile:hover { 
+        transform: translateY(-3px); 
+        box-shadow: 0 6px 15px rgba(44, 62, 80, 0.5); 
+        color: white;
+    }
     
     .tag-count { background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 15px; font-size: 0.8em; font-weight: bold;}
     
     .posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; }
-    .post-card { background: var(--bg-container); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.04); transition: transform 0.2s, box-shadow 0.2s; border: 1px solid var(--border-light); display: flex; flex-direction: column; }
-    .post-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+    .post-card { background: var(--bg-container); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.06); transition: transform 0.2s, box-shadow 0.2s; border: 1px solid var(--border-light); display: flex; flex-direction: column; }
+    .post-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
     .card-img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid var(--border-color); }
     
     .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
@@ -464,7 +499,6 @@ def create_local_blog(xml_file, output_dir):
             baygani_dict[baygani_key] = {'label': baygani_label, 'posts': []}
         baygani_dict[baygani_key]['posts'].append(post_metadata)
 
-    # Sort everything before generating layouts
     all_posts_info.sort(key=lambda x: x['raw_date'], reverse=True)
     for tag in tags_dict:
         tags_dict[tag].sort(key=lambda x: x['raw_date'], reverse=True)
@@ -476,7 +510,6 @@ def create_local_blog(xml_file, output_dir):
 
     print("Phase 2: Generating Footer Navigation & Subpages...")
 
-    # Generate two sets of tile links (one for subpages with ../ and one for index)
     tag_tiles_html_subpage = ""
     tag_tiles_html_index = ""
     for tag, posts_list in sorted_tags:
@@ -493,7 +526,6 @@ def create_local_blog(xml_file, output_dir):
         baygani_tiles_html_subpage += f'<a href="../baygani/{key}.html" class="baygani-tile"><span class="tag-name">{baygani_data["label"]}</span><span class="tag-count">{count}</span></a>\n'
         baygani_tiles_html_index += f'<a href="baygani/{key}.html" class="baygani-tile"><span class="tag-name">{baygani_data["label"]}</span><span class="tag-count">{count}</span></a>\n'
 
-    # The universal footer injected at the end of all subpages!
     footer_nav_html = f"""
     <div class="subpage-footer" style="margin-top: 80px; padding-top: 40px; border-top: 2px solid var(--border-color);">
         <h3 style="color: var(--text-heading); margin-bottom: 20px; font-size: 1.3em;">موضوعات پرطرفدار</h3>
@@ -503,7 +535,6 @@ def create_local_blog(xml_file, output_dir):
     </div>
     """
 
-    # Generate Individual Posts
     for p in all_posts_info:
         post_html = f"""
         <!DOCTYPE html>
@@ -539,7 +570,6 @@ def create_local_blog(xml_file, output_dir):
         with open(os.path.join(posts_dir, p['filename']), "w", encoding="utf-8") as f:
             f.write(post_html)
 
-    # Generate Tag Pages
     for tag, posts_list in tags_dict.items():
         safe_tag_filename = f"{sanitize_filename(tag)}.html"
         tag_page_html = f"""
@@ -588,7 +618,6 @@ def create_local_blog(xml_file, output_dir):
         with open(os.path.join(tags_dir, safe_tag_filename), "w", encoding="utf-8") as f:
             f.write(tag_page_html)
 
-    # Generate Baygani Pages
     for key in sorted_baygani_keys:
         baygani_data = baygani_dict[key]
         baygani_page_html = f"""
@@ -639,7 +668,6 @@ def create_local_blog(xml_file, output_dir):
 
     print("Phase 3: Generating Master Index...")
 
-    # Fast JSON build for index.html (stripped of heavy HTML strings)
     index_json_data = [{
         'title': p['title'], 'filename': p['filename'], 'date': p['date'],
         'img_url': p['img_url'], 'excerpt': p['excerpt']
