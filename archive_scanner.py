@@ -4,6 +4,8 @@ import requests
 import re
 import time
 import random
+import html
+import jdatetime
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
@@ -18,25 +20,62 @@ def create_robust_session():
     return session
 
 def extract_date_from_text(content_text):
-    # Normalize: Remove ZWNJ/spaces, fix digit-letter attachments
-    text = re.sub(r'[\u200c\u200b\s]+', ' ', content_text)
-    text = re.sub(r'([آ-ی])(\d{4})', r'\1 \2', text)
-    text = re.sub(r'(\d{1,2})([آ-ی])', r'\1 \2', text)
+    # 1. Unescape HTML entities like &nbsp;
+    text = html.unescape(content_text)
+    
+    # 2. Normalize spaces and remove zero-width characters
+    text = re.sub(r'[\u200c\u200b\s]+', ' ', text)
+    
+    # 3. Separate Persian letters from numbers intelligently (e.g., "دی1387ساعت" -> "دی 1387 ساعت")
+    text = re.sub(r'(?<=[آ-یa-zA-Z])(?=\d)', ' ', text)
+    text = re.sub(r'(?<=\d)(?=[آ-یa-zA-Z])', ' ', text)
     text = re.sub(r'\s+', ' ', text).strip()
     
     months = {'فروردین': 1, 'اردیبهشت': 2, 'خرداد': 3, 'تیر': 4, 'مرداد': 5, 'شهریور': 6,
               'مهر': 7, 'آبان': 8, 'آذر': 9, 'دی': 10, 'بهمن': 11, 'اسفند': 12}
     
-    # Matches Day (1-2) + Month Name + Year (4)
-    pattern = r'(\d{1,2})\s+([آ-ی]+)\s+(\d{4})'
-    match = re.search(pattern, text)
-    if match:
-        try:
-            day, month_name, year = int(match.group(1)), match.group(2), int(match.group(3))
-            month = months.get(month_name, 1)
-            return match.group(0), f"{year + 621}-{month:02d}-{day:02d} 00:00:00"
-        except: pass
+    # Match Date: Day + Month Name + Year
+    date_match = re.search(r'(\d{1,2})\s+([آ-ی]+)\s+(\d{4})', text)
     
+    # Match Time: Hour:Minute
+    time_match = re.search(r'(\d{1,2}):(\d{2})', text)
+    
+    if date_match:
+        try:
+            day = int(date_match.group(1))
+            month_name = date_match.group(2)
+            year = int(date_match.group(3))
+            month = months.get(month_name, 1)
+            
+            # Default time variables
+            hour, minute = 0, 0
+            
+            if time_match:
+                hour = int(time_match.group(1))
+                minute = int(time_match.group(2))
+                
+                # Adjust for AM/PM based on surrounding context
+                if any(pm in text for pm in ['بعد از ظهر', 'بعدازظهر', 'عصر', 'شب', 'ب.ظ']):
+                    if hour < 12: 
+                        hour += 12
+                elif any(am in text for am in ['صبح', 'ق.ظ', 'بامداد']):
+                    if hour == 12: 
+                        hour = 0
+            
+            # Convert Jalali datetime to Gregorian using jdatetime
+            gregorian_dt = jdatetime.datetime(year, month, day, hour, minute).togregorian()
+            
+            # Format strictly to standard ISO
+            iso_date = gregorian_dt.strftime("%Y-%m-%d %H:%M:%S")
+            
+            # Create a clean log string for the terminal
+            log_str = f"{date_match.group(0)}" + (f" {time_match.group(0)}" if time_match else "")
+            
+            return log_str, iso_date
+            
+        except Exception: 
+            pass
+            
     return "Not Found", "1970-01-01 00:00:00"
 
 def run_recovery(failed_list_path, index_url, output_xml):
@@ -57,7 +96,6 @@ def run_recovery(failed_list_path, index_url, output_xml):
     
     def process_node(post_id, title, post_body_div):
         nonlocal successful_count
-        # The date is in the sibling <div class="postdesc">
         post_desc_div = post_body_div.find_next_sibling('div', class_='postdesc')
         date_raw = post_desc_div.get_text() if post_desc_div else ""
         persian_date_str, iso_date = extract_date_from_text(date_raw)
@@ -81,7 +119,6 @@ def run_recovery(failed_list_path, index_url, output_xml):
             url = f"https://web.archive.org/web/20120701000000*/http://delsharm.blogfa.com/{post_id}"
             resp = session.get(url, timeout=20)
             soup = BeautifulSoup(resp.text, 'html.parser')
-            # Look for the body of the post
             body = soup.find('div', class_='postbody')
             if body:
                 process_node(post_id, data['title'], body)
@@ -102,7 +139,6 @@ def run_recovery(failed_list_path, index_url, output_xml):
                 if data['found']: continue
                 link = soup.find('a', href=re.compile(post_id))
                 if link:
-                    # Find body, then sibling postdesc
                     body = link.find_parent().find_next_sibling('div', class_='postbody')
                     if body:
                         process_node(post_id, data['title'], body)
