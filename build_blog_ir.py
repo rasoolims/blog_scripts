@@ -270,23 +270,28 @@ def create_local_blog(xml_file, output_dir):
     }
     /* -------------------------------------------------------- */
     
-    .tags-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+    /* Use a tight gap and align items to the right */
+    .tags-grid { 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 8px; /* Reduced from 12px for tighter spacing */
+        justify-content: flex-start; /* Keeps items packed to the right */
+        align-items: flex-start;
+    }
     
     /* Beautiful elegant shadows for Tags */
     .tag-tile { 
-        background: linear-gradient(135deg, #3498db, #2980b9); 
-        color: white; 
-        padding: 8px 16px; 
-        border-radius: 20px; 
-        font-size: 12px; /* Smaller explicit size */
-        display: flex; 
+    background: linear-gradient(135deg, #3498db, #2980b9); 
+        color: white;
+        padding: 6px 12px; /* Smaller padding */
+        border-radius: 18px; 
+        font-size: 11px; /* Smaller font to fit more items */
+        display: inline-flex; /* Changed from flex to inline-flex to hug the content */
         align-items: center; 
-        gap: 8px; 
+        gap: 6px; 
         transition: transform 0.2s, box-shadow 0.2s; 
-        box-shadow: 0 4px 10px rgba(41, 128, 185, 0.35); /* Beauty shadow */
+        box-shadow: 0 3px 6px rgba(0,0,0,0.15);
         border: 1px solid rgba(255, 255, 255, 0.1);
-        word-break: break-word;
-        white-space: normal;
     }
     .tag-tile:hover { 
         transform: translateY(-3px); 
@@ -295,19 +300,17 @@ def create_local_blog(xml_file, output_dir):
     }
     
     .baygani-tile { 
-        background: linear-gradient(135deg, #34495e, #2c3e50); 
-        color: white; 
-        padding: 8px 16px; 
-        border-radius: 20px; 
-        font-size: 12px; /* Smaller explicit size */
-        display: flex; 
+        background: linear-gradient(135deg, #3498db, #2980b9); 
+        color: white;
+       padding: 6px 12px; /* Smaller padding */
+        border-radius: 18px; 
+        font-size: 11px; /* Smaller font to fit more items */
+        display: inline-flex; /* Changed from flex to inline-flex to hug the content */
         align-items: center; 
-        gap: 8px; 
+        gap: 6px; 
         transition: transform 0.2s, box-shadow 0.2s; 
-        box-shadow: 0 4px 10px rgba(44, 62, 80, 0.35); /* Beauty shadow */
+        box-shadow: 0 3px 6px rgba(0,0,0,0.15);
         border: 1px solid rgba(255, 255, 255, 0.1);
-        word-break: break-word;
-        white-space: normal;
     }
     .baygani-tile:hover { 
         transform: translateY(-3px); 
@@ -315,7 +318,14 @@ def create_local_blog(xml_file, output_dir):
         color: white;
     }
     
-    .tag-count { background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 15px; font-size: 11px; font-weight: bold;}
+    /* Slightly adjust the number bubble */
+    .tag-count { 
+        background: rgba(255,255,255,0.25); 
+        padding: 1px 5px; 
+        border-radius: 10px; 
+        font-size: 10px; /* Smallest text for the count */
+        font-weight: bold;
+    }
     
     /* Beautiful elegant shadows for Post Cards */
     .post-card { 
