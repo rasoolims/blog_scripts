@@ -4,6 +4,7 @@ import argparse
 import sys
 import re
 import json
+import datetime
 
 try:
     import jdatetime
@@ -18,14 +19,21 @@ def to_persian_num(num_str):
 def convert_to_jalali(gregorian_date_str):
     try:
         jdatetime.set_locale('fa_IR')
-        date_part = gregorian_date_str.strip()[:10]
-        year, month, day = map(int, date_part.split('-'))
+        raw_str = gregorian_date_str.strip()
         
-        jalali_date = jdatetime.date.fromgregorian(day=day, month=month, year=year)
-        formatted_date = jalali_date.strftime("%d %B %Y")
-        return to_persian_num(formatted_date)
+        if len(raw_str) > 10 and ":" in raw_str:
+            dt = datetime.datetime.strptime(raw_str[:19], "%Y-%m-%d %H:%M:%S")
+            jalali_dt = jdatetime.datetime.fromgregorian(datetime=dt)
+            formatted_date = jalali_dt.strftime("%d %B %Y")
+            formatted_time = jalali_dt.strftime("%H:%M")
+            return to_persian_num(formatted_date), to_persian_num(formatted_time)
+        else:
+            date_part = raw_str[:10]
+            year, month, day = map(int, date_part.split('-'))
+            jalali_date = jdatetime.date.fromgregorian(day=day, month=month, year=year)
+            return to_persian_num(jalali_date.strftime("%d %B %Y")), ""
     except Exception:
-        return gregorian_date_str 
+        return gregorian_date_str, "" 
 
 def get_baygani_info(gregorian_date_str):
     try:
@@ -44,12 +52,16 @@ def get_baygani_info(gregorian_date_str):
 def sanitize_filename(name):
     return re.sub(r'[\\/*?:"<>|]', "", name).strip()
 
-def strip_hardcoded_colors(html_content):
+def strip_hardcoded_styles(html_content):
     if not html_content:
         return ""
-    cleaned = re.sub(r'\b(?:color|bgcolor)\s*=\s*["\'][^"\']*["\']', '', html_content, flags=re.IGNORECASE)
+    # Strip old HTML attributes (color, bgcolor, face, size)
+    cleaned = re.sub(r'\b(?:color|bgcolor|face|size)\s*=\s*["\'][^"\']*["\']', '', html_content, flags=re.IGNORECASE)
+    # Strip specific inline CSS properties
     cleaned = re.sub(r'(?<!-)\bcolor\s*:\s*[^;"\']+[;]?', '', cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r'\bbackground-color\s*:\s*[^;"\']+[;]?', '', cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r'\bfont-family\s*:\s*[^;"\']+[;]?', '', cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r'\bfont-size\s*:\s*[^;"\']+[;]?', '', cleaned, flags=re.IGNORECASE)
     return cleaned
 
 def extract_preview(html_content):
@@ -59,12 +71,9 @@ def extract_preview(html_content):
     no_img_html = re.sub(r'<img[^>]+>', '', html_content, flags=re.IGNORECASE)
     p_blocks = re.findall(r'<p[^>]*>.*?</p>', no_img_html, flags=re.IGNORECASE | re.DOTALL)
     
-    # Dynamic excerpt length based on image presence
     target_length = 350 if img_url else 600
-    
     excerpt_html = ""
     
-    # Attempt 1: Extract from <p> blocks
     if p_blocks:
         current_length = 0
         selected_blocks = []
@@ -79,7 +88,6 @@ def extract_preview(html_content):
                 break
         excerpt_html = "".join(selected_blocks)
         
-    # Attempt 2: If <p> blocks were empty, fall back to div/br parsing
     if not excerpt_html.strip():
         text_with_markers = re.sub(r'<br\s*/?>|</div>|</p>', '\n', no_img_html, flags=re.IGNORECASE)
         clean_text = re.sub(r'<[^>]+>', ' ', text_with_markers)
@@ -127,7 +135,6 @@ def render_comments(post_elem):
         </div>'''
         
     return html + '</div>'
-
 
 def create_local_blog(xml_file, output_dir):
     if not os.path.isfile(xml_file):
@@ -282,10 +289,37 @@ def create_local_blog(xml_file, output_dir):
     .page-numbers a:hover { background: var(--btn-hover); }
     .page-numbers .current-page { background: #2980b9; color: white; font-weight: bold; cursor: default; }
 
-    /* Force clean styles on ALL elements in the post content */
-    .single-post-container, .single-post-container * {
+    /* --- FONT OVERRIDE FIXES --- */
+    /* Force clean styles on single post content */
+    .post-content-body { font-size: 16px !important; }
+    .post-content-body font,
+    .post-content-body span,
+    .post-content-body p,
+    .post-content-body div,
+    .post-content-body * {
         color: var(--text-main) !important;
         font-family: 'Vazirmatn', sans-serif !important;
+        font-size: 16px !important;
+        line-height: 1.8 !important;
+        background-color: transparent !important;
+    }
+    .post-content-body h1, .post-content-body h2, .post-content-body h3 {
+        color: var(--text-heading) !important;
+        font-family: 'Vazirmatn', sans-serif !important;
+        background-color: transparent !important;
+    }
+    
+    /* Force clean styles on previews in the tiles (Index, Tags, Baygani) */
+    .excerpt-container { font-size: 15px !important; }
+    .excerpt-container font,
+    .excerpt-container span,
+    .excerpt-container p,
+    .excerpt-container div,
+    .excerpt-container * {
+        color: var(--text-main) !important;
+        font-family: 'Vazirmatn', sans-serif !important;
+        font-size: 15px !important;
+        line-height: 1.8 !important;
         background-color: transparent !important;
     }
 
@@ -376,16 +410,17 @@ def create_local_blog(xml_file, output_dir):
         
         content_elem = post.find('CONTENT')
         raw_content = content_elem.text if (content_elem is not None and content_elem.text) else "<p>بدون محتوا</p>"
-        content = strip_hardcoded_colors(raw_content)
+        content = strip_hardcoded_styles(raw_content)
 
         comments_html = render_comments(post)
 
         img_url, raw_excerpt = extract_preview(content)
-        excerpt = strip_hardcoded_colors(raw_excerpt)
+        excerpt = strip_hardcoded_styles(raw_excerpt)
         
         date_elem = post.find('CREATED_DATE')
         raw_date = date_elem.text.strip() if (date_elem is not None and date_elem.text) else "1970-01-01"
-        date_text = convert_to_jalali(raw_date)
+        
+        date_text, time_text = convert_to_jalali(raw_date)
 
         baygani_key, baygani_label = get_baygani_info(raw_date)
         url_elem = post.find('URL')
@@ -401,16 +436,13 @@ def create_local_blog(xml_file, output_dir):
             'img_url': img_url, 'excerpt': excerpt
         }
 
-        # Handle existing tags
         unique_post_tags = set()
         if tags_elem is not None:
             unique_post_tags = set(t.text.strip() for t in tags_elem.findall('.//NAME') if t.text and t.text.strip())
             
-        # ADDED LOGIC: Auto-tag missing titles with "سیاه‌مشق"
         if title == "—":
             unique_post_tags.add("سیاه‌مشق")
             
-        # Process all collected tags
         for clean_tag in unique_post_tags:
             safe_tag_filename = sanitize_filename(clean_tag)
             post_tags.append(clean_tag)
@@ -427,13 +459,16 @@ def create_local_blog(xml_file, output_dir):
         tags_html = f'<div class="post-tags"><strong>برچسب‌ها:</strong> {"، ".join(tag_links_html)}</div>' if tag_links_html else ""
         date_html = f'<div class="date" style="color: var(--text-muted); font-size: 0.9em; margin-bottom: 20px;">{date_text}</div>' if date_text else ""
         
-        all_posts_info.append(post_metadata)
+        time_footer_html = f'<div style="color: var(--text-muted); font-size: 0.85em; margin-top: 40px; padding-top: 15px; border-top: 1px dashed var(--border-color);">تاریخ و زمان انتشار: {date_text} ساعت {time_text}</div>' if time_text else ""
         
+        all_posts_info.append(post_metadata)
+
         post_html = f"""
         <!DOCTYPE html>
         <html lang="fa" dir="rtl">
         <head>
             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>{title} | {blog_title}</title>
             <link rel="stylesheet" href="../style.css?v=2">
             {theme_head_script}
@@ -448,7 +483,8 @@ def create_local_blog(xml_file, output_dir):
                 <a href="../index.html" style="display: inline-block; margin-bottom: 20px; font-weight: bold;">← بازگشت به صفحه اصلی</a>
                 <h2 style="border-bottom: 2px solid var(--border-color); padding-bottom: 15px; margin-top: 10px;">{title}</h2>
                 {date_html}
-                <div>{content}</div>
+                <div class="post-content-body">{content}</div>
+                {time_footer_html}
                 {tags_html}
                 {comments_html}
             </div>
@@ -477,6 +513,7 @@ def create_local_blog(xml_file, output_dir):
         <html lang="fa" dir="rtl">
         <head>
             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>برچسب: {tag} | {blog_title}</title>
             <link rel="stylesheet" href="../style.css?v=2">
             {theme_head_script}
@@ -523,6 +560,7 @@ def create_local_blog(xml_file, output_dir):
         <html lang="fa" dir="rtl">
         <head>
             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>بایگانی: {baygani_data['label']} | {blog_title}</title>
             <link rel="stylesheet" href="../style.css?v=2">
             {theme_head_script}
@@ -574,7 +612,7 @@ def create_local_blog(xml_file, output_dir):
         count = to_persian_num(len(baygani_data['posts']))
         baygani_tiles_html += f'<a href="baygani/{key}.html" class="baygani-tile"><span class="tag-name">{baygani_data["label"]}</span><span class="tag-count">{count}</span></a>\n'
 
-    posts_json = json.dumps(all_posts_info, ensure_ascii=False)
+    posts_json = json.dumps(all_posts_info, ensure_ascii=False).replace("</", "<\\/")
     
     print("Generating Master Index...")
 
@@ -583,6 +621,7 @@ def create_local_blog(xml_file, output_dir):
     <html lang="fa" dir="rtl">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{blog_title}</title>
         <link rel="stylesheet" href="style.css?v=2">
         {theme_head_script}
@@ -621,13 +660,17 @@ def create_local_blog(xml_file, output_dir):
         
         {theme_script}
 
+        <script id="posts-data" type="application/json">
+        {posts_json}
+        </script>
+
         <script>
             function toFa(num) {{
                 const farsiDigits = ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
                 return num.toString().replace(/\\d/g, x => farsiDigits[x]);
             }}
 
-            const allPosts = {posts_json};
+            const allPosts = JSON.parse(document.getElementById('posts-data').textContent);
             const postsPerPage = 12; 
             let currentPage = 1;
 
