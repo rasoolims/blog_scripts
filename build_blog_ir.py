@@ -164,6 +164,12 @@ def create_local_blog(xml_file, output_dir):
         box-sizing: border-box;
     }
 
+    /* Prevent horizontal wiggle on mobile */
+    html, body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
     :root {
         --bg-body: #f0f2f5;
         --bg-container: #ffffff;
@@ -231,10 +237,11 @@ def create_local_blog(xml_file, output_dir):
         width: 100%;
     }
     
-    .content-area { min-width: 0; }
+    .content-area { min-width: 0; width: 100%; }
     
     .sidebar-area { 
         min-width: 0; 
+        width: 100%;
         background: var(--bg-container); 
         padding: 25px; 
         border-radius: 12px; 
@@ -396,6 +403,7 @@ def create_local_blog(xml_file, output_dir):
             display: flex; 
             flex-direction: column; 
             gap: 20px; 
+            align-items: stretch; /* FIX: Forces content and sidebar to stretch 100% width instead of aligning to the right */
         }
         
         .sidebar-area { 
@@ -417,7 +425,7 @@ def create_local_blog(xml_file, output_dir):
         
         /* Force single line scrolling */
         .tags-grid {
-            flex-wrap: nowrap !important; /* Forces it into a single line */
+            flex-wrap: nowrap !important; 
             overflow-x: auto;
             overflow-y: hidden;
             padding-bottom: 10px;
