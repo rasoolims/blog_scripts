@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۳۷: پایان تئولوژی ۱؛ از بیژن عبدالکریمی"
 date: 2022-10-25
 jalaliDate: "۰۳ آبان ۱۴۰۱"
-tags: ["فلسفه", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "فلسفه"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 318px; height: 463px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1592144215l/34807557._SX318_.jpg"></span></p>
 <p style="text-align: justify;"><br><span style="">این کتاب جلد اول از مجموعهٔ دو جلدی از مقالات عبدالکریمی است که جلد اولش در 486 صفحه منتشر شده است. در این مقالات عبدالکریمی در سه موضوع اصلی صحبت می‌کند: ۱) نقد شهید مطهری، ۲)‌ نقد اندیشهٔ ایجاد علم دینی در ایران، و ۳) نقد تئولوژی و دعوت به تفکر آنتولوژیک.</span></p>

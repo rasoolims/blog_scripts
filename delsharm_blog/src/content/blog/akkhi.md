@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۵۴:‌ الف؛ خم خسروانی؛ از حافظ ایمانی"
 date: 2022-11-30
 jalaliDate: "۰۹ آذر ۱۴۰۱"
-tags: ["کتاب-شعر", "شعر", "قفسه‌نوشت"]
+tags: ["شعر", "قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 318px; height: 416px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1668316634l/63289732._SX318_.jpg"></span></p>
 <p style="text-align: center;"> </p>

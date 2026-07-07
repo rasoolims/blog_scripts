@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۷۱: کتاب اوهام، اثر پل آستر"
 date: 2021-06-07
 jalaliDate: "۱۷ خرداد ۱۴۰۰"
-tags: ["قفسه‌نوشت", "داستان آمریکایی", "کتاب"]
+tags: ["قفسه‌نوشت", "کتاب", "داستان آمریکایی"]
 ---
 <p style="text-align: center;"><span style=""><span style=""><img alt="" style="width: 284px; height: 475px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1391954093l/50618.jpg"></span></span></p>
 <p> </p>

@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۰۸: خوب‌ترین حادثه می‌دانمت؛ از محمدعلی بهمنی"
 date: 2022-07-22
 jalaliDate: "۳۱ تیر ۱۴۰۱"
-tags: ["کتاب-شعر", "شعر", "قفسه‌نوشت", "غزل"]
+tags: ["شعر", "غزل", "کتاب-شعر", "قفسه‌نوشت"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 266px; height: 390px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1447503555l/27827901.jpg"></p>
 <p> </p>

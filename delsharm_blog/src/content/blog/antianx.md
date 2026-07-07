@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۴۸: غلبه بر اضطراب پیش‌نگرانه؛ از وینستون و سیف"
 date: 2024-11-29
 jalaliDate: "۰۹ آذر ۱۴۰۳"
-tags: ["قفسه‌نوشت", "کتاب", "روان‌شناسی"]
+tags: ["روان‌شناسی", "کتاب", "قفسه‌نوشت"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 300px; height: 450px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1646489767i/58527302.jpg"></span></p>
 <p style="text-align: justify;"> </p>

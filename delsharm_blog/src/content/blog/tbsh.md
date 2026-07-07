@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۰۵: طفلی به نام شادی؛ از محمدرضا شفیعی کدکنی"
 date: 2022-06-15
 jalaliDate: "۲۵ خرداد ۱۴۰۱"
-tags: ["نقد شعر", "قفسه‌نوشت", "نقد کتاب"]
+tags: ["نقد کتاب", "قفسه‌نوشت", "نقد شعر"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 310px; height: 475px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1618955148l/53611319._SY475_.jpg"></p>
 <p> </p>

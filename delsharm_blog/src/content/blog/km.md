@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۲۱: کلاغمرگی؛ از لیلا کردبچه"
 date: 2022-09-22
 jalaliDate: "۳۱ شهریور ۱۴۰۱"
-tags: ["کتاب-شعر", "شعر", "قفسه‌نوشت"]
+tags: ["شعر", "قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 400px; height: 607px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1659291654i/61797868.jpg"></p>
 <p style="text-align: center;"> </p>

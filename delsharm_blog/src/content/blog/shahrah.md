@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۷۴: شاهراه، اثر سینا دادخواه"
 date: 2021-09-18
 jalaliDate: "۲۷ شهریور ۱۴۰۰"
-tags: ["قفسه‌نوشت", "داستان ایرانی", "کتاب"]
+tags: ["قفسه‌نوشت", "کتاب", "داستان ایرانی"]
 ---
 <p style="text-align: center;"><span style=""><span style=""><img alt="" src="https://cdn.fidibo.com/images/books/87975_84351_normal.jpg"></span></span></p>
 <p style="text-align: justify;"> </p>

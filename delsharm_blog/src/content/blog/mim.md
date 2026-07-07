@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۵۴: میم عزیز؛ از محمدحسن شهسواری"
 date: 2025-01-29
 jalaliDate: "۱۰ بهمن ۱۴۰۳"
-tags: ["رمان فارسی", "نقد داستان", "قفسه‌نوشت", "داستان ایرانی"]
+tags: ["نقد داستان", "قفسه‌نوشت", "داستان ایرانی", "رمان فارسی"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 400px; height: 593px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1486828767i/34226767.jpg"></p>
 <p style="text-align: justify;"> </p>

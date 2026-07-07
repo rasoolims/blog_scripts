@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۵۶؛ بازگشت فرضیهٔ خداوند؛ از استیفن میر"
 date: 2025-02-15
 jalaliDate: "۲۷ بهمن ۱۴۰۳"
-tags: ["فیزیک", "خداباوری", "علم", "خلاصه کتاب", "قفسه‌نوشت", "زیست‌شناسی", "فلسفه"]
+tags: ["زیست‌شناسی", "فیزیک", "فلسفه", "علم", "قفسه‌نوشت", "خلاصه کتاب", "خداباوری"]
 ---
 <p style="text-align: justify;"> </p>
 <p style="text-align: center;"><span style=""><img alt="" style="width: 400px; height: 599px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1545836073i/43019303.jpg"></span></p>

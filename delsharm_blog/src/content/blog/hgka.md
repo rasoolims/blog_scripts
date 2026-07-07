@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۴۰: تاریخ خداوند؛ از کارن آرمسترانگ"
 date: 2024-03-04
 jalaliDate: "۱۴ اسفند ۱۴۰۲"
-tags: ["تفکر مدرن", "دین", "کتاب تاریخی", "کتاب دینی", "قفسه‌نوشت", "تاریخ ادیان", "فلسفه"]
+tags: ["کتاب تاریخی", "فلسفه", "قفسه‌نوشت", "کتاب دینی", "تفکر مدرن", "تاریخ ادیان", "دین"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 318px; height: 465px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1386924363i/3873.jpg"></p>
 <p style="text-align: center;"> </p>

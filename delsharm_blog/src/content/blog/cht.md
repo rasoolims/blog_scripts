@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۲۵: چتر شورشی؛ از حمیدرضا شکارسری"
 date: 2022-10-03
 jalaliDate: "۱۱ مهر ۱۴۰۱"
-tags: ["کتاب-شعر", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 400px; height: 622px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1664821738i/62871490.jpg"></span></p>
 <p style="text-align: center;"> </p>

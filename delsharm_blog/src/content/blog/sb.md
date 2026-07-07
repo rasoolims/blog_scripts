@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۷۲: سفر بمباران؛ از علی‌محمد مودب"
 date: 2021-06-15
 jalaliDate: "۲۵ خرداد ۱۴۰۰"
-tags: ["کتاب-شعر", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p style="text-align: center;"><span style=""><span style=""><img alt="" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1432990118l/25630931.jpg"></span></span></p>
 <p> </p>

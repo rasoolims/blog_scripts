@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۷۳: آلوت؛ اثر امیر خداوردی"
 date: 2021-09-17
 jalaliDate: "۲۶ شهریور ۱۴۰۰"
-tags: ["نقد داستان", "قفسه‌نوشت", "داستان ایرانی", "کتاب"]
+tags: ["نقد داستان", "قفسه‌نوشت", "کتاب", "داستان ایرانی"]
 ---
 <p style="text-align: justify;"> </p>
 <p style="text-align: center;"><span style=""><span style=""><img alt="" style="width: 318px; height: 461px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1498897032l/35561635._SX318_.jpg"></span></span></p>

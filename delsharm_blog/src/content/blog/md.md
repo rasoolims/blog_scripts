@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۸۴: مارتین درسلر؛ از استیون میلهاوزر"
 date: 2021-10-18
 jalaliDate: "۲۶ مهر ۱۴۰۰"
-tags: ["نقد داستان", "کتاب و کتاب‌خوانی", "داستان آمریکایی", "قفسه‌نوشت", "کتاب"]
+tags: ["نقد داستان", "کتاب", "داستان آمریکایی", "کتاب و کتاب‌خوانی", "قفسه‌نوشت"]
 ---
 <p style="text-align: justify;"> </p>
 <p style="text-align: center;"><span style=""><span style=""><img alt="" style="width: 311px; height: 475px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1431256217l/146219.jpg"></span></span></p>

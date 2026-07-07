@@ -2,7 +2,7 @@
 title: "مسیر سرسپردگی؛ نوشتهٔ ر. دیوید کولیج"
 date: 2018-08-27
 jalaliDate: "۰۵ شهریور ۱۳۹۷"
-tags: ["ترجمه", "کتاب"]
+tags: ["کتاب", "ترجمه"]
 ---
 <p style="text-align: justify; "><font  >حمد خدای را که <a href="http://bayanbox.ir/view/2950944220200945548/surrender.pdf">این ترجمه</a> به پایان رسید. <a href="http://delsharm.blog.ir/1397/03/30/surrender">قبلاً</a> در مورد <a href="https://www.amazon.com/Beautiful-Surrender-Islam-Path-Walked/dp/1720792763">نسخهٔ انگلیسی</a> کتاب <a href="http://delsharm.blog.ir/1397/03/30/surrender">نوشته‌ام</a>. </font><span style=" ">علاوه بر فایل پی‌دی‌اف کتاب، متن فارسی کتاب نیز در نشانی زیر موجود است:</span></p>
 <p style="text-align: center;"><font  ><a href="https://github.com/rasoolims/surrender">https://github.com/rasoolims/surrender</a></font></p>

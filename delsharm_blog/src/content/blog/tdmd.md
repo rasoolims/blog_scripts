@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۴۷: تاریخ دلتنگی؛ از محمود درویش"
 date: 2022-11-11
 jalaliDate: "۲۰ آبان ۱۴۰۱"
-tags: ["شعر عرب", "کتاب-شعر", "نقد شعر", "شعر", "قفسه‌نوشت"]
+tags: ["شعر", "نقد شعر", "کتاب-شعر", "قفسه‌نوشت", "شعر عرب"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 312px; height: 475px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1668030160l/63265705._SY475_.jpg"></span></p>
 <p style="text-align: center;"><br><span style="">ای پدر مرا به کجا می‌بری؟<br>- به سمت باد<br>چرا اسب را تنها گذاشتی؟<br>- به خاطر این که با خانه انس پیدا کند<br>که خانه‌ها<br>بی‌حضور ساکنین ویران و مرده‌اند</span></p>

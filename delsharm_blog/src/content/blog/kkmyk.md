@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۳۷: خون‌خورده؛ از مهدی یزدانی خرم"
 date: 2024-01-29
 jalaliDate: "۰۹ بهمن ۱۴۰۲"
-tags: ["نقد داستان", "قفسه‌نوشت", "نقد کتاب", "رمان فارسی", "داستان فارسی"]
+tags: ["داستان فارسی", "نقد داستان", "نقد کتاب", "قفسه‌نوشت", "رمان فارسی"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1576253354l/49221464.jpg"></span></p>
 <p style="text-align: justify;"> </p>

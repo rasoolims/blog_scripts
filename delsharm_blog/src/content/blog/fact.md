@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۹۶: واقعیت‌مداری؛ نوشتهٔ هنس راسلینگ"
 date: 2021-12-08
 jalaliDate: "۱۷ آذر ۱۴۰۰"
-tags: ["ناداستان", "کتاب و کتاب‌خوانی", "قفسه‌نوشت", "کتاب"]
+tags: ["کتاب و کتاب‌خوانی", "قفسه‌نوشت", "کتاب", "ناداستان"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 259px; height: 400px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562014795l/45046852.jpg"></span></p>
 <p style="text-align: justify;"><span style="">این کتاب با عناوین «واقعیت» و «واقع‌نگری» ترجمه شده است که به نظرم هیچ‌کدام از ترجمه‌ها نه درست هستند نه معنای کلی را می‌رسانند. </span></p>

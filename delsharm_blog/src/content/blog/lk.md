@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۵۵: لوطی‌کشی؛ از محمدرضا طاهری"
 date: 2022-12-02
 jalaliDate: "۱۱ آذر ۱۴۰۱"
-tags: ["کتاب-شعر", "شعر", "قفسه‌نوشت", "غزل"]
+tags: ["شعر", "غزل", "کتاب-شعر", "قفسه‌نوشت"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 316px; height: 421px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1536446724l/41742738.jpg"></p>
 <p style="text-align: center;"> </p>

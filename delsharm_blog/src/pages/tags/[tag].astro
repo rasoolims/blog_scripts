@@ -76,29 +76,60 @@ function toFa(num: number) {
 }
 
 function extractImage(bodyStr: string) {
-    const imgRegex = /<img[^>]+src=["'](.*?)["']|!\[.*?\]\((.*?)\)/i;
+    // Escaped \x3C and \x3E to prevent Astro JSX compiler crashes
+    const imgRegex = /\x3Cimg[^\x3E]+src=["'](.*?)["']|!\[.*?\]\((.*?)\)/i;
     const match = bodyStr.match(imgRegex);
     return match ? (match[1] || match[2]) : null;
 }
 
 function generateExcerpt(markdownBody: string) {
     if (!markdownBody) return "<p>بدون محتوا</p>";
-    let text = markdownBody.replace(/!\[.*?\]\(.*?\)/g, '').replace(/<img[^>]*>/g, '');
-    const paragraphs = text.split(/\n\s*\n/).map(p => p.trim()).filter(p => p.length > 0);
-    let excerptHtml = "";
-    let currentLen = 0;
-    
-    for (let p of paragraphs) {
-        p = p.replace(/\n/g, '<br>');
-        p = p.replace(/^#+\s+/g, '');
-        p = p.replace(/(\*\*|__)(.*?)\1/g, '$2');
-        p = p.replace(/(\*|_)(.*?)\1/g, '$2');
-        
-        excerptHtml += `<p>${p}</p>`;
-        currentLen += p.length;
-        if (currentLen >= 350) break;
+
+    let text = markdownBody;
+
+    // 1. Nuke hidden blocks (styles, scripts, xml, comments)
+    text = text.replace(/\x3Cstyle[^\x3E]*\x3E[\s\S]*?\x3C\/style\x3E/gi, ' ');
+    text = text.replace(/\x3Cxml[^\x3E]*\x3E[\s\S]*?\x3C\/xml\x3E/gi, ' ');
+    text = text.replace(/\x3Cscript[^\x3E]*\x3E[\s\S]*?\x3C\/script\x3E/gi, ' ');
+    text = text.replace(/\x3C!--[\s\S]*?--\x3E/g, ' ');
+
+    // 2. Strip Markdown links and images
+    text = text.replace(/!\[.*?\]\(.*?\)/g, ' ');
+    text = text.replace(/\[(.*?)\]\(.*?\)/g, '$1');
+
+    // 3. RESCUE LINE BREAKS: Convert <br> and </p> to real newlines BEFORE stripping HTML
+    text = text.replace(/\x3Cbr\s*\/?\x3E/gi, '\n');
+    text = text.replace(/\x3C\/p\x3E/gi, '\n');
+    text = text.replace(/\x3C\/div\x3E/gi, '\n');
+
+    // 4. Strip ALL remaining HTML tags
+    text = text.replace(/\x3C[^\x3E]+\x3E/g, ' ');
+
+    // 5. Crush HTML Entities (&nbsp;, &zwnj;, etc.)
+    text = text.replace(/&nbsp;/gi, ' ');
+    text = text.replace(/&quot;/gi, '"');
+    text = text.replace(/&amp;/gi, '&');
+    text = text.replace(/&lt;/gi, '\x3C');
+    text = text.replace(/&gt;/gi, '\x3E');
+    text = text.replace(/&#?[a-z0-9]+;/gi, ' ');
+
+    // 6. Clean up Markdown formatting characters
+    text = text.replace(/[#*~_>]/g, '');
+
+    // 7. Aggressively normalize whitespace and newlines
+    text = text.replace(/[ \t]+/g, ' ').trim(); // All horizontal space becomes 1 space
+    text = text.replace(/ *[\r\n]+ */g, '\n');  // Remove trailing spaces around newlines
+    text = text.replace(/\n+/g, '\n');          // Multiple empty lines become 1 line
+
+    // 8. Safely cut to 350 characters
+    if (text.length > 350) {
+        text = text.substring(0, 350) + '...';
     }
-    return excerptHtml || "<p>بدون محتوا</p>";
+    
+    // 9. Convert clean newlines back to HTML breaks for the preview card
+    text = text.replace(/\n/g, '<br/>');
+    
+    return `<p>${text}</p>`;
 }
 ---
 

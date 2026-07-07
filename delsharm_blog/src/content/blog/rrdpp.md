@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۶۰: رنگ‌های رفتهٔ دنیا و گزیده‌ای از پرندهٔ پنهان؛ از گروس عبدالملکیان"
 date: 2022-12-15
 jalaliDate: "۲۴ آذر ۱۴۰۱"
-tags: ["کتاب-شعر", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 318px; height: 452px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1492355634l/34866929._SX318_.jpg"></span></p>
 <p style="text-align: center;"> </p>

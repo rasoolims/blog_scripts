@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۹۹: پذیرفتن؛ از گروس عبدالملکیان"
 date: 2022-03-31
 jalaliDate: "۱۱ فروردین ۱۴۰۱"
-tags: ["کتاب-شعر", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 298px; height: 435px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1527488137l/25099715.jpg"></span></p>
 <p style="text-align: center;"><span style="">دست‌های هم را گرفته بودیم</span></p>

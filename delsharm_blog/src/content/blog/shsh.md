@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۱۶: شماس شامی؛ از مجید قیصری"
 date: 2022-09-01
 jalaliDate: "۱۰ شهریور ۱۴۰۱"
-tags: ["نقد داستان", "قفسه‌نوشت", "شهرستان ادب"]
+tags: ["شهرستان ادب", "قفسه‌نوشت", "نقد داستان"]
 ---
 <p style="text-align: center;"><img alt="" src="https://shahrestanadab.com/Portals/0/Images/1400/shammas.jpg?ver=rwTObRVWex7JzONf_yvSYw%3d%3d"><img alt="" style="width: 416px; height: 615px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1537439989i/13453410.jpg"></p>
 <p style="text-align: center;"> </p>

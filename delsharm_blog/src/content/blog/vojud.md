@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۴۵: وجود؛ از فاضل نظری"
 date: 2024-11-05
 jalaliDate: "۱۵ آبان ۱۴۰۳"
-tags: ["کتاب-شعر", "شعر", "قفسه‌نوشت", "غزل"]
+tags: ["شعر", "غزل", "کتاب-شعر", "قفسه‌نوشت"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 300px; height: 476px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1693859832i/61169032.jpg"></p>
 <p style="text-align: center;"> </p>

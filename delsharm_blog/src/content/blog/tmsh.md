@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۹۸: تماشایی؛ از میلاد عرفان‌پور"
 date: 2022-03-22
 jalaliDate: "۰۲ فروردین ۱۴۰۱"
-tags: ["کتاب-شعر", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p style="text-align: center;"><img alt="" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1527081599l/40198226._SX318_.jpg"></p>
 <p style="text-align: center;"> </p>

@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۲۹: از سرشت و سرنوشت؛ از حسین منزوی"
 date: 2022-10-12
 jalaliDate: "۲۰ مهر ۱۴۰۱"
-tags: ["نقد شعر", "کتاب-شعر", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب-شعر", "نقد شعر"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 318px; height: 475px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1527155355l/36670914._SX318_.jpg"></span></p>
 <p style="text-align: justify;"> </p>

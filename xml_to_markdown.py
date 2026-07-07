@@ -19,6 +19,7 @@ def convert_to_jalali(gregorian_date_str):
     try:
         jdatetime.set_locale('fa_IR')
         raw_str = gregorian_date_str.strip()
+        
         if len(raw_str) > 10 and ":" in raw_str:
             dt = datetime.datetime.strptime(raw_str[:19], "%Y-%m-%d %H:%M:%S")
             jalali_dt = jdatetime.datetime.fromgregorian(datetime=dt)
@@ -38,11 +39,30 @@ def sanitize_filename(name):
 def strip_hardcoded_styles(html_content):
     if not html_content:
         return ""
-    cleaned = re.sub(r'\b(?:color|bgcolor|face|size)\s*=\s*["\'][^"\']*["\']', '', html_content, flags=re.IGNORECASE)
+        
+    # --- FIXED: Aggressive MS Word Junk Removal ---
+    # 1. Destroy <style> tags FIRST so nested comments don't break the regex
+    cleaned = re.sub(r'<style[^>]*>.*?</style>', '', html_content, flags=re.IGNORECASE | re.DOTALL)
+    
+    # 2. Destroy <xml> tags
+    cleaned = re.sub(r'<xml[^>]*>.*?</xml>', '', cleaned, flags=re.IGNORECASE | re.DOTALL)
+    
+    # 3. Destroy Microsoft conditional comments (e.g. )
+    cleaned = re.sub(r'', '', cleaned, flags=re.IGNORECASE | re.DOTALL)
+    
+    # 4. Destroy any remaining standard HTML comments
+    cleaned = re.sub(r'', '', cleaned, flags=re.DOTALL)
+    
+    # 5. Destroy Word local file links
+    cleaned = re.sub(r'<link[^>]*rel=["\']File-List["\'][^>]*/?>', '', cleaned, flags=re.IGNORECASE)
+
+    # --- Standard Inline Style Removal ---
+    cleaned = re.sub(r'\b(?:color|bgcolor|face|size)\s*=\s*["\'][^"\']*["\']', '', cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r'(?<!-)\bcolor\s*:\s*[^;"\']+[;]?', '', cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r'\bbackground-color\s*:\s*[^;"\']+[;]?', '', cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r'\bfont-family\s*:\s*[^;"\']+[;]?', '', cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r'\bfont-size\s*:\s*[^;"\']+[;]?', '', cleaned, flags=re.IGNORECASE)
+    
     return cleaned
 
 def convert_xml_to_markdown(xml_file, output_posts_dir):
@@ -74,7 +94,6 @@ def convert_xml_to_markdown(xml_file, output_posts_dir):
         date_elem = post.find('CREATED_DATE')
         raw_date = date_elem.text.strip() if (date_elem is not None and date_elem.text) else "1970-01-01"
         
-        # Split full timestamp down to standard YYYY-MM-DD for standard frontmatter formatting
         iso_date = raw_date[:10] 
         jalali_date = convert_to_jalali(raw_date)
 
@@ -82,18 +101,17 @@ def convert_xml_to_markdown(xml_file, output_posts_dir):
         url_slug = url_elem.text.strip() if (url_elem is not None and url_elem.text) else f"post_{i+1}"
         filename = f"{sanitize_filename(url_slug)}.md"
 
-        # Safely extract and array-format tags for frontmatter
         tags_elem = post.find('TAGS')
         unique_post_tags = set()
         if tags_elem is not None:
             unique_post_tags = set(t.text.strip() for t in tags_elem.findall('.//NAME') if t.text and t.text.strip())
+        
+        # Apply the specific tagging rule
         if title == "—":
             unique_post_tags.add("سیاه‌مشق")
         
-        # Turn into a valid YAML list string formatted for modern SSGs
         tags_yaml = ", ".join([f'"{t}"' for t in unique_post_tags])
 
-        # Write out file with clean frontmatter metadata blocks
         md_content = f"""---
 title: "{title}"
 date: {iso_date}
@@ -105,7 +123,7 @@ tags: [{tags_yaml}]
         with open(os.path.join(output_posts_dir, filename), "w", encoding="utf-8") as f:
             f.write(md_content)
 
-    print(f"🎉 Successfully converted posts into Markdown in: {output_posts_dir}")
+    print(f"✅ Successfully converted posts into Markdown in: {output_posts_dir}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert XML backup into standard Markdown files with clean frontmatter attributes.")

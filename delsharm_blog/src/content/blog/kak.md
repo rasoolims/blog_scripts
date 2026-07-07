@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۰۳: یک بغل کاکتوس؛ از امید مهدی‌نژاد"
 date: 2023-09-07
 jalaliDate: "۱۶ شهریور ۱۴۰۲"
-tags: ["شعر", "طنز", "قفسه‌نوشت", "شعر طنز"]
+tags: ["شعر", "قفسه‌نوشت", "شعر طنز", "طنز"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="height: 446px; width: 300px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1336414898i/13638164.jpg"></span></p>
 <p style="text-align: justify;"><span style="">برای من شعر طنز بیشتر شنیدنی است تا خواندنی. مخصوصاً به خاطر آن که به دلایل تقریباً واضح انتخاب واژگانی در شعر طنز روی به کلمات کوچه‌بازاری دارد و به همین خاطر خیلی نمی‌شود انتظار لذت ادبی‌ای که از شعر جدی می‌شود برد داشت.</span></p>

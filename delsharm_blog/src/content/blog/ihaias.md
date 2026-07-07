@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۲۳: این هم از این؛ از امیرعلی سلیمانی"
 date: 2023-11-18
 jalaliDate: "۲۷ آبان ۱۴۰۲"
-tags: ["کتاب-شعر", "قفسه‌نوشت", "غزل"]
+tags: ["غزل", "کتاب-شعر", "قفسه‌نوشت"]
 ---
 <p style="direction: ltr; text-align: center;"><img alt="" style="width: 400px; height: 554px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1572080949i/48582122.jpg"></p>
 <p><span style="">برخی از غزل‌های این مجموعه نشان از قریحهٔ خوب و مطالعهٔ فراوان این شاعر جوان دارد از جمله غزلی که در آغاز کتاب آمده است:</span></p>

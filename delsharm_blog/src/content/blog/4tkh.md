@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۶۱: چهار کتاب تاریخی از عبدالحسین زرین‌کوب"
 date: 2025-11-03
 jalaliDate: "۱۲ آبان ۱۴۰۴"
-tags: ["کتاب تاریخی", "تاریخ ایران"]
+tags: ["تاریخ ایران", "کتاب تاریخی"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 300px; height: 457px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0ja3fscXe5hyXgNg-PwuWo-z-miOkLHv7bg&amp;s"></p>
 <p style="text-align: justify;"> </p>

@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۵۸: حیرت دمیده‌ام؛ از علی معلم دامغانی"
 date: 2025-07-16
 jalaliDate: "۲۵ تیر ۱۴۰۴"
-tags: ["اسرائیل", "قفسه‌نوشت", "مقالات"]
+tags: ["قفسه‌نوشت", "اسرائیل", "مقالات"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 350px; height: 501px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1752540318i/238765074.jpg"></p>
 <p> </p>

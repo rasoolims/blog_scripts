@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۱۴: واقعیت رؤیای من است؛ از بیژن نجدی"
 date: 2022-08-12
 jalaliDate: "۲۱ مرداد ۱۴۰۱"
-tags: ["نقد شعر", "شعر", "قفسه‌نوشت"]
+tags: ["شعر", "قفسه‌نوشت", "نقد شعر"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 500px; height: 745px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1657374700i/22231813.jpg"></span></p>
 <p> </p>

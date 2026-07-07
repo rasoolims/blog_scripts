@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۷۰: دو مجموعه شعر از گروس عبدالملکیان"
 date: 2021-06-04
 jalaliDate: "۱۴ خرداد ۱۴۰۰"
-tags: ["کتاب-شعر", "قفسه‌نوشت", "کتاب"]
+tags: ["قفسه‌نوشت", "کتاب-شعر", "کتاب"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 240px; height: 336px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551299966l/44154779.jpg"></p>
 <p> </p>

@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۹۵: نرگس؛ از حسین صفا"
 date: 2023-06-28
 jalaliDate: "۰۷ تیر ۱۴۰۲"
-tags: ["کتاب-شعر", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p style="direction: ltr; "> </p>
 <p style="text-align: center;"><img alt="" style="width: 520px; height: 794px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1564995477i/35082931.jpg"></p>

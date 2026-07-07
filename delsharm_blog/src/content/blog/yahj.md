@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۴۴: ی؛ از حسین جنتی"
 date: 2022-11-04
 jalaliDate: "۱۳ آبان ۱۴۰۱"
-tags: ["نقد شعر", "شعر", "قفسه‌نوشت", "کتاب"]
+tags: ["شعر", "قفسه‌نوشت", "کتاب", "نقد شعر"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 318px; height: 318px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1473512746l/28119176._SX318_.jpg"></span></p>
 <p style="text-align: justify;"> </p>

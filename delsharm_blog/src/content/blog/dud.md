@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۷۶: دود؛ اثر حسین سناپور"
 date: 2021-09-21
 jalaliDate: "۳۰ شهریور ۱۴۰۰"
-tags: ["نقد داستان", "قفسه‌نوشت", "داستان ایرانی", "کتاب"]
+tags: ["نقد داستان", "قفسه‌نوشت", "کتاب", "داستان ایرانی"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 270px; height: 414px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1412281742l/23299413.jpg"></p>
 <p> </p>

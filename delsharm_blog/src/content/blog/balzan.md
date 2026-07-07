@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۴۶: بالزن‌ها؛ از محمدرضا کاتب"
 date: 2024-11-08
 jalaliDate: "۱۸ آبان ۱۴۰۳"
-tags: ["رمان فارسی", "نقد داستان", "قفسه‌نوشت", "داستان ایرانی"]
+tags: ["نقد داستان", "قفسه‌نوشت", "داستان ایرانی", "رمان فارسی"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 300px; height: 488px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUBVF46tBNd47WzxiYKkM26xP4xNVLJrSGDQ&amp;s"></p>
 <p> </p>

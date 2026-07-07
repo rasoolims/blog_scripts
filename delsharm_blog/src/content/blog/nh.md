@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۴۴: دنیا را گشتم بدون تو؛ از ناظم حکمت"
 date: 2024-05-30
 jalaliDate: "۱۰ خرداد ۱۴۰۳"
-tags: ["کتاب-شعر", "شعر سپید", "موسیقی", "شعر", "قفسه‌نوشت"]
+tags: ["شعر", "موسیقی", "شعر سپید", "قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p> </p>
 <p style="text-align: center;"><span style=""><img alt="" style="width: 191px; height: 264px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdMjAqI1CO3l1Jea2dnnwZ0KS7lXi1p65vFA&amp;s"><br>وقت رفتن است<br>وقت افتادن به تهی تاریک، یک‌باره<br>هرگز نخواهم فهمید<br>خزیدن کرم‌ها درون جمجمه‌ام را<br>پوسیدن گوشت تنم را<br>یاد مرگ لحظه‌ای تنهایم نمی‌گذارد<br>این یعنی مرگ همین نزدیکی‌هاست</span></p>

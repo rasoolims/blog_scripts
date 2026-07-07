@@ -2,7 +2,7 @@
 title: "همسفر شراب (سفرنامهٔ نیویورک) - فصل آخر"
 date: 2018-08-30
 jalaliDate: "۰۸ شهریور ۱۳۹۷"
-tags: ["سفرنامهٔ نیویورک", "سفرنامهٔ امریکا", "‌سفرنامهٔ امریکا", "همسفر شراب"]
+tags: ["سفرنامهٔ امریکا", "سفرنامهٔ نیویورک", "همسفر شراب", "‌سفرنامهٔ امریکا"]
 ---
 <p style="text-align: center;"><a href="//bayanbox.ir/info/5314492699564598033/hafiz" target="_blank"><img src="//bayanbox.ir/view/5314492699564598033/hafiz.png" height="1024" width="1172"></a></p>
 <p style="text-align: center;"><font  >۰</font></p>

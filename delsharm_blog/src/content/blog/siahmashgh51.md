@@ -2,7 +2,7 @@
 title: "سیاه‌مشق ۵۱"
 date: 2018-04-17
 jalaliDate: "۲۸ فروردین ۱۳۹۷"
-tags: ["شعر", "غزل", "سیاه‌مشق"]
+tags: ["سیاه‌مشق", "غزل", "شعر"]
 ---
 <p></p>
 <div style="text-align: center;"><span style="  font-variant-ligatures: none; white-space: pre-wrap;"><font  style="" >شاید که جام او شراب دیگری دارد</font></span></div>

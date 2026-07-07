@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۱۵: تاریخ ایران مدرن؛ از یرواند آبراهامیان"
 date: 2023-10-31
 jalaliDate: "۰۹ آبان ۱۴۰۲"
-tags: ["تاریخ معاصر", "کتاب تاریخی", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب تاریخی", "تاریخ معاصر"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 500px; height: 741px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1528198851i/12704670.jpg"></span></p>
 <p style="text-align: justify;"><span style="">«با این همه، من چنین خطری را می‌پذیرم و بنا را بر این می‌گذارم که اگر اتفاق خارق‌العاده‌ای رخ ندهد، جمهوری اسلامی تا آینده‌ای معلوم دوام خواهد داشت؛ گیرم هیچ دولتی تا ابد پایدار نمی‌ماند.» (ص ۱۳)</span></p>

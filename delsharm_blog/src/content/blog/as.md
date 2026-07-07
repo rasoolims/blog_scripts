@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۱۵: چشم به راه ابریشم؛ از علی اسداللهی"
 date: 2022-08-31
 jalaliDate: "۰۹ شهریور ۱۴۰۱"
-tags: ["کتاب-شعر", "شعر", "قفسه‌نوشت"]
+tags: ["شعر", "قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 200px; height: 300px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1368174113i/17905737.jpg"></p>
 <p> </p>

@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۳۵: آموزش عقائد؛ از محمدتقی مصباح یزدی"
 date: 2024-01-17
 jalaliDate: "۲۷ دی ۱۴۰۲"
-tags: ["فلسفه", "دین", "قفسه‌نوشت", "کتاب دینی"]
+tags: ["قفسه‌نوشت", "کتاب دینی", "فلسفه", "دین"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 300px; height: 415px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1701796107i/203275276.jpg"></span></p>
 <p style="text-align: justify;"><span style="">این کتاب از توحید شروع می‌کند به نبوت و امامت، معاد و ایمان می‌رسد و با بحث شفاعت به پایان می‌رسد. با فصل‌های کوتاه سه چهار صفحه‌ای که آخر هر فصل، پرسش‌هایی برای مرور وجود دارد.</span></p>

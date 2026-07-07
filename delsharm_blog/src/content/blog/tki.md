@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۱۲: توسعه و خوشبختی در میان ایرانیان؛ از محمد سمیعی"
 date: 2023-10-23
 jalaliDate: "۰۱ آبان ۱۴۰۲"
-tags: ["کتاب جامعه‌شناسی", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب جامعه‌شناسی"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 400px; height: 574px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1649326994i/60766594.jpg"></p>
 <p> </p>

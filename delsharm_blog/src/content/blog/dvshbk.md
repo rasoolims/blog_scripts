@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۵۰: دیوار؛ از شیرکو بی‌کس"
 date: 2022-11-15
 jalaliDate: "۲۴ آبان ۱۴۰۱"
-tags: ["کتاب-شعر", "شعر", "قفسه‌نوشت", "شعر کردستان"]
+tags: ["شعر", "قفسه‌نوشت", "کتاب-شعر", "شعر کردستان"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 300px; height: 452px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1587107013l/53193193.jpg"></p>
 <p style="text-align: justify;"> </p>

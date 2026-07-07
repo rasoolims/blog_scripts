@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۸۱: ما کو تا اونا شیم؛ از اکبر اکسیر"
 date: 2023-03-13
 jalaliDate: "۲۲ اسفند ۱۴۰۱"
-tags: ["کتاب-شعر", "شعر سپید", "طنز", "شعر طنز", "قفسه‌نوشت", "شعر فرانو"]
+tags: ["شعر سپید", "قفسه‌نوشت", "شعر فرانو", "طنز", "کتاب-شعر", "شعر طنز"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 400px; height: 605px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1648039164i/23252077.jpg"></span></p>
 <p style="text-align: center;"><br><span style="">«وظایف»<br>مادر<br>می‌پخت، می‌شست<br>می‌برد می‌آورد<br>می‌دوشید می‌کاشت<br>کتک می‌خورد، فحش می‌شنید<br>درد می‌کشید، می‌زایید<br>ما گریه می‌کردیم<br>پدر<br>مثل کوه ایستاده بود<br>(ص ۶۱)</span></p>

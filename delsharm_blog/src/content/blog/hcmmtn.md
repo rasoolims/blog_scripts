@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۷۰: هیچ چیز مثل مرگ تازه نیست؛ از گروس عبدالملکیان"
 date: 2023-02-03
 jalaliDate: "۱۴ بهمن ۱۴۰۱"
-tags: ["کتاب-شعر", "شعر", "قفسه‌نوشت"]
+tags: ["شعر", "قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 318px; height: 376px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1368187141i/17906021.jpg"></p>
 <p style="text-align: justify;"> </p>

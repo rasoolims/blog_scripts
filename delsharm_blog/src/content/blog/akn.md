@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۳۴: اکنون؛ از فاضل نظری"
 date: 2022-10-22
 jalaliDate: "۳۰ مهر ۱۴۰۱"
-tags: ["نقد شعر", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "نقد شعر"]
 ---
 <p style="text-align: center;"><img alt="" style="height: 569px; width: 400px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551877022l/44290291._SX318_.jpg"></p>
 <p style="text-align: justify;"> </p>

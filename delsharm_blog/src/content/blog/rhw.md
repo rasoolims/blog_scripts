@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۶۵: زن موقرمز، اثر اورهان پاموک"
 date: 2021-04-28
 jalaliDate: "۰۸ اردیبهشت ۱۴۰۰"
-tags: ["رمان ترکی", "قفسه‌نوشت", "کتاب"]
+tags: ["قفسه‌نوشت", "کتاب", "رمان ترکی"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 292px; height: 450px;" src="https://images.penguinrandomhouse.com/cover/9781101974230"></p>
 <p><span style=""><span style="">این رمان در سال ۲۰۱۶ در ترکیه و ترجمه‌اش در سال ۲۰۱۷ در آمریکا منتشر شده است و ظاهراً ترجمهٔ فارسی‌اش نیز موجود است.</span></span></p>

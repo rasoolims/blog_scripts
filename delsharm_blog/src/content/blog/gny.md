@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۳۲: گزینه اشعار نیما یوشیج"
 date: 2022-10-17
 jalaliDate: "۲۵ مهر ۱۴۰۱"
-tags: ["کتاب-شعر", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 318px; height: 461px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549471259l/43866447._SX318_.jpg"></span></p>
 <p style="text-align: justify;"><span style="">این کتاب جزو مجموعهٔ گزینه اشعاری است که نشر مروارید برای شاعران مطرح معاصر سال‌هاست در قطع‌های مختلف از جمله جیبی منتشر می‌کند و برای من جزو خاطره‌انگیزترین و جذاب‌ترین مجموعه گزینه شعر است.</span></p>

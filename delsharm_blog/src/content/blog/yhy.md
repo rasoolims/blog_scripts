@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۴۱: یحیی؛ از سید حمیدرضا برقعی"
 date: 2022-11-01
 jalaliDate: "۱۰ آبان ۱۴۰۱"
-tags: ["کتاب-شعر", "شعر", "قفسه‌نوشت"]
+tags: ["شعر", "قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 315px; height: 475px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1557085233l/45479391._SY475_.jpg"></span></p>
 <p style="text-align: justify;"><span style="">مشت نمونهٔ خروار:</span></p>

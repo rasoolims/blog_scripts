@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۳۳: دوربین قدیمی؛ از عباس صفاری"
 date: 2024-01-12
 jalaliDate: "۲۲ دی ۱۴۰۲"
-tags: ["کتاب-شعر", "شعر", "شعر سپید", "قفسه‌نوشت"]
+tags: ["شعر", "شعر سپید", "کتاب-شعر", "قفسه‌نوشت"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 318px; height: 468px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1306543910i/11476638.jpg"></span></p>
 <p style="text-align: justify;"> </p>

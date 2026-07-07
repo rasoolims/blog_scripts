@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۱۲: پس از ۴۰ سال؛ از حمید سبحانی صدر"
 date: 2022-08-01
 jalaliDate: "۱۰ مرداد ۱۴۰۱"
-tags: ["کتاب تاریخی", "قفسه‌نوشت", "کتاب دینی"]
+tags: ["قفسه‌نوشت", "کتاب دینی", "کتاب تاریخی"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 175px; height: 287px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659291529l/48738624.jpg"></span></p>
 <p style="text-align: justify;"> </p>

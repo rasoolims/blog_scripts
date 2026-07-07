@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۰۶: اخلاق در عصر مدرن؛ از رضا داوری اردکانی"
 date: 2022-07-12
 jalaliDate: "۲۱ تیر ۱۴۰۱"
-tags: ["فلسفه", "قفسه‌نوشت", "کتاب"]
+tags: ["قفسه‌نوشت", "کتاب", "فلسفه"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 209px; height: 326px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1445937777l/27289182.jpg"></p>
 <p style="text-align: justify;"> </p>

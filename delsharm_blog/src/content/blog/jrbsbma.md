@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۸۵: جهان را به شاعران بسپارید؛ از محمدرضا عبدالملکیان"
 date: 2023-04-06
 jalaliDate: "۱۷ فروردین ۱۴۰۲"
-tags: ["کتاب-شعر", "نیمایی", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب-شعر", "نیمایی"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 300px; height: 444px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609497688i/40096805.jpg"></span></p>
 <p style="text-align: center;"><span style="">ساده با تو حرف می‌زنم<br>مثل آب با درخت<br>مثل نور با گیاه<br>مثل شب‌نوردِ خسته‌ای<br>با نگاه ماه</span></p>

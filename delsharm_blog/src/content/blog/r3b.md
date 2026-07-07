@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۴۲: مرور سه کتاب"
 date: 2024-03-20
 jalaliDate: "۰۱ فروردین ۱۴۰۳"
-tags: ["دین", "قفسه‌نوشت", "کتاب دینی"]
+tags: ["قفسه‌نوشت", "کتاب دینی", "دین"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 300px; height: 446px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1370243816i/6617712.jpg"></p>
 <p style="text-align: justify;"> </p>

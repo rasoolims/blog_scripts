@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۳۹: ارباب و مرد؛ از لئو تولستوی"
 date: 2024-02-02
 jalaliDate: "۱۳ بهمن ۱۴۰۲"
-tags: ["نقد کتاب", "داستان روس", "نقد داستان", "قفسه‌نوشت"]
+tags: ["نقد داستان", "قفسه‌نوشت", "نقد کتاب", "داستان روس"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 308px; height: 475px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388954083i/824278.jpg"></p>
 <p style="text-align: justify;"> </p>

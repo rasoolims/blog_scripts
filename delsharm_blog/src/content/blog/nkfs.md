@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۵۳: نیاز به دانستن قطعی؛ از سیف و وینستون"
 date: 2025-01-18
 jalaliDate: "۲۹ دی ۱۴۰۳"
-tags: ["قفسه‌نوشت", "روان‌شناسی"]
+tags: ["روان‌شناسی", "قفسه‌نوشت"]
 ---
 <p style="text-align: justify;"> </p>
 <p style="text-align: center;"><span style=""><img alt="" style="width: 400px; height: 600px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1568465133i/43319540.jpg"></span></p>

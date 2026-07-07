@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۳۴: تربیت دینی کودک؛ از محی‌الدین حائری شیرازی"
 date: 2024-01-17
 jalaliDate: "۲۷ دی ۱۴۰۲"
-tags: ["تربیت", "قفسه‌نوشت", "کتاب دینی"]
+tags: ["قفسه‌نوشت", "کتاب دینی", "تربیت"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 481px; height: 756px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1703272893i/50492848.jpg"></span></p>
 <p style="text-align: justify;"><span style="">کوتاه سخن: در مجموع کتابی است با نکات جالب و آموزنده.</span></p>

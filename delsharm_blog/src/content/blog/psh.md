@@ -2,7 +2,7 @@
 title: "پیشنهادی برای امروز"
 date: 2022-09-29
 jalaliDate: "۰۷ مهر ۱۴۰۱"
-tags: ["رمان فارسی", "قفسه‌نوشت", "پیشنهاد بی‌شرح", "کتاب"]
+tags: ["قفسه‌نوشت", "کتاب", "پیشنهاد بی‌شرح", "رمان فارسی"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 400px; height: 602px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1312395713i/12266950.jpg"></p>
 <p style="text-align: justify;"> </p>

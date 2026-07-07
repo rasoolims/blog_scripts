@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۳۸: مترجم؛ از لیلا ابوالعلا"
 date: 2024-01-29
 jalaliDate: "۰۹ بهمن ۱۴۰۲"
-tags: ["نقد داستان", "داستان انگلیسی", "قفسه‌نوشت"]
+tags: ["نقد داستان", "قفسه‌نوشت", "داستان انگلیسی"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 312px; height: 475px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1328856924i/107824.jpg"></p>
 <p style="text-align: justify;"> </p>

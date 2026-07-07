@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۷۸: خانهٔ لهستانی‌ها؛ از مرجان شیرمحمدی"
 date: 2021-09-24
 jalaliDate: "۰۲ مهر ۱۴۰۰"
-tags: ["نقد داستان", "قفسه‌نوشت", "داستان ایرانی", "کتاب"]
+tags: ["نقد داستان", "قفسه‌نوشت", "کتاب", "داستان ایرانی"]
 ---
 <p style="text-align: center;"><span style=""><span style=""><img alt="" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1525780425l/36044121.jpg"></span></span></p>
 <p style="text-align: justify;"><br><span style=""><span style="">نقد یک‌خطی: عالی است؛ بخوانیدش.</span></span></p>

@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۹۷: حفره‌ها؛ از گروس عبدالملکیان"
 date: 2022-03-18
 jalaliDate: "۲۷ اسفند ۱۴۰۰"
-tags: ["کتاب-شعر", "قفسه‌نوشت", "کتاب"]
+tags: ["قفسه‌نوشت", "کتاب-شعر", "کتاب"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 318px; height: 439px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1305149452l/11347116.jpg"></p>
 <p> </p>

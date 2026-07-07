@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۷۹: آذر، شهدخت، پرویز و دیگران؛ از مرجان شیرمحمدی"
 date: 2021-10-01
 jalaliDate: "۰۹ مهر ۱۴۰۰"
-tags: ["نقد داستان", "قفسه‌نوشت", "داستان ایرانی", "کتاب"]
+tags: ["نقد داستان", "قفسه‌نوشت", "کتاب", "داستان ایرانی"]
 ---
 <p style="text-align: center;"><span style=""><span style=""><img alt="" style="width: 200px; height: 289px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403972365l/22598669.jpg"></span></span></p>
 <p style="text-align: justify;"> </p>

@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۶۶: شمعدانی‌ها؛ از میلاد عرفان‌پور"
 date: 2023-01-26
 jalaliDate: "۰۶ بهمن ۱۴۰۱"
-tags: ["کتاب-شعر", "شعر", "قفسه‌نوشت"]
+tags: ["شعر", "قفسه‌نوشت", "کتاب-شعر"]
 ---
 <p style="direction: ltr; text-align: center;"><img alt="" style="width: 400px; height: 577px;" src="https://adabbook.com/images/thumbs/0003119_-.jpeg"></p>
 <p style="direction: ltr; "> </p>

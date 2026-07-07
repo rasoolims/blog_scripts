@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۶۷: یادداشت‌های زیرزمینی و دیگر داستان‌ها، اثر فئودور داستایوسکی"
 date: 2021-05-14
 jalaliDate: "۲۴ اردیبهشت ۱۴۰۰"
-tags: ["داستان روس", "نقد داستان", "قفسه‌نوشت", "کتاب"]
+tags: ["نقد داستان", "قفسه‌نوشت", "کتاب", "داستان روس"]
 ---
 <p style="text-align: center;"><span style=""><span style=""><img alt="" style="width: 304px; height: 475px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328753107l/2544122.jpg"></span></span></p>
 <p style="text-align: justify;"> </p>

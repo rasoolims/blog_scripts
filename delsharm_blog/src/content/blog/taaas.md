@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۴۹: تاریخ اندوه؛ از عدنان الصائغ"
 date: 2022-11-15
 jalaliDate: "۲۴ آبان ۱۴۰۱"
-tags: ["شعر عرب", "شعر", "قفسه‌نوشت", "کتاب-شعر"]
+tags: ["شعر", "قفسه‌نوشت", "شعر عرب", "کتاب-شعر"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 310px; height: 475px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1668213547l/63281002._SY475_.jpg"></span></p>
 <p style="text-align: justify;"> </p>

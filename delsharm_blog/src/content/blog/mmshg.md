@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۶۳: مونالیزای منتشر؛ از شاهرخ گیوا"
 date: 2022-12-22
 jalaliDate: "۰۱ دی ۱۴۰۱"
-tags: ["رمان فارسی", "نقد داستان", "قفسه‌نوشت", "داستان ایرانی"]
+tags: ["نقد داستان", "قفسه‌نوشت", "داستان ایرانی", "رمان فارسی"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 300px; height: 470px;" src="https://newcdn.fidibo.com/images/books/4343_10333_normal.jpg?width=200"></span></p>
 <p style="text-align: justify;"> </p>

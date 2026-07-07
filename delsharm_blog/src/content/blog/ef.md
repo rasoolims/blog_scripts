@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۹۲: امپایر فالز؛ از ریچارد روسو"
 date: 2021-11-28
 jalaliDate: "۰۷ آذر ۱۴۰۰"
-tags: ["نقد داستان", "کتاب و کتاب‌خوانی", "داستان آمریکایی", "قفسه‌نوشت", "کتاب"]
+tags: ["نقد داستان", "کتاب", "داستان آمریکایی", "کتاب و کتاب‌خوانی", "قفسه‌نوشت"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 259px; height: 400px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403184884l/187020.jpg"></p>
 <p style="text-align: justify;"> </p>

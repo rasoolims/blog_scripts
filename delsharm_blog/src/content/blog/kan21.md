@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۷۳: خواب آشفتهٔ نفت (۲-۱)؛ از محمدعلی موحد"
 date: 2023-02-15
 jalaliDate: "۲۶ بهمن ۱۴۰۱"
-tags: ["تاریخ معاصر", "کتاب تاریخی", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب تاریخی", "تاریخ معاصر"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 400px; height: 567px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1671521890i/4732666.jpg"></span></p>
 <p style="text-align: justify;"> </p>

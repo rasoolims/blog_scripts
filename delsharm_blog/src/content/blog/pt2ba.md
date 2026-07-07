@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۳۱: پایان تئولوژی ۲؛ از بیژن عبدالکریمی"
 date: 2024-01-03
 jalaliDate: "۱۳ دی ۱۴۰۲"
-tags: ["تفکر مدرن", "دین", "قفسه‌نوشت", "فلسفه"]
+tags: ["قفسه‌نوشت", "تفکر مدرن", "فلسفه", "دین"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 398px; height: 600px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1491423680i/34807636.jpg"></span></p>
 <p style="text-align: justify;"> </p>

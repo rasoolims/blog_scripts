@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۰۷: اقتدارگرایی ایرانی در عهد قاجار؛ از محمود سریع‌القلم"
 date: 2023-10-02
 jalaliDate: "۱۰ مهر ۱۴۰۲"
-tags: ["تاریخ معاصر", "کتاب تاریخی", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب تاریخی", "تاریخ معاصر"]
 ---
 <p style="text-align: center;"> </p>
 <p style="text-align: center;"><img alt="" style="width: 317px; height: 475px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1352816511i/16147763.jpg"></p>

@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۸۲: عشق و چیزهای دیگر؛ از مصطفی مستور"
 date: 2021-10-07
 jalaliDate: "۱۵ مهر ۱۴۰۰"
-tags: ["نقد داستان", "کتاب و کتاب‌خوانی", "داستان ایرانی", "قفسه‌نوشت", "کتاب"]
+tags: ["نقد داستان", "کتاب", "داستان ایرانی", "کتاب و کتاب‌خوانی", "قفسه‌نوشت"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 276px; height: 400px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1518253012l/38463865.jpg"></p>
 <p style="text-align: justify;"><span style=""><span style="">این مطلب را حدوداً سه سال پیش، همان موقعی که کتاب را خواندم، نوشتم و به دلایلی توفیق انتشارش تا حال نبود.</span></span></p>

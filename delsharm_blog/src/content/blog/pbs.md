@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۲۷: پس از بیست سال؛ از سلمان کدیور"
 date: 2022-10-07
 jalaliDate: "۱۵ مهر ۱۴۰۱"
-tags: ["نقد داستان", "شهرستان ادب", "قفسه‌نوشت", "نقد کتاب", "رمان فارسی"]
+tags: ["شهرستان ادب", "نقد داستان", "نقد کتاب", "قفسه‌نوشت", "رمان فارسی"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" src="https://shahrestanadab.com/Portals/0/Images/1400/50%20copy.jpg"><img alt="" style="width: 400px; height: 648px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1550848083i/44088704.jpg"></span></p>
 <p style="text-align: center;"> </p>

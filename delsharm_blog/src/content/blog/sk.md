@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۱۸: تاریخ سیاست خارجی ایران؛ از روح‌الله رمضانی"
 date: 2022-09-17
 jalaliDate: "۲۶ شهریور ۱۴۰۱"
-tags: ["کتاب تاریخی", "قفسه‌نوشت"]
+tags: ["قفسه‌نوشت", "کتاب تاریخی"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 184px; height: 273px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1662572215i/62328075.jpg"></span></p>
 <p style="text-align: justify;"> </p>

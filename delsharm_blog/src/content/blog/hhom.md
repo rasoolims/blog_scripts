@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۰۴: آشویتس خصوصی من؛ از حسن همایون"
 date: 2023-09-08
 jalaliDate: "۱۷ شهریور ۱۴۰۲"
-tags: ["کتاب-شعر", "شعر", "شعر سپید", "قفسه‌نوشت"]
+tags: ["شعر", "شعر سپید", "کتاب-شعر", "قفسه‌نوشت"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 468px; height: 640px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1506105048i/36286328.jpg"></span></p>
 <p><span style="">دوستت دارم یعنی</span></p>

@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۳۰۵: راه باریک به عمق شمال؛ از ریچارد فلاناگان"
 date: 2023-09-13
 jalaliDate: "۲۲ شهریور ۱۴۰۲"
-tags: ["رمان فارسی", "نقد داستان", "داستان استرالیایی", "قفسه‌نوشت"]
+tags: ["داستان استرالیایی", "قفسه‌نوشت", "نقد داستان", "رمان فارسی"]
 ---
 <p style="text-align: center;"> </p>
 <p style="text-align: center;"><img alt="" style="width: 500px; height: 772px;" src="https://m.media-amazon.com/images/I/71PCJ3zxoNL._SL1500_.jpg"></p>

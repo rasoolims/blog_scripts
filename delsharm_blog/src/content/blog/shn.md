@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۰۴: شاخ‌نامه؛ از مسلم حسن‌شاهی واریز"
 date: 2022-06-14
 jalaliDate: "۲۴ خرداد ۱۴۰۱"
-tags: ["کتاب-شعر", "شعر", "طنز", "قفسه‌نوشت"]
+tags: ["شعر", "قفسه‌نوشت", "کتاب-شعر", "طنز"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 184px; height: 274px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1648144490l/60684340.jpg"></span></p>
 <p style="text-align: center;"> </p>

@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۲۲: سه‌تار؛ از جلال آل‌احمد"
 date: 2022-09-26
 jalaliDate: "۰۴ مهر ۱۴۰۱"
-tags: ["نقد کتاب", "نقد داستان", "قفسه‌نوشت"]
+tags: ["نقد داستان", "قفسه‌نوشت", "نقد کتاب"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 400px; height: 619px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1354299967i/16182552.jpg"></p>
 <p style="text-align: justify;"> </p>

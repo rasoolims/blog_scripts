@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۰۷: فلسفه در دادگاه ایدئولوژی؛ از رضا داوری اردکانی"
 date: 2022-07-22
 jalaliDate: "۳۱ تیر ۱۴۰۱"
-tags: ["فلسفه", "کتاب و کتاب‌خوانی", "قفسه‌نوشت", "کتاب"]
+tags: ["کتاب و کتاب‌خوانی", "قفسه‌نوشت", "کتاب", "فلسفه"]
 ---
 <p style="text-align: justify;"> </p>
 <p style="text-align: center;"><span style=""><img alt="" style="width: 198px; height: 314px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1445938509l/27289503.jpg"></span></p>

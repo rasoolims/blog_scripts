@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۱۷: دفترچه خاطرات و فراموشی و مقالات دیگر؛ از محمد قائد"
 date: 2022-09-06
 jalaliDate: "۱۵ شهریور ۱۴۰۱"
-tags: ["مقالات", "قفسه‌نوشت", "کتاب", "محمد قائد"]
+tags: ["قفسه‌نوشت", "محمد قائد", "کتاب", "مقالات"]
 ---
 <p style="text-align: center;"><img alt="" style="height: 624px; width: 400px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1632521000i/55696133.jpg"></p>
 <p> </p>

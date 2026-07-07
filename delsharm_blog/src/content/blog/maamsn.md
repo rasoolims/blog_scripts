@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۷۷: مهدویت و آرامش روان؛ از محمد سبحانی‌نیا"
 date: 2023-03-08
 jalaliDate: "۱۷ اسفند ۱۴۰۱"
-tags: ["قفسه‌نوشت", "کتاب دینی", "روان‌شناسی"]
+tags: ["روان‌شناسی", "کتاب دینی", "قفسه‌نوشت"]
 ---
 <p style="text-align: center;"><img alt="" style="width: 300px; height: 435px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1678044905i/123184243.jpg"></p>
 <p style="text-align: justify;"> </p>

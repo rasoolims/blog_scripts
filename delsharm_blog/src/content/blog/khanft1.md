@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۲۷۱: خواب آشفتهٔ نفت (۱)؛ از محمدعلی موحد"
 date: 2023-02-05
 jalaliDate: "۱۶ بهمن ۱۴۰۱"
-tags: ["نقد کتاب", "کتاب تاریخی", "قفسه‌نوشت"]
+tags: ["نقد کتاب", "قفسه‌نوشت", "کتاب تاریخی"]
 ---
 <p style="text-align: center;"><span style=""><img alt="" style="width: 500px; height: 710px;" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1671521703i/33772722.jpg"></span></p>
 <p style="text-align: justify;"><span style="">«النفط إمراة زانیة لا خیر فیها»</span></p>

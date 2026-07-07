@@ -2,7 +2,7 @@
 title: "قفسه‌نوشت ۱۸۳: دریاروندگان جزیرهٔ آبی‌تر؛ از عباس معروفی"
 date: 2021-10-11
 jalaliDate: "۱۹ مهر ۱۴۰۰"
-tags: ["نقد داستان", "قفسه‌نوشت", "داستان ایرانی", "کتاب"]
+tags: ["نقد داستان", "قفسه‌نوشت", "کتاب", "داستان ایرانی"]
 ---
 <p style="text-align: center;"><span style=""><span style=""><img alt="" style="width: 199px; height: 312px;" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1583673100l/113141.jpg"></span></span></p>
 <p style="text-align: justify;"> </p>
