@@ -1,0 +1,35 @@
+---
+title: "—"
+date: 2007-08-18
+jalaliDate: "۲۷ مرداد ۱۳۸۶"
+tags: ["سیاه‌مشق"]
+---
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="AR-SA" style="  LINE-HEIGHT: 150%; ">همین جا</span><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">ده‌ها رو به آخر شدند<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">زمان‌ها دگر دیرباور شدند<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA"><p> </p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">تو خاموش کن زودتر شمع را<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">که پروانه‌ها سخت کافر شدند<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA"><p> </p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">و این‌جا همه شکل‌شان قلب شد<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">مگس‌ها شبیه کبوتر شدند<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA"><p> </p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">خدا پای این عهد امضا گرفت<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">چرا ناخدایان خداتر شدند؟<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA"><p> </p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">و میشان دنیا چه خوشبین و شاد<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">که با گرگ‌ها هم برادر شدند<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA"><p> </p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">چنان بیشه را بوی خون می‌گرفت<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">چو اشک مرا خوب از بر شدند<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA"><p> </p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">شهید جدیدی کفن می‌کنند<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">و پرهای چشمم که پرپر شدند<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA"><p> </p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">بیا ای کبوتر کمی پر بزن<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">که این واژه‌ها هم مکرر شدند<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA"><p> </p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">بیا نای چوپان به دادم برس<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA">که این گله‌ها گرگ‌پرور شدند<p></p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA"><p> </p></span></p>
+<p class="MsoNormal" dir="rtl" style="MARGIN: 0pt; DIRECTION: rtl; LINE-HEIGHT: 150%; unicode-bidi: embed; TEXT-ALIGN: center" align="center"><span lang="FA" style="  LINE-HEIGHT: 150%;  mso-bidi-language: FA"><font >مرداد ۱۳۸۶</font></span></p>
+<p> </p>

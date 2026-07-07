@@ -133,12 +133,12 @@ function generateExcerpt(markdownBody: string) {
                     {posts.map((post) => (
                         <div class="post-card">
                             {extractImage(post.body) && (
-                                <a href={`/blog/${post.id}/`}>
+                                <a href={`/delsharm/blog/${post.id}/`}>
                                     <img src={extractImage(post.body)} class="card-img" alt="تصویر پست" />
                                 </a>
                             )}
                             <div class="card-content">
-                                <h2><a href={`/blog/${post.id}/`}>{post.data.title}</a></h2>
+                                <h2><a href={`/delsharm/blog/${post.id}/`}>{post.data.title}</a></h2>
                                 
                                 {post.data.jalaliDate && (
                                     <div class="date">{post.data.jalaliDate}</div>
@@ -146,7 +146,7 @@ function generateExcerpt(markdownBody: string) {
                                 
                                 <div class="excerpt-container" set:html={generateExcerpt(post.body)}></div>
                                 
-                                <a href={`/blog/${post.id}/`} class="read-more">ادامه مطلب ←</a>
+                                <a href={`/delsharm/blog/${post.id}/`} class="read-more">ادامه مطلب ←</a>
                             </div>
                         </div>
                     ))}
@@ -158,7 +158,7 @@ function generateExcerpt(markdownBody: string) {
                 <div class="section-title">موضوعات پرطرفدار</div>
                 <div class="tags-grid">
                     {sortedTags.map(([t, count]) => (
-                        <a href={`/tags/${t}/`} class="tag-tile">
+                        <a href={`/delsharm/tags/${t}/`} class="tag-tile">
                             <span class="tag-name">{t}</span>
                             <span class="tag-count">{toFa(count)}</span>
                         </a>
@@ -167,10 +167,10 @@ function generateExcerpt(markdownBody: string) {
                 
                 <div class="section-title">بایگانی ماهانه</div>
                 <div class="tags-grid">
-                    {sortedArchives.map(archive => (
-                        <a href="#" class="baygani-tile">
-                            <span class="tag-name">{archive.label}</span>
-                            <span class="tag-count">{toFa(archive.count)}</span>
+                    {sortedArchives.map(arch => (
+                        <a href={`/delsharm/baygani/${arch.label}/`} class="baygani-tile">
+                            <span class="tag-name">{arch.label}</span>
+                            <span class="tag-count">{toFa(arch.count)}</span>
                         </a>
                     ))}
                 </div>
