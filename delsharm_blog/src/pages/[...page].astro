@@ -47,11 +47,39 @@ allPosts.forEach(post => {
 });
 
 const sortedTags = Object.entries(tagCounts).sort((a, b) => b[1] - a[1]);
+// Define the Persian calendar order
+const persianMonths = [
+    "فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور",
+    "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"
+];
+
+// Helper function to convert a label like "اسفند ۱۳۸۷" into a sortable number (e.g., 138711)
+function getArchiveSortValue(label: string) {
+    if (label === "نامشخص") return 0;
+    
+    const parts = label.split(" ");
+    if (parts.length !== 2) return 0;
+    
+    const monthName = parts[0];
+    const yearStr = parts[1];
+    
+    // Convert Persian year digits to English digits so JavaScript can do math on them
+    const enYear = yearStr.replace(/[۰-۹]/g, (w) => '۰۱۲۳۴۵۶۷۸۹'.indexOf(w).toString());
+    const year = parseInt(enYear, 10);
+    
+    const monthIndex = persianMonths.indexOf(monthName);
+    
+    if (isNaN(year) || monthIndex === -1) return 0;
+    
+    // Prioritize the year, then the month
+    return (year * 100) + monthIndex;
+}
+
+// Sort chronologically (newest first) instead of by post count
 const sortedArchives = Object.keys(archiveCounts).map(label => ({
     label,
     count: archiveCounts[label]
-})).sort((a, b) => b.count - a.count);
-
+})).sort((a, b) => getArchiveSortValue(b.label) - getArchiveSortValue(a.label));
 function toFa(num: number) {
     const farsiDigits = ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
     return num.toString().replace(/\d/g, x => farsiDigits[parseInt(x)]);
