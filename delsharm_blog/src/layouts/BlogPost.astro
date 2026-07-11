@@ -7,6 +7,14 @@ const { title, jalaliDate, tags } = data;
 
 // Fetch all posts to generate the footer tags/archives
 const allPosts = await getCollection('blog');
+// Fetch all comments and tally them up by postSlug
+const allComments = await getCollection('comments');
+const commentCounts: Record<string, number> = {};
+
+allComments.forEach(comment => {
+    const slug = comment.data.postSlug;
+    commentCounts[slug] = (commentCounts[slug] || 0) + 1;
+});
 const tagCounts: Record<string, number> = {};
 const archiveCounts: Record<string, number> = {};
 
@@ -77,21 +85,16 @@ function toFa(num: number) {
             <div class="post-tags">
                 <strong>برچسب‌ها:</strong>
                 {tags.map((tag: string) => (
-                    <a href={`/tags/${tag}`} style="margin-left: 10px; color: #2980b9;">{tag}</a>
+                    <a href={`/delsharm/tags/${tag}`} style="margin-left: 10px; color: #2980b9;">{tag}</a>
                 ))}
             </div>
         )}
-        
-        <div id="comments-section" style="margin-top: 50px; padding-top: 20px; border-top: 2px solid var(--border-color);">
-            <h3 style="color: var(--text-heading);">نظرات</h3>
-            <p style="color: var(--text-muted);">بخش نظرات به‌زودی فعال می‌شود...</p>
-        </div>
         
         <div class="subpage-footer" style="margin-top: 80px; padding-top: 40px; border-top: 2px solid var(--border-color);">
             <h3 style="color: var(--text-heading); margin-bottom: 20px; font-size: 1.3em;">موضوعات پرطرفدار</h3>
             <div class="tags-grid">
                 {sortedTags.map(([tag, count]) => (
-                    <a href={`/tags/${tag}/`} class="tag-tile">
+                    <a href={`/delsharm/tags/${tag}/`} class="tag-tile">
                         <span class="tag-name">{tag}</span>
                         <span class="tag-count">{toFa(count)}</span>
                     </a>

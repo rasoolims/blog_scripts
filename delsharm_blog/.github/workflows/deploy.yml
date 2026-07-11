@@ -1,0 +1,64 @@
+name: Automated Deploy to Delsharm
+
+on:
+  push:
+    branches:
+      - main # Triggers when a PR is merged into main, or when you push directly to main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the source repository (delsharm_source)
+      - name: Checkout Source Repo
+        uses: actions/checkout@v4
+        with:
+          path: delsharm_source
+
+      # 2. Checkout the destination repository (delsharm) using your custom token
+      - name: Checkout Destination Repo
+        uses: actions/checkout@v4
+        with:
+          repository: rasoolims/delsharm
+          token: ${{ secrets.DEPLOY_TOKEN }}
+          path: delsharm
+
+      # 3. Set up Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22' 
+          cache: 'npm'
+          cache-dependency-path: 'delsharm_source/package-lock.json'
+
+      # 4. Install dependencies and build the application
+      - name: Install and Build
+        run: |
+          cd delsharm_source
+          npm ci
+          npm run build
+          
+      # 5. Sync the built files and push to the delsharm repository
+      - name: Deploy to Delsharm Repo
+        run: |
+          # Configure Git credentials inside the runner
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Sync files using rsync exactly like your local package.json command
+          rsync -av --delete \
+            --exclude='.git' \
+            --exclude='.nojekyll' \
+            --exclude='staticman.yml' \
+            delsharm_source/dist/ delsharm/
+          
+          # Commit and push changes to the deployment repository
+          cd delsharm
+          git add .
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "auto-deployed update from github actions"
+            git push origin master
+          else
+            echo "No changes detected. Skipping push."
+          fi

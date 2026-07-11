@@ -1,0 +1,18 @@
+comments:
+  allowedFields:
+    - name
+    - message
+    - postSlug
+  branch: "main"
+  commitMessage: "نظری جدید از {fields.name}"
+  filename: "comment_{@timestamp}"
+  format: "yml"
+  generatedFields:
+    date:
+      type: "date"
+      options:
+        format: "iso8601"
+    postSlug:
+      type: "slug"
+  path: "src/content/comments" # Where the JSON files will be saved
+  moderation: true # CRITICAL: This forces the Pull Request so you can approve it!

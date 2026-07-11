@@ -3,18 +3,166 @@ import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.id },
-		props: post,
-	}));
+    const posts = await getCollection('blog');
+    return posts.map((post) => ({
+        params: { slug: post.id },
+        props: post,
+    }));
 }
 type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content } = await render(post);
+
+// Fetch all comments and filter them to only show the ones belonging to this specific post.id
+const allComments = await getCollection('comments');
+const filteredComments = allComments
+    .filter(comment => comment.data.postSlug === post.id)
+    .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+
+// Convert the JSON UTC timestamps into beautiful Jalali dates (Now with time!)
+function formatJalali(dateObj: Date) {
+    return new Intl.DateTimeFormat('fa-IR', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+    }).format(dateObj);
+}
+
+function toFa(num: number) {
+    const farsiDigits = ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
+    return num.toString().replace(/\d/g, x => farsiDigits[parseInt(x)]);
+}
 ---
 
 <BlogPost {...post.data}>
-	<Content />
+    <Content />
+
+    <div id="comments-section" class="comments-section">
+      <h3 style="color: var(--text-heading); margin-bottom: 20px; font-size: 1.3em;">
+        دیدگاه‌ها ({toFa(filteredComments.length)})
+      </h3>
+
+      <div class="comments-list">
+        {filteredComments.map(comment => (
+            <div class="comment-thread">
+                
+                {/* Visitor Comment */}
+                <div class="comment-item">
+                    <div class="meta">
+                        <strong>{comment.data.name}</strong>
+                        <span class="date">{formatJalali(comment.data.date)}</span>
+                    </div>
+                    <p>{comment.data.message}</p>
+                </div>
+
+                {/* Optional Admin Response */}
+                {comment.data.adminResponse && (
+                    <div class="comment-item admin-reply">
+                        <div class="meta">
+                            <strong style="color: #2980b9;">محمدصادق (نویسنده)</strong>
+                            <span class="date">{formatJalali(comment.data.adminResponse.date)}</span>
+                        </div>
+                        <p>{comment.data.adminResponse.message}</p>
+                    </div>
+                )}
+            </div>
+        ))}
+      </div>
+
+      <form action="https://delsharm-comments.onrender.com/v2/entry/rasoolims/delsharm_source/main/comments" method="POST" class="comment-form">        
+        <input type="hidden" name="fields[postSlug]" value={post.id} />
+        
+        <input type="text" name="fields[name]" placeholder="نام شما" required />
+        <textarea name="fields[message]" placeholder="دیدگاه خود را بنویسید..." rows="4" required></textarea>
+        
+        <button type="submit">ارسال دیدگاه</button>
+      </form>
+    </div>
+
+    <style>
+      .comments-section { margin-top: 50px; padding-top: 20px; border-top: 2px solid var(--border-color); }
+      .comment-thread { margin-bottom: 25px; }
+      
+      .comment-item { background: var(--accent-bg); padding: 20px; border-radius: 8px; border-right: 4px solid var(--border-color); }
+      /* Makes the comment text slightly smaller */
+      .comment-item p { font-size: 0.90em; line-height: 1.7; margin-bottom: 0; }
+      
+      .admin-reply { margin-right: 30px; margin-top: 10px; border-right: 4px solid #3498db; background: var(--bg-container); border: 1px solid var(--border-light); }
+      /* Makes the author response italic */
+      .admin-reply p { font-style: italic; }
+      
+      .meta { display: flex; gap: 15px; align-items: center; margin-bottom: 10px; border-bottom: 1px dashed var(--border-light); padding-bottom: 10px;}
+      .meta strong { color: var(--text-heading); font-size: 1.1em; }
+      .meta .date { font-size: 0.85em; color: var(--text-muted); }
+      
+      .comment-form { display: flex; flex-direction: column; gap: 15px; margin-top: 40px; background: var(--bg-container); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid var(--border-light); }
+      .comment-form input, .comment-form textarea { padding: 12px; border: 1px solid var(--border-color); border-radius: 6px; background: var(--bg-body); color: var(--text-main); font-family: inherit; font-size: 1em; }
+      .comment-form input:focus, .comment-form textarea:focus { outline: none; border-color: #3498db; }
+      
+      .comment-form button { padding: 12px 20px; background: #2c3e50; color: white; border: none; border-radius: 6px; font-size: 1em; font-weight: bold; cursor: pointer; transition: background 0.2s; font-family: inherit; align-self: flex-start; }
+      .comment-form button:hover:not(:disabled) { background: #1a252f; }
+      .comment-form button:disabled { opacity: 0.8; cursor: not-allowed; }
+    </style>
 </BlogPost>
+
+<script is:inline>
+  const form = document.querySelector('.comment-form');
+  
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault(); // Stops the browser from leaving the page
+      
+      const btn = form.querySelector('button');
+      const originalText = 'ارسال دیدگاه';
+      
+      // UI Feedback: Sending
+      btn.innerText = 'در حال ارسال...';
+      btn.style.backgroundColor = '#e67e22'; // Orange
+      btn.disabled = true;
+
+      // Package the form data
+      const formData = new FormData(form);
+      const params = new URLSearchParams(formData);
+
+      try {
+        // Send the data to your Render server invisibly
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: params,
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          }
+        });
+
+        if (res.ok) {
+          // UI Feedback: Success
+          btn.innerText = 'دیدگاه شما ثبت شد و پس از تایید نمایش داده می‌شود.';
+          btn.style.backgroundColor = '#27ae60'; // Green
+          form.reset(); // Clear the text boxes
+          
+          // Reset the button back to normal after 5 seconds
+          setTimeout(() => {
+            btn.disabled = false;
+            btn.innerText = originalText;
+            btn.style.backgroundColor = '';
+          }, 5000);
+        } else {
+          // If Staticman throws an error, show it so we can debug
+          const data = await res.json();
+          alert("خطا: " + (data.errorCode || 'نامشخص'));
+          btn.innerText = originalText;
+          btn.style.backgroundColor = '';
+          btn.disabled = false;
+        }
+      } catch (err) {
+        alert("خطا در ارتباط با سرور. لطفاً تنظیمات اینترنت خود را بررسی کنید.");
+        btn.innerText = originalText;
+        btn.style.backgroundColor = '';
+        btn.disabled = false;
+      }
+    });
+  }
+</script>
