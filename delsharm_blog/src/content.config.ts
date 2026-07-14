@@ -11,6 +11,7 @@ const blogCollection = defineCollection({
     date: z.date().or(z.string()), 
     jalaliDate: z.string().optional(),
     tags: z.array(z.string()).default([]),
+    pinned: z.boolean().optional(),
   }),
 });
 
@@ -21,6 +22,8 @@ const commentsCollection = defineCollection({
   schema: z.object({
     postSlug: z.string(),
     name: z.string(),
+    email: z.string().optional(),
+    url: z.string().optional(),
     // z.coerce.date() safely converts both JSON strings and YAML Date objects!
     date: z.coerce.date(),
     message: z.string(),

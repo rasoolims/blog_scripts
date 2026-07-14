@@ -1,6 +1,8 @@
 comments:
   allowedFields:
     - name
+    - email
+    - url
     - message
     - postSlug
   branch: "main"

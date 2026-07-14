@@ -111,9 +111,27 @@ function generateExcerpt(markdownBody: string) {
 <body>
     <div class="container">
         <div class="page-header">
-            <button id="theme-toggle" class="theme-toggle-btn" aria-label="تغییر تم">🌙</button>
-            <h1><a href="/delsharm/" style="color: inherit; text-decoration: none;">دلشرم</a></h1>
-            <p style="color: var(--text-muted); margin-top: 10px; font-size: 1.1em;">محمدصادق رسولی</p>
+            
+            <div class="header-right">
+                <a href="/delsharm/rss.xml" target="_blank" title="اشتراک RSS" class="rss-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 11a9 9 0 0 1 9 9"></path>
+                        <path d="M4 4a16 16 0 0 1 16 16"></path>
+                        <circle cx="5" cy="19" r="1"></circle>
+                    </svg>
+                    <span class="rss-text" dir="ltr">RSS</span>
+                </a>
+            </div>
+
+            <div class="header-center">
+                <h1><a href="/delsharm/" style="color: inherit; text-decoration: none;">دلشرم</a></h1>
+                <p><a href="/delsharm/about" style="text-decoration: underline; color: inherit;">محمدصادق رسولی</a></p> 
+            </div>
+
+            <div class="header-left">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="تغییر تم" style="margin: 0;">🌙</button>
+            </div>
+
         </div>
         
         <div class="main-layout">
@@ -143,9 +161,10 @@ function generateExcerpt(markdownBody: string) {
                                     <div class="card-footer" style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 20px;">
                                         <a href={`/delsharm/blog/${post.id}/`} class="read-more" style="margin-top: 0;">ادامه مطلب ←</a>
                                         
-                                        <div class="comment-badge" style="font-size: 0.85em; color: #3498db; background: rgba(52, 152, 219, 0.1); padding: 2px 8px; border-radius: 12px; font-weight: bold;">
+                                        <a href={`/delsharm/blog/${post.id}/#comments-section`} class="comment-badge" style="position: relative; z-index: 20; text-decoration: none; font-size: 0.85em; color: #3498db; background: rgba(52, 152, 219, 0.1); padding: 2px 8px; border-radius: 12px; font-weight: bold;">
                                             💬 {commentCounts[post.id] ? toFa(commentCounts[post.id]) : '۰'} دیدگاه
-                                        </div>
+                                        </a>
+
                                     </div>
                                 </div>
                              </div>

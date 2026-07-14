@@ -3,164 +3,89 @@ title: "معرفی رمان و داستان بلند"
 date: 2025-05-09
 jalaliDate: "۱۹ اردیبهشت ۱۴۰۴"
 tags: ["داستان بلند", "نقد داستان", "رمان", "کتاب", "کتاب و کتاب‌خوانی", "قفسه‌نوشت", "معرفی کتاب", "رمان فارسی"]
+pinned: true
 ---
-<p style="text-align: justify;"><span style="">این روزها عجیب مشغولیت‌های کاری‌ام بالا رفته است: ما را به سخت‌جانی خود این گمان نبود. </span></p>
-<p style="text-align: justify;"><span style="">مدت‌ها بود فکر چنین کاری در سرم بود. تا که یادم آمد الان قاعدتاً باید فصل نمایشگاه کتاب باشد. ساخته و پرداخته کردن فهرستی دقیق اصلاً ساده نیست اما به ذهنم رسید کاری که از دستم برمی‌آید، دیدن فهرست رمان‌های خوانده‌شده‌ام (۳۴۳ مورد) است و سپس آن‌هایی که به نظرم ارزش خواندن به دلایل مختلف دارند بگذارم. این انتخاب فقط با یک نظر در فهرست بلندبالا بوده و قاعدتاً اگر یک بار دیگر این کار را کنم شاید بعضی کم شوند و بعضی دیگر اضافه شوند. وزن آثار کلاسیک کم‌تر است چرا که به نظرم کلاسیک‌خوانی حوصله می‌طلبد مگر آن که غولی مانند داستایوسکی باشد. آن‌چیزی که هست پیوندها به ۷۷ داستان است که برخی‌ش فارسی‌اند و از خارجی‌ها، اگر ترجمه داشته باشد نسخه‌های ترجمهٔ فارسی‌شان به سادگی قابل نمایش است. </span></p>
-<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><span style="">این روزها عجیب مشغولیت‌های کاری‌ام بالا رفته است: ما را به سخت‌جانی خود این گمان نبود. </span></p>
+<p style="text-align: justify;"><span style="">مدت‌ها بود فکر چنین کاری در سرم بود. تا که یادم آمد الان قاعدتاً باید فصل نمایشگاه کتاب باشد. ساخته و پرداخته کردن فهرستی دقیق اصلاً ساده نیست اما به ذهنم رسید کاری که از دستم برمی‌آید، دیدن فهرست رمان‌های خوانده‌شده‌ام (۳۴۳ مورد) است و سپس آن‌هایی که به نظرم ارزش خواندن به دلایل مختلف دارند بگذارم. این انتخاب فقط با یک نظر در فهرست بلندبالا بوده و قاعدتاً اگر یک بار دیگر این کار را کنم شاید بعضی کم شوند و بعضی دیگر اضافه شوند. وزن آثار کلاسیک کم‌تر است چرا که به نظرم کلاسیک‌خوانی حوصله می‌طلبد مگر آن که غولی مانند داستایوسکی باشد. آن‌چیزی که هست پیوندها به ۷۷ داستان است که برخی‌ش فارسی‌اند و از خارجی‌ها، اگر ترجمه داشته باشد نسخه‌های ترجمهٔ فارسی‌شان به سادگی قابل نمایش است. </span></p>
+<p style="text-align: justify;"> </p>
 <p style="text-align: justify;"><span style="">در این کشتی درآ، پا در رکاب ماست دریاها<br>مترس از موج، بسم الله مجریها و مُرسیها</span></p>
-<p style="text-align: justify;"></p>
-<p style="text-align: justify;"> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/187020">https://www.goodreads.com/book/show/187020</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/37979569">https://www.goodreads.com/book/show/37979569</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/18385">https://www.goodreads.com/book/show/18385</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/4940">https://www.goodreads.com/book/show/4940</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/17375975">https://www.goodreads.com/book/show/17375975</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/42647">https://www.goodreads.com/book/show/42647</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/3656">https://www.goodreads.com/book/show/3656</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/745608">https://www.goodreads.com/book/show/745608</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/35749432">https://www.goodreads.com/book/show/35749432</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/35955498">https://www.goodreads.com/book/show/35955498</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/2517">https://www.goodreads.com/book/show/2517</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/923693">https://www.goodreads.com/book/show/923693</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/5552635">https://www.goodreads.com/book/show/5552635</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/14028">https://www.goodreads.com/book/show/14028</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/2526">https://www.goodreads.com/book/show/2526</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/24904280">https://www.goodreads.com/book/show/24904280</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/36242374">https://www.goodreads.com/book/show/36242374</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/6867">https://www.goodreads.com/book/show/6867</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/119073">https://www.goodreads.com/book/show/119073</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/13414650">https://www.goodreads.com/book/show/13414650</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/504731">https://www.goodreads.com/book/show/504731</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/36210250">https://www.goodreads.com/book/show/36210250</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/930835">https://www.goodreads.com/book/show/930835</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/191349">https://www.goodreads.com/book/show/191349</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/1068449">https://www.goodreads.com/book/show/1068449</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/12073240">https://www.goodreads.com/book/show/12073240</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/32920226">https://www.goodreads.com/book/show/32920226</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/77013">https://www.goodreads.com/book/show/77013</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/18515951">https://www.goodreads.com/book/show/18515951</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/1671821">https://www.goodreads.com/book/show/1671821</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/1974199">https://www.goodreads.com/book/show/1974199</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/5055269">https://www.goodreads.com/book/show/5055269</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/75522556">https://www.goodreads.com/book/show/75522556</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/25111728">https://www.goodreads.com/book/show/25111728</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/5485">https://www.goodreads.com/book/show/5485</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/34006942">https://www.goodreads.com/book/show/34006942</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/168646">https://www.goodreads.com/book/show/168646</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/18655998">https://www.goodreads.com/book/show/18655998</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/3100380">https://www.goodreads.com/book/show/3100380</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/7905092">https://www.goodreads.com/book/show/7905092</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/97353">https://www.goodreads.com/book/show/97353</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/19264196">https://www.goodreads.com/book/show/19264196</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/2805392">https://www.goodreads.com/book/show/2805392</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/17188710">https://www.goodreads.com/book/show/17188710</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/1198384">https://www.goodreads.com/book/show/1198384</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/15723912">https://www.goodreads.com/book/show/15723912</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/894468">https://www.goodreads.com/book/show/894468</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/496553">https://www.goodreads.com/book/show/496553</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/432394">https://www.goodreads.com/book/show/432394</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/12266950">https://www.goodreads.com/book/show/12266950</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/18929">https://www.goodreads.com/book/show/18929</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/5470">https://www.goodreads.com/book/show/5470</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/4759497">https://www.goodreads.com/book/show/4759497</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/5113">https://www.goodreads.com/book/show/5113</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/431">https://www.goodreads.com/book/show/431</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/3169518">https://www.goodreads.com/book/show/3169518</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/11125453">https://www.goodreads.com/book/show/11125453</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/7152529">https://www.goodreads.com/book/show/7152529</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/890">https://www.goodreads.com/book/show/890</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/1503020">https://www.goodreads.com/book/show/1503020</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/17289500">https://www.goodreads.com/book/show/17289500</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/15792258">https://www.goodreads.com/book/show/15792258</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/440020">https://www.goodreads.com/book/show/440020</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/890696">https://www.goodreads.com/book/show/890696</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/662768">https://www.goodreads.com/book/show/662768</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/326272">https://www.goodreads.com/book/show/326272</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/116925">https://www.goodreads.com/book/show/116925</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/148849">https://www.goodreads.com/book/show/148849</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/1020416">https://www.goodreads.com/book/show/1020416</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/302983">https://www.goodreads.com/book/show/302983</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/332374">https://www.goodreads.com/book/show/332374</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/253945">https://www.goodreads.com/book/show/253945</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/377087">https://www.goodreads.com/book/show/377087</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/8882686">https://www.goodreads.com/book/show/8882686</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/58255">https://www.goodreads.com/book/show/58255</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/311776">https://www.goodreads.com/book/show/311776</a></b></span></p>
-<p> </p>
-<p dir="ltr"><span style=""><b id="docs-internal-guid-c5977d48-7fff-6c32-21c8-46a3515912bc"><a href="https://www.goodreads.com/book/show/137790322">https://www.goodreads.com/book/show/137790322</a></b></span></p>
-<p><br> </p>
+
+<div class="book-tile-grid">
+    <a href="https://www.goodreads.com/book/show/187020" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1403184884i/187020.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/37979569" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1516135914i/37979569.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/18385" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1386912817i/18385.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/4940" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1500534446i/4940.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/17375975" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1610503748i/17375975.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/42647" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1433172418i/42647.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/3656" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1386924824i/3656.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/745608" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1347672604i/745608.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/35749432" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1500731966i/35749432.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/35955498" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1513840212i/35955498.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/2517" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1547450869i/2517.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/923693" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1487162563i/923693.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/5552635" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1444504733i/5552635.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/14028" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756679502i/14028.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/2526" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1742526277i/2526.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/24904280" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1433712045i/24904280.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/36242374" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1514111342i/36242374.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/6867" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1773518365i/6867.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/119073" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1415375471i/119073.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/13414650" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1344371034i/13414650.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/504731" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1348748866i/504731.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/36210250" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1504956347i/36210250.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/930835" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1328753084i/930835.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/191349" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1474956038i/191349.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/1068449" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1328753187i/1068449.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/12073240" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1311092844i/12073240.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/32920226" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1499340866i/32920226.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/77013" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757102388i/77013.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/18515951" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1379471767i/18515951.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/1671821" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1529701771i/1671821.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/1974199" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1328753189i/1974199.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/5055269" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1621116619i/5055269.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/75522556" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1672689938i/75522556.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/25111728" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1425972784i/25111728.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/5485" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1298180450i/5485.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/34006942" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1704365779i/34006942.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/168646" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1435277484i/168646.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/18655998" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1407709112i/18655998.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/3100380" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1328155869i/3100380.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/7905092" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1316729686i/7905092.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/97353" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1418363668i/97353.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/19264196" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1386432624i/19264196.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/2805392" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1202835948i/2805392.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/17188710" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1357711954i/17188710.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/1198384" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1348702949i/1198384.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/15723912" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1399722186i/15723912.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/894468" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1493618557i/894468.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/496553" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1328753103i/496553.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/432394" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1479652582i/432394.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/12266950" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1727719970i/12266950.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/18929" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1439670966i/18929.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/5470" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1348990566i/5470.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/4759497" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1222136228i/4759497.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/5113" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1355037988i/5113.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/431" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1386924429i/431.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/3169518" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1469355299i/3169518.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/11125453" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1323461759i/11125453.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/7152529" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1268553525i/7152529.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/890" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1511302904i/890.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/1503020" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1721648395i/1503020.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/17289500" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1469353364i/17289500.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/15792258" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1344287925i/15792258.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/440020" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1709092156i/440020.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/890696" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1542244711i/890696.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/662768" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1216935347i/662768.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/326272" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1783252228i/326272.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/116925" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1200875630i/116925.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/148849" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1680542672i/148849.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/1020416" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1632479337i/1020416.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/302983" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1268611739i/302983.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/332374" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1253533065i/332374.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/253945" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1503765904i/253945.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/377087" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1475040630i/377087.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/8882686" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1390747614i/8882686.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/58255" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1783938876i/58255.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/311776" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1700196540i/311776.jpg" alt="Book Cover" /></a>
+    <a href="https://www.goodreads.com/book/show/137790322" class="book-tile" target="_blank"><img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1724346471i/137790322.jpg" alt="Book Cover" /></a>
+</div>
