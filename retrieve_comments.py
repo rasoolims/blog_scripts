@@ -61,24 +61,33 @@ def parse_persian_date(date_str):
             
     return "2020-01-01T12:00:00.000Z"
 
-def generate_comment_fingerprint(post_slug, author, date_iso, message):
-    """Creates a unique hash for a comment to prevent duplicates."""
-    raw_string = f"{post_slug}|{author}|{date_iso}|{message[:50]}".encode('utf-8')
+def normalize_text(text):
+    """Strips whitespace and punctuation for strict matching."""
+    if not text: return ""
+    return re.sub(r'[\s.,!؟،؛:]+', '', str(text))
+
+def generate_comment_fingerprint(post_slug, message):
+    """Creates a unique hash using ONLY the core text to prevent duplicate captures."""
+    norm_msg = normalize_text(message)
+    raw_string = f"{post_slug}|{norm_msg[:60]}".encode('utf-8')
     return hashlib.md5(raw_string).hexdigest()
 
 def extract_comments_from_html(html_content, post_slug):
     soup = BeautifulSoup(html_content, 'html.parser')
     comments = []
     
-    # STRATEGY 1: Search by blog.ir's default element ID structure
     post_comments = soup.find_all(id=re.compile(r'^comment-\d+$'))
-    
-    # STRATEGY 2: Fallback to aggressive regex matching for varied themes
     if not post_comments:
-        post_comments = soup.find_all(class_=re.compile(r'\b(comment|post-comment|cm-row|cm-message|comment-item|cm-box)\b'))
+        # Added 'media' and 'comment_list' to catch older blog.ir themes
+        post_comments = soup.find_all(class_=re.compile(r'\b(comment|post-comment|cm-row|cm-message|comment-item|cm-box|media|comment_list)\b'))
     
     for pc in post_comments:
+        # Ignore wrappers
         if 'comments' in pc.get('class', []) and len(pc.get('class', [])) == 1:
+            continue
+            
+        # Ignore elements that are purely admin replies accidentally caught in the loop
+        if any(cls in pc.get('class', []) for cls in ['comment-reply', 'admin-response', 'cm-reply']):
             continue
 
         author_elem = pc.find(class_=re.compile(r'(?i)name|author|cm-name|cm_name|cm-author'))
@@ -87,9 +96,12 @@ def extract_comments_from_html(html_content, post_slug):
 
         author = author_elem.get_text(strip=True) if author_elem else "ناشناس"
         
+        # CORE FIX: If the author is "پاسخ:", this is an orphaned admin reply. Skip it entirely.
+        if author == "پاسخ:":
+            continue
+        
         date_raw = date_elem.get_text(strip=True) if date_elem else ""
         date_iso = parse_persian_date(date_raw)
-        
         message = body_elem.get_text(separator='\n', strip=True) if body_elem else ""
         
         if not message:
@@ -132,7 +144,7 @@ def extract_comments_from_html(html_content, post_slug):
                     'message': rep_message
                 }
 
-        fingerprint = generate_comment_fingerprint(post_slug, author, date_iso, message)
+        fingerprint = generate_comment_fingerprint(post_slug, message)
 
         comment_obj = {
             '_id': fingerprint,
@@ -164,7 +176,7 @@ def get_snapshot_timestamps(original_url, session):
     return []
 
 def main():
-    parser = argparse.ArgumentParser(description="Smart scrape blog.ir comments (starts from newest snapshot and trusts it).")
+    parser = argparse.ArgumentParser(description="Smart scrape blog.ir comments (starts from newest, continues if 0 found).")
     parser.add_argument("xml_file", help="Path to your blog.ir XML backup file.")
     parser.add_argument("output_dir", help="Folder to save the YAML comment files.")
     args = parser.parse_args()
@@ -176,7 +188,6 @@ def main():
     }
 
     print("\n--- Phase 1: Parsing XML for all blog posts ---")
-    
     session = requests.Session()
     retries = Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504])
     session.mount('https://', HTTPAdapter(max_retries=retries))
@@ -194,7 +205,7 @@ def main():
         print(f"❌ Failed to parse XML file: {e}")
         return
 
-    print(f"\n--- Phase 2: Hyper-Fast Scraping from {len(original_urls)} Posts ---")
+    print(f"\n--- Phase 2: Scraping from {len(original_urls)} Posts ---")
     
     total_comments_saved = 0
     seen_fingerprints = set() 
@@ -220,7 +231,6 @@ def main():
             try:
                 response = session.get(wayback_url, headers=headers, timeout=20)
                 
-                # If the snapshot successfully loads...
                 if response.status_code == 200:
                     comments = extract_comments_from_html(response.text, slug)
                     
@@ -239,16 +249,16 @@ def main():
                                 total_comments_saved += 1
                                 
                         print(f"  -> Found {new_comments_for_post} comments in snapshot {ts}. Moving to next post.")
+                        
+                        # WE ONLY BREAK IF WE ACTUALLY FOUND COMMENTS
+                        break 
                     else:
-                        print(f"  -> Snapshot {ts} loaded successfully but has 0 comments. Moving to next post.")
-                    
-                    # CRITICAL LOGIC: Break out immediately upon ANY successful page load!
-                    break 
+                        # IF ZERO COMMENTS, KEEP GOING BACK IN TIME! DO NOT BREAK!
+                        print(f"  -> Snapshot {ts} loaded but has 0 comments. Checking older snapshots just in case...")
                         
             except Exception as e:
                 print(f"    [!] Failed to fetch snapshot {ts}: {e}")
             
-            # Polite delay between snapshot fetches if we actually have to loop
             time.sleep(1.5)
             
     print(f"\n✅ Finished! Successfully recovered {total_comments_saved} unique comments.")

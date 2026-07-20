@@ -4,40 +4,48 @@ date: 2009-08-24
 jalaliDate: "۰۲ شهریور ۱۳۸۸"
 tags: ["سیاه‌مشق"]
 ---
-<div class="postbody">
-<meta content="Word.Document" name="ProgId"/>
-<meta content="Microsoft Word 12" name="Generator"/>
-<meta content="Microsoft Word 12" name="Originator"/><link href="file:///C:\DOCUME~1\user\LOCALS~1\Temp\msohtmlclip1\01\clip_themedata.thmx" rel="themeData"/><link href="file:///C:\DOCUME~1\user\LOCALS~1\Temp\msohtmlclip1\01\clip_colorschememapping.xml" rel="colorSchemeMapping"/>
+<p style="text-align: center;">خبری نیست</p>
 
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">خبری نیست</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">به جز بغض غریبی</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">که شب و روز سراغ دل غربت‌زده را می‌گیرد</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""> </span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">خبری نیست</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">به جز اشک</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">که هر لحظه گلاویز دو چشمم شده است</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">و امیدی به رسیدن به نگاهی</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">که برایش کمی از درد دل خویش بگویم، هم نیست</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""> </span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">چشم من روزنۀ باران‌ست</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">دلم آهسته‌ترین راز خدا بود</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">که در بغض فرود آمد و ناگاه شکست</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""> </span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">باورم نیست</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">که آواره‌ام و تنهایی</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">مثل آوار فرو ریخته بر خانۀ دل‌تنگی من</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""> </span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">گله‌ای نیست دگر</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">چینه‌دان سخنم سخت لبالب شده از لحن سکوت</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""> </span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">باورم نیست</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">که تنها هستم</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">همۀ دل‌خوشی من این است</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">که خدا هم تنهاست</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""> </span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">دیگر امّا خبری نیست</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" dir="rtl" style="MARGIN-BOTTOM: 0pt;  DIRECTION: rtl; LINE-HEIGHT: normal; unicode-bidi: embed; TEXT-ALIGN: center"><font  ><span lang="FA" style=" " tahoma?,?sans-serif?;?="">به جز تنهایی...</span><span lang="AR-SA" style=" " tahoma?,?sans-serif?;?=""></span></font></p>
-<p align="center" style=" TEXT-ALIGN: center"><font  ><span dir="rtl" lang="AR-SA" style="" tahoma?,?sans-serif?;?=""> </span></font></p>
-<p></p>
-<div style=" TEXT-ALIGN: center"><span dir="rtl" lang="AR-SA" style=" LINE-HEIGHT: 115%; " tahoma?,?sans-serif?;?="">یک‌شنبه 25 مرداد 1388</span></div>
-<div style=" TEXT-ALIGN: center"><span dir="rtl" lang="AR-SA" style=" LINE-HEIGHT: 115%; " tahoma?,?sans-serif?;?=""></span> </div></div>
+<p style="text-align: center;">به جز بغض غریبی</p>
+
+<p style="text-align: center;">که شب و روز سراغ دل غربت‌زده را می‌گیرد</p>
+
+<p style="text-align: center;">خبری نیست</p>
+
+<p style="text-align: center;">به جز اشک</p>
+
+<p style="text-align: center;">که هر لحظه گلاویز دو چشمم شده است</p>
+
+<p style="text-align: center;">و امیدی به رسیدن به نگاهی</p>
+
+<p style="text-align: center;">که برایش کمی از درد دل خویش بگویم، هم نیست</p>
+
+<p style="text-align: center;">چشم من روزنۀ باران‌ست</p>
+
+<p style="text-align: center;">دلم آهسته‌ترین راز خدا بود</p>
+
+<p style="text-align: center;">که در بغض فرود آمد و ناگاه شکست</p>
+
+<p style="text-align: center;">باورم نیست</p>
+
+<p style="text-align: center;">که آواره‌ام و تنهایی</p>
+
+<p style="text-align: center;">مثل آوار فرو ریخته بر خانۀ دل‌تنگی من</p>
+
+<p style="text-align: center;">گله‌ای نیست دگر</p>
+
+<p style="text-align: center;">چینه‌دان سخنم سخت لبالب شده از لحن سکوت</p>
+
+<p style="text-align: center;">باورم نیست</p>
+
+<p style="text-align: center;">که تنها هستم</p>
+
+<p style="text-align: center;">همۀ دل‌خوشی من این است</p>
+
+<p style="text-align: center;">که خدا هم تنهاست</p>
+
+<p style="text-align: center;">دیگر امّا خبری نیست</p>
+
+<p style="text-align: center;">به جز تنهایی...</p>
+
+یک‌شنبه 25 مرداد 1388
